@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kratom</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="header__logo">
+            <img src="./img/logo.png" alt="Kratom">
+        </a>
+        <nav class="header__nav">
+            <span class="general-decor-elem"></span>
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#" class="header__link">Buy kratom</a>
+                </li>
+                <li class="header__item header__item-hide-tablet">
+                    <a href="#" class="header__link">Guidebook</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Earn with us</a>
+                </li>
+                <li class="header__item header__item-hide-tablet">
+                    <a href="#" class="header__link">Pay/Delivery</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Contact</a>
+                </li>
+                <li class="header__item header__item__drop js-drop-item">
+                    <div class="wrapper js-drop-button">
+                        <a class="text">Menu</a>
+                        <span class="icon-drop"></span>
+                    </div>
+                    <ul class="header__drop-list">
+                        <li class="header__drop-item">
+                            <a href="#" class="header__drop-link">forum</a>
+                        </li>
+                        <li class="header__drop-item">
+                            <a href="#" class="header__drop-link">About us</a>
+                        </li>
+                        <li class="header__drop-item">
+                            <a href="#" class="header__drop-link">Reviews</a>
+                        </li>
+                        <li class="header__drop-item">
+                            <a href="#" class="header__drop-link">Faq</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="header__close-nav">
+                <span class="icon-close"></span>
+            </button>
+        </nav>
+        <div class="header__nav-profile">
+            <div class="header__search js-drop-item">
+                <form action="#" class="header__search-form">
+                    <input type="text" class="header__search__input" placeholder="search">
+                    <button class="header__search__button">
+                        <span class="icon-search"></span>
+                    </button>
+                </form>
+                <div class="header__livesearch">
+                    <ul class="header__livesearch-list">
+                        <li class="header__livesearch-item">
+                            <a href="#" class="header__livesearch-link">maeng da green vein</a>
+                        </li>
+                        <li class="header__livesearch-item">
+                            <a href="#" class="header__livesearch-link">maeng da green vein</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="header__search__button js-drop-button">
+                    <span class="icon-search"></span>
+                </button>
+            </div>
+            <div class="header__nav-profile__item">
+                <a href="#">
+                    <span class="icon-profile"></span>
+                </a>
+            </div>
+            <div class="header__nav-profile__item header__nav-profile__item-cart">
+                <button class="js-button" data-target="noty-cart">
+                    <span class="icon-cart"></span>
+                </button>
+                <span class="decor-cart"></span>
+            </div>
+            <div class="header__nav-profile__item header__nav-profile__item-burger">
+                <button class="header__burger">
+                    <span class="decor"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <section class="popup popup-noty-cart" data-target="noty-cart">
+        <div class="popup-noty-cart__header">
+            <button class="general-more js-close">
+                <span class="icon-arrow-left"></span>
+                <span class="text">back</span>
+            </button>
+            <h3 class="main-caption">cart</h3>
+        </div>
+        <div class="popup-noty-cart__body">
+            <ul class="popup-noty-cart__list">
+                <li class="popup-noty-cart__item">
+                    <div class="popup-noty-cart__img">
+                        <img src="./img/product-img-1.png" alt="Продукт">
+                    </div>
+                    <div class="popup-noty-cart__info">
+                        <h5 class="name">maeng da green vein kratom</h5>
+                        <p class="info">
+                            <span class="weight">50g</span>
+                            <span>x</span>
+                            <span class="calc">1</span>
+                        </p>
+                        <div class="info__footer">
+                            <p class="price"> USD <span>20</span></p>
+                            <button class="delete-button">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popup-noty-cart__item">
+                    <div class="popup-noty-cart__img">
+                        <img src="./img/product-img-1.png" alt="Продукт">
+                    </div>
+                    <div class="popup-noty-cart__info">
+                        <h5 class="name">maeng da green vein kratom</h5>
+                        <p class="info">
+                            <span class="weight">50g</span>
+                            <span>x</span>
+                            <span class="calc">1</span>
+                        </p>
+                        <div class="info__footer">
+                            <p class="price"> USD <span>20</span></p>
+                            <button class="delete-button">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popup-noty-cart__item">
+                    <div class="popup-noty-cart__img">
+                        <img src="./img/product-img-1.png" alt="Продукт">
+                    </div>
+                    <div class="popup-noty-cart__info">
+                        <h5 class="name">maeng da green vein kratom</h5>
+                        <p class="info">
+                            <span class="weight">50g</span>
+                            <span>x</span>
+                            <span class="calc">1</span>
+                        </p>
+                        <div class="info__footer">
+                            <p class="price"> USD <span>20</span></p>
+                            <button class="delete-button">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popup-noty-cart__item">
+                    <div class="popup-noty-cart__img">
+                        <img src="./img/product-img-1.png" alt="Продукт">
+                    </div>
+                    <div class="popup-noty-cart__info">
+                        <h5 class="name">maeng da green vein kratom</h5>
+                        <p class="info">
+                            <span class="weight">50g</span>
+                            <span>x</span>
+                            <span class="calc">1</span>
+                        </p>
+                        <div class="info__footer">
+                            <p class="price"> USD <span>20</span></p>
+                            <button class="delete-button">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popup-noty-cart__item">
+                    <div class="popup-noty-cart__img">
+                        <img src="./img/product-img-1.png" alt="Продукт">
+                    </div>
+                    <div class="popup-noty-cart__info">
+                        <h5 class="name">maeng da green vein kratom</h5>
+                        <p class="info">
+                            <span class="weight">50g</span>
+                            <span>x</span>
+                            <span class="calc">1</span>
+                        </p>
+                        <div class="info__footer">
+                            <p class="price"> USD <span>20</span></p>
+                            <button class="delete-button">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popup-noty-cart__item">
+                    <div class="popup-noty-cart__img">
+                        <img src="./img/product-img-1.png" alt="Продукт">
+                    </div>
+                    <div class="popup-noty-cart__info">
+                        <h5 class="name">maeng da green vein kratom</h5>
+                        <p class="info">
+                            <span class="weight">50g</span>
+                            <span>x</span>
+                            <span class="calc">1</span>
+                        </p>
+                        <div class="info__footer">
+                            <p class="price"> USD <span>20</span></p>
+                            <button class="delete-button">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="popup-noty-cart__footer js-drop-item">
+            <button class="popup-noty-cart__open-button js-drop-button"></button>
+            <div class="total__wrapper">
+                <div class="total__item">
+                    <p class="type">subtotal</p>
+                    <p class="description">usd 40</p>
+                </div>
+                <div class="total__item">
+                    <p class="type">Bonuses used</p>
+                    <p class="description">usd 0</p>
+                </div>
+                <div class="total__item">
+                    <p class="type">shipping</p>
+                    <p class="description">usd 0</p>
+                </div>
+                <div class="total__item total__item-general">
+                    <p class="type">total</p>
+                    <p class="description">usd 40</p>
+                </div>
+            </div>
+            <a href="#" class="main-button-color popup-noty-cart__button">
+                <span class="text">checkout</span>
+            </a>
+            <a href="#" class="main-button popup-noty-cart__button">
+                <span class="text">edit</span>
+            </a>
+        </div>
+    </section>
+    <main>
+        <section class="breadcrumbs">
+            <div class="breadcrumbs__wrapper container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Home</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Forum</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="forum-page">
+            <div class="forum-page__wrapper container">
+                <div class="forum__header">
+                    <h1 class="main-caption main-caption-align">Forum</h1>
+                    <form action="#" class="forum__search-form">
+                        <input type="text" class="forum__search__input" placeholder="forum search">
+                        <button class="forum__search__button">
+                            <span class="icon-search"></span>
+                        </button>
+                    </form>
+                </div>
+                <div class="forum-page__container">
+                    <ul class="forum-topic__list forum-topic__list--forum-page">
+                        <li class="forum-topic__item" style="background-image: url(./img/forum-img/forum-topic-img-1.png);">
+                            <a href="#" class="forum-topic__item__link"></a>
+                            <p class="forum-topic__item__caption">Is kratom legal?</p>
+                            <div class="forum-topic__item__autor">
+                                <div class="img" style="background-image: url(./img/client-say-img-1.png);"></div>
+                                <p class="name">by Jakob</p>
+                            </div>
+                        </li>
+                        <li class="forum-topic__item" style="background-image: url(./img/forum-img/forum-topic-img-2.png);">
+                            <a href="#" class="forum-topic__item__link"></a>
+                            <p class="forum-topic__item__caption">let's drink kratom together!</p>
+                            <div class="forum-topic__item__autor">
+                                <div class="img" style="background-image: url(./img/client-say-img-2.png);"></div>
+                                <p class="name">by Jakob</p>
+                            </div>
+                        </li>
+                        <li class="forum-topic__item" style="background-image: url(./img/forum-img/forum-topic-img-3.png);">
+                            <a href="#" class="forum-topic__item__link"></a>
+                            <p class="forum-topic__item__caption">where is kratom harvested?</p>
+                            <div class="forum-topic__item__autor">
+                                <div class="img" style="background-image: url(./img/client-say-img-3.png);"></div>
+                                <p class="name">by Jakob</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="form-top-topic">
+                        <div class="form-top-topic__caption">top topics</div>
+                        <ul class="form-top-topic__list">
+                            <li class="form-top-topic__item">
+                                <span class="icon-forum-fire">
+                                    <span class="path1"></span>
+                                    <span class="path2"></span>
+                                </span>
+                                <div class="wrapper">
+                                    <a href="#" class="forum-topic___caption">Is kratom legal?</a>
+                                    <div class="forum-topic__coments">
+                                        <span class="icon-form-comments"></span>
+                                        <span class="text">30 comments</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="form-top-topic__item">
+                                <span class="icon-forum-fire">
+                                    <span class="path1"></span>
+                                    <span class="path2"></span>
+                                </span>
+                                <div class="wrapper">
+                                    <a href="#" class="forum-topic___caption">Is kratom legal?</a>
+                                    <div class="forum-topic__coments">
+                                        <span class="icon-form-comments"></span>
+                                        <span class="text">30 comments</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="form-top-topic__item">
+                                <span class="icon-forum-fire">
+                                    <span class="path1"></span>
+                                    <span class="path2"></span>
+                                </span>
+                                <div class="wrapper">
+                                    <a href="#" class="forum-topic___caption">Is kratom legal?</a>
+                                    <div class="forum-topic__coments">
+                                        <span class="icon-form-comments"></span>
+                                        <span class="text">30 comments</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="form-top-topic__item">
+                                <span class="icon-forum-fire">
+                                    <span class="path1"></span>
+                                    <span class="path2"></span>
+                                </span>
+                                <div class="wrapper">
+                                    <a href="#" class="forum-topic___caption">Is kratom legal?</a>
+                                    <div class="forum-topic__coments">
+                                        <span class="icon-form-comments"></span>
+                                        <span class="text">30 comments</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="form-top-topic__item">
+                                <span class="icon-forum-fire">
+                                    <span class="path1"></span>
+                                    <span class="path2"></span>
+                                </span>
+                                <div class="wrapper">
+                                    <a href="#" class="forum-topic___caption">Is kratom legal?</a>
+                                    <div class="forum-topic__coments">
+                                        <span class="icon-form-comments"></span>
+                                        <span class="text">30 comments</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="forum-block">
+            <div class="forum-block__wrapper container">
+                <div class="forum-container__header">
+                    <p class="main-caption-l">all discussions</p>
+                    <div class="wrapper">
+                        <p class="calc-discussions">56 discussions</p>
+                        <button class="main-button main-button-small main-button-forum js-button" data-target="new-topic">
+                            <span class="text">create a new topic</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="forum-block__container">
+                    <div class="forum-block__container__header">
+                        <p class="forum-block-topic-position">Topic</p>
+                        <p class="forum-block-latest-position">Latest reply</p>
+                        <p class="forum-block-members-position">The members</p>
+                    </div>
+                    <ul class="forum-block__list">
+                        <li class="forum-block__item">
+                            <span class="icon-forum-fire">
+                                <span class="path1"></span>
+                                <span class="path2"></span>
+                            </span>
+                            <div class="forum-block__item__topic forum-block-topic-position">
+                                <p class="forum-block__item__caption">Task</p>
+                                <a href="#" class="forum-topic___caption">Is kratom legal?</a>
+                                <div class="forum-topic__coments">
+                                    <span class="icon-form-comments"></span>
+                                    <span class="text">30 comments</span>
+                                </div>
+                            </div>
+                            <div class="forum-block__item__latest forum-block-latest-position">
+                                <p class="forum-block__item__caption">Latest reply</p>
+                                <div class="forum-block__item__latest-header">
+                                    <div class="forum-block__item__user">
+                                        <div class="forum-block__item__user-img" style="background-image:url(./img/client-say-img-1.png)"></div>
+                                        <p class="forum-block__item__user-name">User</p>
+                                    </div>
+                                    <p class="forum-block__item__date">
+                                        <span class="date">21.06.2020</span>
+                                        <span class="time">21:36</span>
+                                    </p>
+                                </div>
+                                <div class="forum-block__item__latest-text">
+                                    <p>The use of Kratom is very beneficial as it helps with anxiety, pain, energy levels, and mood improve </p>
+                                </div>
+                            </div>
+                            <div class="forum-members js-drop-item forum-block-members-position">
+                                <p class="forum-block__item__caption">The members</p>
+                                <div class="forum-members__wrapper">
+                                    <div class="forum-members__item" style="background-image:url(./img/client-say-img-1.png)"></div>
+                                    <div class="forum-members__item" style="background-image:url(./img/client-say-img-2.png)"></div>
+                                    <div class="forum-members__item" style="background-image:url(./img/client-say-img-3.png)"></div>
+                                    <button class="forum-more__button js-drop-button">
+                                        <span class="dots"></span>
+                                        <span class="dots"></span>
+                                        <span class="dots"></span>
+                                    </button>
+                                </div>
+                                <ul class="forum-sub-members__list">
+                                    <li class="forum-sub-members__item">
+                                        <div class="img" style="background-image:url(./img/client-say-img-3.png)"></div>
+                                        <p class="name">Emma</p>
+                                    </li>
+                                    <li class="forum-sub-members__item">
+                                        <div class="img" style="background-image:url(./img/client-say-img-3.png)"></div>
+                                        <p class="name">Emma</p>
+                                    </li>
+                                    <li class="forum-sub-members__item">
+                                        <div class="img" style="background-image:url(./img/client-say-img-3.png)"></div>
+                                        <p class="name">Emma</p>
+                                    </li>
+                                    <li class="forum-sub-members__item">
+                                        <div class="img" style="background-image:url(./img/client-say-img-3.png)"></div>
+                                        <p class="name">Emma</p>
+                                    </li>
+                                    <li class="forum-sub-members__item">
+                                        <div class="img" style="background-image:url(./img/client-say-img-3.png)"></div>
+                                        <p class="name">Emma</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="forum-block__item">
+                            <span class="icon-forum-fire">
+                                <span class="path1"></span>
+                                <span class="path2"></span>
+                            </span>
+                            <div class="forum-block__item__topic forum-block-topic-position">
+                                <p class="forum-block__item__caption">Task</p>
+                                <a href="#" class="forum-topic___caption">MAENG DA GREEN VEIN KRATOM or Maeng Da White Vein Kratom</a>
+                                <div class="forum-topic__coments">
+                                    <span class="icon-form-comments"></span>
+                                    <span class="text">30 comments</span>
+                                </div>
+                            </div>
+                            <div class="forum-block__item__latest forum-block-latest-position">
+                                <p class="forum-block__item__caption">Latest reply</p>
+                                <div class="forum-block__item__latest-header">
+                                    <div class="forum-block__item__user">
+                                        <div class="forum-block__item__user-img" style="background-image:url(./img/client-say-img-1.png)"></div>
+                                        <p class="forum-block__item__user-name">User</p>
+                                    </div>
+                                    <p class="forum-block__item__date">
+                                        <span class="date">21.06.2020</span>
+                                        <span class="time">21:36</span>
+                                    </p>
+                                </div>
+                                <div class="forum-block__item__latest-text">
+                                    <p>The use of Kratom is very beneficial as it helps with anxiety, pain, energy levels, and mood improve ergy levels, and mood improve</p>
+                                </div>
+                            </div>
+                            <div class="forum-members js-drop-item forum-block-members-position">
+                                <p class="forum-block__item__caption">The members</p>
+                                <div class="forum-members__wrapper">
+                                    <div class="forum-members__item" style="background-image:url(./img/client-say-img-1.png)"></div>
+                                    <div class="forum-members__item" style="background-image:url(./img/client-say-img-2.png)"></div>
+                                    <div class="forum-members__item" style="background-image:url(./img/client-say-img-3.png)"></div>
+                                    <button class="forum-more__button js-drop-button">
+                                        <span class="dots"></span>
+                                        <span class="dots"></span>
+                                        <span class="dots"></span>
+                                    </button>
+                                </div>
+                                <ul class="forum-sub-members__list">
+                                    <li class="forum-sub-members__item">
+                                        <div class="img" style="background-image:url(./img/client-say-img-3.png)"></div>
+                                        <p class="name">Emma</p>
+                                    </li>
+                                    <li class="forum-sub-members__item">
+                                        <div class="img" style="background-image:url(./img/client-say-img-3.png)"></div>
+                                        <p class="name">Emma</p>
+                                    </li>
+                                    <li class="forum-sub-members__item">
+                                        <div class="img" style="background-image:url(./img/client-say-img-3.png)"></div>
+                                        <p class="name">Emma</p>
+                                    </li>
+                                    <li class="forum-sub-members__item">
+                                        <div class="img" style="background-image:url(./img/client-say-img-3.png)"></div>
+                                        <p class="name">Emma</p>
+                                    </li>
+                                    <li class="forum-sub-members__item">
+                                        <div class="img" style="background-image:url(./img/client-say-img-3.png)"></div>
+                                        <p class="name">Emma</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="main-button">
+                    <span class="text">show more</span>
+                </button>
+            </div>
+        </section>
+        <section class="question-block" style="background-image:url(./img/question-block-img.png)">
+            <div class="question-block__wrapper container">
+                <div class="question-block__container">
+                    <h2 class="main-caption">have any questions?</h2>
+                    <p class="sub">Write to us</p>
+                    <ul class="question-block__list">
+                        <li class="question-block__item question-block__item-message">
+                            <a href="#" class="question-block__link">
+                                <span class="icon-message"></span>
+                            </a>
+                        </li>
+                        <li class="question-block__item question-block__item-teleg">
+                            <a href="#" class="question-block__link">
+                                <span class="icon-teleg"></span>
+                            </a>
+                        </li>
+                        <li class="question-block__item question-block__item-whatsapp">
+                            <a href="#" class="question-block__link">
+                                <span class="icon-whatsapp"></span>
+                            </a>
+                        </li>
+                        <li class="question-block__item question-block__item-skype">
+                            <a href="#" class="question-block__link">
+                                <span class="icon-skype"></span>
+                            </a>
+                        </li>
+                        <li class="question-block__item question-block__item-viber">
+                            <a href="#" class="question-block__link">
+                                <span class="icon-viber"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="popup popup-new-topic" data-target="new-topic">
+            <button class="close__popup js-close">
+                <span class="icon-close"></span>
+            </button>
+            <p class="popup-caption">create a new topic</p>
+            <form action="#" class="popup__body">
+                <label class="add-photo js-photo-wrapper">
+                    <input type="file" class="add-photo__input js-photo-input" accept=".jpg, .jpeg, .png, .svg">
+                    <img src="" alt="Фото" class="add-photo__img js-photo-img">
+                </label>
+                <label class="input__wrapper js-input-wrapper error">
+                    <input type="text" class="main-input js-input">
+                    <span class="custome-placeholder__wrapper">
+                        <span class="custome-placeholder__before"></span>
+                        <span class="custome-placeholder__text">
+                            <span class="inner-text">New topic title</span>
+                        </span>
+                        <span class="custome-placeholder__after"></span>
+                    </span>
+                </label>
+                <label class="input__wrapper js-input-wrapper error">
+                    <input type="text" class="main-input js-input">
+                    <span class="custome-placeholder__wrapper">
+                        <span class="custome-placeholder__before"></span>
+                        <span class="custome-placeholder__text">
+                            <span class="inner-text">Your message</span>
+                        </span>
+                        <span class="custome-placeholder__after"></span>
+                    </span>
+                </label>
+                <button class="main-button-color main-button-color-popup">
+                    <span class="text">create</span>
+                </button>
+                <button class="main-button main-button-popup">
+                    <span class="text">create incognito</span>
+                </button>
+            </form>
+        </section>
+        <section class="popup popup-edit-topic" data-target="edit-topic">
+            <button class="close__popup js-close">
+                <span class="icon-close"></span>
+            </button>
+            <p class="popup-caption">edit topic</p>
+            <form action="#" class="popup__body">
+                <label class="add-photo js-photo-wrapper">
+                    <input type="file" class="add-photo__input js-photo-input" accept=".jpg, .jpeg, .png, .svg">
+                    <img src="" alt="Фото" class="add-photo__img js-photo-img">
+                </label>
+                <label class="input__wrapper js-input-wrapper">
+                    <input type="text" class="main-input js-input">
+                    <span class="custome-placeholder__wrapper">
+                        <span class="custome-placeholder__before"></span>
+                        <span class="custome-placeholder__text">
+                            <span class="inner-text">Name topic</span>
+                        </span>
+                        <span class="custome-placeholder__after"></span>
+                    </span>
+                </label>
+                <button class="main-button-color main-button-color-popup">
+                    <span class="text">edit</span>
+                </button>
+                <button type="button" class="main-button main-button-popup js-button" data-target="delete-topic">
+                    <span class="text">delete topic</span>
+                </button>
+            </form>
+        </section>
+        <section class="popup popup-delete-topic" data-target="delete-topic">
+            <button class="close__popup js-close">
+                <span class="icon-close"></span>
+            </button>
+            <p class="popup-caption">are you sure?</p>
+            <p class="popup-delete-topic__text">All message in this topic will be deleted</p>
+            <form action="#" class="popup__body">
+                <button class="main-button-color main-button-color-popup">
+                    <span class="text">delete</span>
+                </button>
+                <button type="button" class="main-button main-button-popup js-close">
+                    <span class="text">cancel</span>
+                </button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper container">
+            <div class="footer__wrapper__top">
+                <div class="footer__logo-wrapper">
+                    <div class="footer__logo">
+                        <img src="./img/logo.svg" alt="Kratom">
+                    </div>
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Buy kratom</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Guidebook</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Earn with us</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Pay/Delivery</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">About us</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Reviews</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">forum</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Rewards</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Contact</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Faq</a>
+                    </li>
+                </ul>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social__link">
+                            <span class="icon-fb"></span>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social__link">
+                            <span class="icon-inst"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__wrapper__down">
+                <p class="footer__copyright">Copyright © 2020</p>
+                <a href="#" class="footer__down-link">Terms & Conditions</a>
+                <a href="#" class="footer__down-link">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    <div class="button-to-top">
+        <button class="to-top">
+            <span class="icon-arrow-right"></span>
+        </button>
+    </div>
+    <div class="overlay"></div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

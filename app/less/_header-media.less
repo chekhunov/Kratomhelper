@@ -1,0 +1,207 @@
+ /* Header */
+ 
+@media screen and (max-width: 1440px) {
+    .header {
+        padding: 0px 20px;
+    }
+    
+    .header__search {
+        &.active {
+            .header__search-form {
+                width: 175px;
+            }
+        }
+    }
+    
+    .header__search__input {
+        max-width: 145px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header__search {
+        position: static;
+        
+        &.active {
+            .header__search-form {
+                width: 100%;
+                transform: translateX(0%);
+                transition: transform .4s;
+            }
+            
+            > .header__search__button {
+                color: #ACDA53;
+            }
+        }
+    }
+    
+    .header__search-form {
+        top: 100%;
+        left: 0px;
+        width: 100%;
+        height: 50px;
+        padding: 10px 20px;
+        background-color: #333333;
+        border-bottom: none;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transform: translateX(101%);
+        
+        &::before {
+            content: "";
+            position: absolute;
+            left: 20px;
+            bottom: 14px;
+            width: calc(100% - 40px);
+            height: 1px;
+            background-color: #C4C4C4;
+        }
+    }
+    
+    .header__search__input {
+        max-width: calc(100% - 25px);
+    }
+    
+    .header__livesearch {
+        top: calc(100% + 50px);
+        right: 0px;
+        width: 100%;
+        box-shadow: none;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    .header__item-hide-tablet {
+        display: none;
+    }
+    
+    .header__drop-list {
+        transition: none;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .header {
+        height: 50px;
+        padding: 0px 0px 0px 20px;
+    }
+    
+    .header__logo {
+        max-width: 119px;
+        height: 26px;
+    }
+    
+    .header__nav {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        padding: 50px 20px;
+        align-items: flex-start;
+        background-color: #333333;
+        overflow: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        z-index: 2;
+        transform: translateX(101%);
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .general-decor-elem {
+            display: none;
+        }
+        
+        &.active {
+            transform: translateX(0%);
+            transition: transform .5s;
+        }
+    }
+    
+    .header__close-nav {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    
+    .header__list {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    .header__item {
+        margin-bottom: 30px;
+        margin-right: 0px;
+        
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    
+    .header__item__drop {
+        .wrapper {
+            display: none;
+        }
+        
+        .header__drop-list {
+            position: static;
+            visibility: visible;
+            opacity: 1;
+            box-shadow: none;
+            transform: none;
+            padding: 0px;
+            margin-top: -15px;
+        }
+    }
+    
+    .header__link {
+        padding: 0px;
+    }
+        
+    .header__item-hide-tablet {
+        display: flex;
+    }
+    
+    .header__nav-profile__item-burger {
+        display: flex;
+    }
+    
+    .header__burger,
+    .header__close-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: #201F1F;
+        
+        .decor {
+            width: 20px;
+            height: 8px;
+            border-top: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+        }
+    }
+    
+    .header__burger {
+        margin-left: 20px;
+    }
+    
+    .header__nav-profile {
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .header__search {
+        margin-right: 20px;
+    }
+    
+    .header__nav-profile__item-cart {
+        margin-left: 20px;
+    }
+}

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kratom</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="header__logo">
+            <img src="./img/logo.png" alt="Kratom">
+        </a>
+        <nav class="header__nav">
+            <span class="general-decor-elem"></span>
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#" class="header__link">Buy kratom</a>
+                </li>
+                <li class="header__item header__item-hide-tablet">
+                    <a href="#" class="header__link">Guidebook</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Earn with us</a>
+                </li>
+                <li class="header__item header__item-hide-tablet">
+                    <a href="#" class="header__link">Pay/Delivery</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Contact</a>
+                </li>
+                <li class="header__item header__item__drop js-drop-item">
+                    <div class="wrapper js-drop-button">
+                        <a class="text">Menu</a>
+                        <span class="icon-drop"></span>
+                    </div>
+                    <ul class="header__drop-list">
+                        <li class="header__drop-item">
+                            <a href="#" class="header__drop-link">forum</a>
+                        </li>
+                        <li class="header__drop-item">
+                            <a href="#" class="header__drop-link">About us</a>
+                        </li>
+                        <li class="header__drop-item">
+                            <a href="#" class="header__drop-link">Reviews</a>
+                        </li>
+                        <li class="header__drop-item">
+                            <a href="#" class="header__drop-link">Faq</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="header__close-nav">
+                <span class="icon-close"></span>
+            </button>
+        </nav>
+        <div class="header__nav-profile">
+            <div class="header__search js-drop-item">
+                <form action="#" class="header__search-form">
+                    <input type="text" class="header__search__input" placeholder="search">
+                    <button class="header__search__button">
+                        <span class="icon-search"></span>
+                    </button>
+                </form>
+                <div class="header__livesearch">
+                    <ul class="header__livesearch-list">
+                        <li class="header__livesearch-item">
+                            <a href="#" class="header__livesearch-link">maeng da green vein</a>
+                        </li>
+                        <li class="header__livesearch-item">
+                            <a href="#" class="header__livesearch-link">maeng da green vein</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="header__search__button js-drop-button">
+                    <span class="icon-search"></span>
+                </button>
+            </div>
+            <div class="header__nav-profile__item">
+                <a href="#">
+                    <span class="icon-profile"></span>
+                </a>
+            </div>
+            <div class="header__nav-profile__item header__nav-profile__item-cart">
+                <a href="#">
+                    <span class="icon-cart"></span>
+                </a>
+                <span class="decor-cart"></span>
+            </div>
+            <div class="header__nav-profile__item header__nav-profile__item-burger">
+                <button class="header__burger">
+                    <span class="decor"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <section class="popup popup-noty-cart" data-target="noty-cart">
+        <div class="popup-noty-cart__header">
+            <button class="general-more js-close">
+                <span class="icon-arrow-left"></span>
+                <span class="text">back</span>
+            </button>
+            <h3 class="main-caption">cart</h3>
+        </div>
+        <div class="popup-noty-cart__body">
+            <ul class="popup-noty-cart__list">
+                <li class="popup-noty-cart__item">
+                    <div class="popup-noty-cart__img">
+                        <img src="./img/product-img-1.png" alt="Продукт">
+                    </div>
+                    <div class="popup-noty-cart__info">
+                        <h5 class="name">maeng da green vein kratom</h5>
+                        <p class="info">
+                            <span class="weight">50g</span>
+                            <span>x</span>
+                            <span class="calc">1</span>
+                        </p>
+                        <div class="info__footer">
+                            <p class="price"> USD <span>20</span></p>
+                            <button class="delete-button">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popup-noty-cart__item">
+                    <div class="popup-noty-cart__img">
+                        <img src="./img/product-img-1.png" alt="Продукт">
+                    </div>
+                    <div class="popup-noty-cart__info">
+                        <h5 class="name">maeng da green vein kratom</h5>
+                        <p class="info">
+                            <span class="weight">50g</span>
+                            <span>x</span>
+                            <span class="calc">1</span>
+                        </p>
+                        <div class="info__footer">
+                            <p class="price"> USD <span>20</span></p>
+                            <button class="delete-button">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popup-noty-cart__item">
+                    <div class="popup-noty-cart__img">
+                        <img src="./img/product-img-1.png" alt="Продукт">
+                    </div>
+                    <div class="popup-noty-cart__info">
+                        <h5 class="name">maeng da green vein kratom</h5>
+                        <p class="info">
+                            <span class="weight">50g</span>
+                            <span>x</span>
+                            <span class="calc">1</span>
+                        </p>
+                        <div class="info__footer">
+                            <p class="price"> USD <span>20</span></p>
+                            <button class="delete-button">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popup-noty-cart__item">
+                    <div class="popup-noty-cart__img">
+                        <img src="./img/product-img-1.png" alt="Продукт">
+                    </div>
+                    <div class="popup-noty-cart__info">
+                        <h5 class="name">maeng da green vein kratom</h5>
+                        <p class="info">
+                            <span class="weight">50g</span>
+                            <span>x</span>
+                            <span class="calc">1</span>
+                        </p>
+                        <div class="info__footer">
+                            <p class="price"> USD <span>20</span></p>
+                            <button class="delete-button">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popup-noty-cart__item">
+                    <div class="popup-noty-cart__img">
+                        <img src="./img/product-img-1.png" alt="Продукт">
+                    </div>
+                    <div class="popup-noty-cart__info">
+                        <h5 class="name">maeng da green vein kratom</h5>
+                        <p class="info">
+                            <span class="weight">50g</span>
+                            <span>x</span>
+                            <span class="calc">1</span>
+                        </p>
+                        <div class="info__footer">
+                            <p class="price"> USD <span>20</span></p>
+                            <button class="delete-button">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popup-noty-cart__item">
+                    <div class="popup-noty-cart__img">
+                        <img src="./img/product-img-1.png" alt="Продукт">
+                    </div>
+                    <div class="popup-noty-cart__info">
+                        <h5 class="name">maeng da green vein kratom</h5>
+                        <p class="info">
+                            <span class="weight">50g</span>
+                            <span>x</span>
+                            <span class="calc">1</span>
+                        </p>
+                        <div class="info__footer">
+                            <p class="price"> USD <span>20</span></p>
+                            <button class="delete-button">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="popup-noty-cart__footer js-drop-item">
+            <button class="popup-noty-cart__open-button js-drop-button"></button>
+            <div class="total__wrapper">
+                <div class="total__item">
+                    <p class="type">subtotal</p>
+                    <p class="description">usd 40</p>
+                </div>
+                <div class="total__item">
+                    <p class="type">Bonuses used</p>
+                    <p class="description">usd 0</p>
+                </div>
+                <div class="total__item">
+                    <p class="type">shipping</p>
+                    <p class="description">usd 0</p>
+                </div>
+                <div class="total__item total__item-general">
+                    <p class="type">total</p>
+                    <p class="description">usd 40</p>
+                </div>
+            </div>
+            <a href="#" class="main-button-color popup-noty-cart__button">
+                <span class="text">checkout</span>
+            </a>
+            <a href="#" class="main-button popup-noty-cart__button">
+                <span class="text">edit</span>
+            </a>
+        </div>
+    </section>
+    <main>
+        <section class="breadcrumbs">
+            <div class="breadcrumbs__wrapper container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Home</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Shop</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="shop-page">
+            <div class="shop-page__wrapper container">
+                <div class="general-decor-figure"></div>
+                <h2 class="main-caption main-caption-align">Shop</h2>
+                <ul class="general-tabs__list">
+                    <li class="general-tabs__item active">kratom</li>
+                    <li class="general-tabs__item">other products</li>
+                </ul>
+                <div class="product__position">
+                    <ul class="product__list">
+                        <li class="product__item">
+                            <div class="product__item__container js-drop-item">
+                                <div class="product__item__info-block">
+                                    <div class="wrapper">
+                                        <p>White vein kratom Maeng Da has much common with Maeng Da Green, but in spite of the resemblance, it has a number of features that make it unique. This kind of kratom gives an incredible feeling of euphoria, without an obvious calming effect. To the opposite, it empowers you and courses stimulating effect. White vein maeng da contains a high </p>
+                                        <h4>White vein Thai kratom effects:</h4>
+                                        <p>white maeng da kratom will be especially useful for those who white maeng da kratom will beTo the opposite, it empowers you and courses stimulating effect</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="product__item__img">
+                                    <img src="./img/product-img-1.png" alt="Product">
+                                </a>
+                                <a href="#" class="product__item__link">maeng da green vein kratom</a>
+                                <button class="product__item__button js-drop-button">
+                                    <span class="text">info</span>
+                                    <span class="icon-info"></span>
+                                </button>
+                                <ul class="product__item__info-list">
+                                    <li class="product__item__info-item">
+                                        <p class="name">STIMULATION</p>
+                                        <ul class="product__item__info-poins__list">
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item active"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="product__item__info-item">
+                                        <p class="name">relaxation</p>
+                                        <ul class="product__item__info-poins__list">
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item active"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="product__item__info-item">
+                                        <p class="name">euphoria</p>
+                                        <ul class="product__item__info-poins__list">
+                                            <li class="product__item__info-poins__item active"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="product__item__weight">
+                                    <ul class="product__weight-list">
+                                        <li class="product__weight-item active">50g</li>
+                                        <li class="product__weight-item">100g</li>
+                                        <li class="product__weight-item">300g</li>
+                                        <li class="product__weight-item">500g</li>
+                                        <li class="product__weight-item">1000g</li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__footer">
+                                    <p class="product__item__price">USD <span>20.00</span></p>
+                                    <button class="main-button-color">
+                                        <span class="text">add to cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product__item">
+                            <div class="product__item__container js-drop-item">
+                                <div class="product__item__info-block">
+                                    <div class="wrapper">
+                                        <p>White vein kratom Maeng Da has much common with Maeng Da Green, but in spite of the resemblance, it has a number of features that make it unique. This kind of kratom gives an incredible feeling of euphoria, without an obvious calming effect. To the opposite, it empowers you and courses stimulating effect. White vein maeng da contains a high </p>
+                                        <h4>White vein Thai kratom effects:</h4>
+                                        <p>white maeng da kratom will be especially useful for those who white maeng da kratom will beTo the opposite, it empowers you and courses stimulating effect</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="product__item__img">
+                                    <img src="./img/product-img-1.png" alt="Product">
+                                </a>
+                                <a href="#" class="product__item__link">maeng da green vein kratom</a>
+                                <button class="product__item__button js-drop-button">
+                                    <span class="text">info</span>
+                                    <span class="icon-info"></span>
+                                </button>
+                                <ul class="product__item__info-list">
+                                    <li class="product__item__info-item">
+                                        <p class="name">STIMULATION</p>
+                                        <ul class="product__item__info-poins__list">
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item active"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="product__item__info-item">
+                                        <p class="name">relaxation</p>
+                                        <ul class="product__item__info-poins__list">
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item active"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="product__item__info-item">
+                                        <p class="name">euphoria</p>
+                                        <ul class="product__item__info-poins__list">
+                                            <li class="product__item__info-poins__item active"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="product__item__weight">
+                                    <ul class="product__weight-list">
+                                        <li class="product__weight-item active">50g</li>
+                                        <li class="product__weight-item">100g</li>
+                                        <li class="product__weight-item">300g</li>
+                                        <li class="product__weight-item">500g</li>
+                                        <li class="product__weight-item">1000g</li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__footer">
+                                    <p class="product__item__price">USD <span>20.00</span></p>
+                                    <button class="main-button-color">
+                                        <span class="text">add to cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product__item">
+                            <div class="product__item__container js-drop-item">
+                                <div class="product__item__info-block">
+                                    <div class="wrapper">
+                                        <p>White vein kratom Maeng Da has much common with Maeng Da Green, but in spite of the resemblance, it has a number of features that make it unique. This kind of kratom gives an incredible feeling of euphoria, without an obvious calming effect. To the opposite, it empowers you and courses stimulating effect. White vein maeng da contains a high </p>
+                                        <h4>White vein Thai kratom effects:</h4>
+                                        <p>white maeng da kratom will be especially useful for those who white maeng da kratom will beTo the opposite, it empowers you and courses stimulating effect</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="product__item__img">
+                                    <img src="./img/product-img-1.png" alt="Product">
+                                </a>
+                                <a href="#" class="product__item__link">maeng da green vein kratom</a>
+                                <button class="product__item__button js-drop-button">
+                                    <span class="text">info</span>
+                                    <span class="icon-info"></span>
+                                </button>
+                                <ul class="product__item__info-list">
+                                    <li class="product__item__info-item">
+                                        <p class="name">STIMULATION</p>
+                                        <ul class="product__item__info-poins__list">
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item active"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="product__item__info-item">
+                                        <p class="name">relaxation</p>
+                                        <ul class="product__item__info-poins__list">
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item active"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="product__item__info-item">
+                                        <p class="name">euphoria</p>
+                                        <ul class="product__item__info-poins__list">
+                                            <li class="product__item__info-poins__item active"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="product__item__weight">
+                                    <ul class="product__weight-list">
+                                        <li class="product__weight-item active">50g</li>
+                                        <li class="product__weight-item">100g</li>
+                                        <li class="product__weight-item">300g</li>
+                                        <li class="product__weight-item">500g</li>
+                                        <li class="product__weight-item">1000g</li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__footer">
+                                    <p class="product__item__price">USD <span>20.00</span></p>
+                                    <button class="main-button-color">
+                                        <span class="text">add to cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product__item">
+                            <div class="product__item__container js-drop-item">
+                                <div class="product__item__info-block">
+                                    <div class="wrapper">
+                                        <p>White vein kratom Maeng Da has much common with Maeng Da Green, but in spite of the resemblance, it has a number of features that make it unique. This kind of kratom gives an incredible feeling of euphoria, without an obvious calming effect. To the opposite, it empowers you and courses stimulating effect. White vein maeng da contains a high </p>
+                                        <h4>White vein Thai kratom effects:</h4>
+                                        <p>white maeng da kratom will be especially useful for those who white maeng da kratom will beTo the opposite, it empowers you and courses stimulating effect</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="product__item__img">
+                                    <img src="./img/product-img-1.png" alt="Product">
+                                </a>
+                                <a href="#" class="product__item__link">maeng da green vein kratom</a>
+                                <button class="product__item__button js-drop-button">
+                                    <span class="text">info</span>
+                                    <span class="icon-info"></span>
+                                </button>
+                                <ul class="product__item__info-list">
+                                    <li class="product__item__info-item">
+                                        <p class="name">STIMULATION</p>
+                                        <ul class="product__item__info-poins__list">
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item active"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="product__item__info-item">
+                                        <p class="name">relaxation</p>
+                                        <ul class="product__item__info-poins__list">
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item active"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="product__item__info-item">
+                                        <p class="name">euphoria</p>
+                                        <ul class="product__item__info-poins__list">
+                                            <li class="product__item__info-poins__item active"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="product__item__weight">
+                                    <ul class="product__weight-list">
+                                        <li class="product__weight-item active">50g</li>
+                                        <li class="product__weight-item">100g</li>
+                                        <li class="product__weight-item">300g</li>
+                                        <li class="product__weight-item">500g</li>
+                                        <li class="product__weight-item">1000g</li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__footer">
+                                    <p class="product__item__price">USD <span>20.00</span></p>
+                                    <button class="main-button-color">
+                                        <span class="text">add to cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product__item">
+                            <div class="product__item__container js-drop-item">
+                                <div class="product__item__info-block">
+                                    <div class="wrapper">
+                                        <p>White vein kratom Maeng Da has much common with Maeng Da Green, but in spite of the resemblance, it has a number of features that make it unique. This kind of kratom gives an incredible feeling of euphoria, without an obvious calming effect. To the opposite, it empowers you and courses stimulating effect. White vein maeng da contains a high </p>
+                                        <h4>White vein Thai kratom effects:</h4>
+                                        <p>white maeng da kratom will be especially useful for those who white maeng da kratom will beTo the opposite, it empowers you and courses stimulating effect</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="product__item__img">
+                                    <img src="./img/product-img-1.png" alt="Product">
+                                </a>
+                                <a href="#" class="product__item__link">maeng da green vein kratom</a>
+                                <button class="product__item__button js-drop-button">
+                                    <span class="text">info</span>
+                                    <span class="icon-info"></span>
+                                </button>
+                                <ul class="product__item__info-list">
+                                    <li class="product__item__info-item">
+                                        <p class="name">STIMULATION</p>
+                                        <ul class="product__item__info-poins__list">
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item active"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="product__item__info-item">
+                                        <p class="name">relaxation</p>
+                                        <ul class="product__item__info-poins__list">
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item active"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="product__item__info-item">
+                                        <p class="name">euphoria</p>
+                                        <ul class="product__item__info-poins__list">
+                                            <li class="product__item__info-poins__item active"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="product__item__weight">
+                                    <ul class="product__weight-list">
+                                        <li class="product__weight-item active">50g</li>
+                                        <li class="product__weight-item">100g</li>
+                                        <li class="product__weight-item">300g</li>
+                                        <li class="product__weight-item">500g</li>
+                                        <li class="product__weight-item">1000g</li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__footer">
+                                    <p class="product__item__price">USD <span>20.00</span></p>
+                                    <button class="main-button-color">
+                                        <span class="text">add to cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product__item">
+                            <div class="product__item__container js-drop-item">
+                                <div class="product__item__info-block">
+                                    <div class="wrapper">
+                                        <p>White vein kratom Maeng Da has much common with Maeng Da Green, but in spite of the resemblance, it has a number of features that make it unique. This kind of kratom gives an incredible feeling of euphoria, without an obvious calming effect. To the opposite, it empowers you and courses stimulating effect. White vein maeng da contains a high </p>
+                                        <h4>White vein Thai kratom effects:</h4>
+                                        <p>white maeng da kratom will be especially useful for those who white maeng da kratom will beTo the opposite, it empowers you and courses stimulating effect</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="product__item__img">
+                                    <img src="./img/product-img-1.png" alt="Product">
+                                </a>
+                                <a href="#" class="product__item__link">maeng da green vein kratom</a>
+                                <button class="product__item__button js-drop-button">
+                                    <span class="text">info</span>
+                                    <span class="icon-info"></span>
+                                </button>
+                                <ul class="product__item__info-list">
+                                    <li class="product__item__info-item">
+                                        <p class="name">STIMULATION</p>
+                                        <ul class="product__item__info-poins__list">
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item active"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="product__item__info-item">
+                                        <p class="name">relaxation</p>
+                                        <ul class="product__item__info-poins__list">
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item active"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="product__item__info-item">
+                                        <p class="name">euphoria</p>
+                                        <ul class="product__item__info-poins__list">
+                                            <li class="product__item__info-poins__item active"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                            <li class="product__item__info-poins__item"></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="product__item__weight">
+                                    <ul class="product__weight-list">
+                                        <li class="product__weight-item active">50g</li>
+                                        <li class="product__weight-item">100g</li>
+                                        <li class="product__weight-item">300g</li>
+                                        <li class="product__weight-item">500g</li>
+                                        <li class="product__weight-item">1000g</li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__footer">
+                                    <p class="product__item__price">USD <span>20.00</span></p>
+                                    <button class="main-button-color">
+                                        <span class="text">add to cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="main-button">
+                    <span class="text">show more</span>
+                </button>
+            </div>
+        </section>
+        <section class="seo-block seo-block-main">
+            <div class="seo-block__wrapper container">
+                <h2 class="main-caption">seo-text</h2>
+                <div class="seo-block__container">
+                    <h4>The history of the occurrence and usage of the kratom</h4>
+                    <p>Kratom was first time mentioned in Thailand. The tradition of its usage originated from that exotic country. But later it spread over many countries. It is believed to empower human strength and increase endurance that was so crucial for hard workers in fields. So, it was mainly used to support a man while his hard physical labor. In this regard, men consumed much more kratom than women. This was how the whole story began.</p>
+                    <p>And yes, it is generally acknowledged that some types of kratom powder stimulate work activity. In 1836 kratom was the first time mentioned by the Western explorer - Mr. Lowe. He indicated that Kratom was used as an alternative to opium. Moreover, kratom was much cheaper than opium.</p>
+                    <p>Due to kratom’s tonic qualities, it influences a man in a way that makes him more industrious. That is why locals in Thailand prefer dealing with people who use kratom and avoid those who are detected with marijuana, which is well known for its relaxing characteristics.</p>
+                    <h4>And yes, it is generally acknowledged that some types of kratom powder stimulate work activity</h4>
+                    <p> In 1836 kratom was the first time mentioned by the Western explorer - Mr. Lowe. He indicated that Kratom was used as an alternative to opium. Moreover, kratom was much cheaper than opium.</p>
+                    <p>Due to kratom’s tonic qualities, it influences a man in a way that makes him more industrious. That is why locals in Thailand prefer dealing with people who use kratom and avoid those who are detected with marijuana, which is well known for its relaxing characteristics.</p>
+                </div>
+            </div>
+        </section>
+        <section class="question-block" style="background-image:url(./img/question-block-img.png)">
+            <div class="question-block__wrapper container">
+                <div class="question-block__container">
+                    <h2 class="main-caption">have any questions?</h2>
+                    <p class="sub">Write to us</p>
+                    <ul class="question-block__list">
+                        <li class="question-block__item question-block__item-message">
+                            <a href="#" class="question-block__link">
+                                <span class="icon-message"></span>
+                            </a>
+                        </li>
+                        <li class="question-block__item question-block__item-teleg">
+                            <a href="#" class="question-block__link">
+                                <span class="icon-teleg"></span>
+                            </a>
+                        </li>
+                        <li class="question-block__item question-block__item-whatsapp">
+                            <a href="#" class="question-block__link">
+                                <span class="icon-whatsapp"></span>
+                            </a>
+                        </li>
+                        <li class="question-block__item question-block__item-skype">
+                            <a href="#" class="question-block__link">
+                                <span class="icon-skype"></span>
+                            </a>
+                        </li>
+                        <li class="question-block__item question-block__item-viber">
+                            <a href="#" class="question-block__link">
+                                <span class="icon-viber"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper container">
+            <div class="footer__wrapper__top">
+                <div class="footer__logo-wrapper">
+                    <div class="footer__logo">
+                        <img src="./img/logo.svg" alt="Kratom">
+                    </div>
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Buy kratom</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Guidebook</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Earn with us</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Pay/Delivery</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">About us</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Reviews</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">forum</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Rewards</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Contact</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Faq</a>
+                    </li>
+                </ul>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social__link">
+                            <span class="icon-fb"></span>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social__link">
+                            <span class="icon-inst"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__wrapper__down">
+                <p class="footer__copyright">Copyright © 2020</p>
+                <a href="#" class="footer__down-link">Terms & Conditions</a>
+                <a href="#" class="footer__down-link">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    <div class="button-to-top">
+        <button class="to-top">
+            <span class="icon-arrow-right"></span>
+        </button>
+    </div>
+    <div class="overlay"></div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

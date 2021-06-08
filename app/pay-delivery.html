@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kratom</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="header__logo">
+            <img src="./img/logo.png" alt="Kratom">
+        </a>
+        <nav class="header__nav">
+            <span class="general-decor-elem"></span>
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#" class="header__link">Buy kratom</a>
+                </li>
+                <li class="header__item header__item-hide-tablet">
+                    <a href="#" class="header__link">Guidebook</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Earn with us</a>
+                </li>
+                <li class="header__item header__item-hide-tablet">
+                    <a href="#" class="header__link">Pay/Delivery</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Contact</a>
+                </li>
+                <li class="header__item header__item__drop js-drop-item">
+                    <div class="wrapper js-drop-button">
+                        <a class="text">Menu</a>
+                        <span class="icon-drop"></span>
+                    </div>
+                    <ul class="header__drop-list">
+                        <li class="header__drop-item">
+                            <a href="#" class="header__drop-link">forum</a>
+                        </li>
+                        <li class="header__drop-item">
+                            <a href="#" class="header__drop-link">About us</a>
+                        </li>
+                        <li class="header__drop-item">
+                            <a href="#" class="header__drop-link">Reviews</a>
+                        </li>
+                        <li class="header__drop-item">
+                            <a href="#" class="header__drop-link">Faq</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="header__close-nav">
+                <span class="icon-close"></span>
+            </button>
+        </nav>
+        <div class="header__nav-profile">
+            <div class="header__search js-drop-item">
+                <form action="#" class="header__search-form">
+                    <input type="text" class="header__search__input" placeholder="search">
+                    <button class="header__search__button">
+                        <span class="icon-search"></span>
+                    </button>
+                </form>
+                <div class="header__livesearch">
+                    <ul class="header__livesearch-list">
+                        <li class="header__livesearch-item">
+                            <a href="#" class="header__livesearch-link">maeng da green vein</a>
+                        </li>
+                        <li class="header__livesearch-item">
+                            <a href="#" class="header__livesearch-link">maeng da green vein</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="header__search__button js-drop-button">
+                    <span class="icon-search"></span>
+                </button>
+            </div>
+            <div class="header__nav-profile__item">
+                <a href="#">
+                    <span class="icon-profile"></span>
+                    <!-- <div class="img" style="background-image:url(./img/client-say-img-2.png)"></div> -->
+                </a>
+            </div>
+            <div class="header__nav-profile__item header__nav-profile__item-cart">
+                <button class="js-button" data-target="noty-cart">
+                    <span class="icon-cart"></span>
+                </button>
+                <span class="decor-cart"></span>
+            </div>
+            <div class="header__nav-profile__item header__nav-profile__item-burger">
+                <button class="header__burger">
+                    <span class="decor"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <section class="popup popup-noty-cart" data-target="noty-cart">
+        <div class="popup-noty-cart__header">
+            <button class="general-more js-close">
+                <span class="icon-arrow-left"></span>
+                <span class="text">back</span>
+            </button>
+            <h3 class="main-caption">cart</h3>
+        </div>
+        <div class="popup-noty-cart__body">
+            <ul class="popup-noty-cart__list">
+                <li class="popup-noty-cart__item">
+                    <div class="popup-noty-cart__img">
+                        <img src="./img/product-img-1.png" alt="Продукт">
+                    </div>
+                    <div class="popup-noty-cart__info">
+                        <h5 class="name">maeng da green vein kratom</h5>
+                        <p class="info">
+                            <span class="weight">50g</span>
+                            <span>x</span>
+                            <span class="calc">1</span>
+                        </p>
+                        <div class="info__footer">
+                            <p class="price"> USD <span>20</span></p>
+                            <button class="delete-button">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popup-noty-cart__item">
+                    <div class="popup-noty-cart__img">
+                        <img src="./img/product-img-1.png" alt="Продукт">
+                    </div>
+                    <div class="popup-noty-cart__info">
+                        <h5 class="name">maeng da green vein kratom</h5>
+                        <p class="info">
+                            <span class="weight">50g</span>
+                            <span>x</span>
+                            <span class="calc">1</span>
+                        </p>
+                        <div class="info__footer">
+                            <p class="price"> USD <span>20</span></p>
+                            <button class="delete-button">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popup-noty-cart__item">
+                    <div class="popup-noty-cart__img">
+                        <img src="./img/product-img-1.png" alt="Продукт">
+                    </div>
+                    <div class="popup-noty-cart__info">
+                        <h5 class="name">maeng da green vein kratom</h5>
+                        <p class="info">
+                            <span class="weight">50g</span>
+                            <span>x</span>
+                            <span class="calc">1</span>
+                        </p>
+                        <div class="info__footer">
+                            <p class="price"> USD <span>20</span></p>
+                            <button class="delete-button">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popup-noty-cart__item">
+                    <div class="popup-noty-cart__img">
+                        <img src="./img/product-img-1.png" alt="Продукт">
+                    </div>
+                    <div class="popup-noty-cart__info">
+                        <h5 class="name">maeng da green vein kratom</h5>
+                        <p class="info">
+                            <span class="weight">50g</span>
+                            <span>x</span>
+                            <span class="calc">1</span>
+                        </p>
+                        <div class="info__footer">
+                            <p class="price"> USD <span>20</span></p>
+                            <button class="delete-button">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popup-noty-cart__item">
+                    <div class="popup-noty-cart__img">
+                        <img src="./img/product-img-1.png" alt="Продукт">
+                    </div>
+                    <div class="popup-noty-cart__info">
+                        <h5 class="name">maeng da green vein kratom</h5>
+                        <p class="info">
+                            <span class="weight">50g</span>
+                            <span>x</span>
+                            <span class="calc">1</span>
+                        </p>
+                        <div class="info__footer">
+                            <p class="price"> USD <span>20</span></p>
+                            <button class="delete-button">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="popup-noty-cart__item">
+                    <div class="popup-noty-cart__img">
+                        <img src="./img/product-img-1.png" alt="Продукт">
+                    </div>
+                    <div class="popup-noty-cart__info">
+                        <h5 class="name">maeng da green vein kratom</h5>
+                        <p class="info">
+                            <span class="weight">50g</span>
+                            <span>x</span>
+                            <span class="calc">1</span>
+                        </p>
+                        <div class="info__footer">
+                            <p class="price"> USD <span>20</span></p>
+                            <button class="delete-button">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="popup-noty-cart__footer js-drop-item">
+            <button class="popup-noty-cart__open-button js-drop-button"></button>
+            <div class="total__wrapper">
+                <div class="total__item">
+                    <p class="type">subtotal</p>
+                    <p class="description">usd 40</p>
+                </div>
+                <div class="total__item">
+                    <p class="type">Bonuses used</p>
+                    <p class="description">usd 0</p>
+                </div>
+                <div class="total__item">
+                    <p class="type">shipping</p>
+                    <p class="description">usd 0</p>
+                </div>
+                <div class="total__item total__item-general">
+                    <p class="type">total</p>
+                    <p class="description">usd 40</p>
+                </div>
+            </div>
+            <a href="#" class="main-button-color popup-noty-cart__button">
+                <span class="text">checkout</span>
+            </a>
+            <a href="#" class="main-button popup-noty-cart__button">
+                <span class="text">edit</span>
+            </a>
+        </div>
+    </section>
+    <main>
+        <section class="breadcrumbs">
+            <div class="breadcrumbs__wrapper container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Home</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Reviews</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="pay-delivery">
+            <div class="pay-deliver__wrapper container">
+                <div class="general-decor-figure"></div>
+                <div class="general-decor-text">kratom helper</div>
+                <h2 class="main-caption main-caption-align">Pay/Delivery Information</h2>
+                <ul class="pay-delivery__list">
+                    <li class="pay-delivery__item">
+                        <div class="general-decor-caption">
+                            <div class="img" style="background-image:url(./img/pay-delivery-payment.png)"></div>
+                        </div>
+                        <h4 class="main-caption-l">PAYMENT</h4>
+                        <ul class="delivery__list delivery__list-payment">
+                            <li class="delivery__item">
+                                <div class="delivery__item__img" style="background-image:url(./img/visa-img.png)"></div>
+                                <p class="text">visa/mastercard</p>
+                            </li>
+                            <li class="delivery__item">
+                                <div class="delivery__item__img" style="background-image:url(./img/paypal-img.png)"></div>
+                                <p class="text">paypal</p>
+                            </li>
+                            <li class="delivery__item">
+                                <div class="delivery__item__img" style="background-image:url(./img/wu-img.png)"></div>
+                                <p class="text">Western Union</p>
+                            </li>
+                            <li class="delivery__item">
+                                <div class="delivery__item__img" style="background-image:url(./img/swift-img.png)"></div>
+                                <p class="text">swift</p>
+                            </li>
+                            <li class="delivery__item">
+                                <div class="delivery__item__img" style="background-image:url(./img/money-gram-img.png)"></div>
+                                <p class="text">money gram</p>
+                            </li>
+                            <li class="delivery__item">
+                                <div class="delivery__item__img" style="background-image:url(./img/bitcoin-img.png)"></div>
+                                <p class="text">bitcoin</p>
+                            </li>
+                            <li class="delivery__item">
+                                <p class="text">Another Payment Method</p>
+                            </li>
+                        </ul>
+                        <p>We would like to inform you at once that there are different delivery ways with the same result – your order will be brought home. <strong>You must pay the delivery additionally. </strong>As soon as you choose a delivery way, we are going to inform you about its price</p>
+                    </li>
+                    <li class="pay-delivery__item">
+                        <div class="general-decor-caption">
+                            <div class="img" style="background-image:url(./img/delivery-times.png)"></div>
+                        </div>
+                        <h4 class="main-caption-l">delivery times</h4>
+                        <ul class="delivery__list delivery__list-option">
+                            <li class="delivery__item">
+                                <p>2 - 4 days <span>(from $ 5)</span></p>
+                            </li>
+                            <li class="delivery__item">
+                                <p>5 - 9 days <span>(from $ 3)</span></p>
+                            </li>
+                            <li class="delivery__item">
+                                <p>9 - 17 days <span>(from $ 2)</span></p>
+                            </li>
+                        </ul>
+                        <p>If you have the possibility to wait for <strong>2 or 3 weeks</strong>, you may choose the cheapest delivery way. It is going to cost about <strong>$5-10</strong> (depending on your location).</p>
+                        <p>If you would like to get the order in <strong>2-4 days</strong>, you have to pay about <strong>$25-50</strong>. Maybe more, maybe less. We would like you to understand the procedure in general, so <strong>we are not giving you the precise prices now.</strong></p>
+                        <p>As soon as you make an order, <strong>we are going to contact you</strong> to discuss the delivery period and the delivery price.</p>
+                    </li>
+                    <li class="pay-delivery__item">
+                        <div class="general-decor-caption">
+                            <div class="img" style="background-image:url(./img/delivery-method.png)"></div>
+                        </div>
+                        <h4 class="main-caption-l">delivery method</h4>
+                        <ul class="delivery__list delivery__list-deliver">
+                            <li class="delivery__item">
+                                <p>UPS</p>
+                            </li>
+                            <li class="delivery__item">
+                                <p>DHL Express</p>
+                            </li>
+                            <li class="delivery__item">
+                                <p>FedEx</p>
+                            </li>
+                            <li class="delivery__item">
+                                <p> tNT Express</p>
+                            </li>
+                            <li class="delivery__item">
+                                <p>international international</p>
+                            </li>
+                        </ul>
+                        <p>Dispatch takes place from the Czech Republic, the further your delivery address, the more expensive the delivery will cost. We will inform you of the exact details after placing the order</p>
+                        <p>You may <strong>buy kratom confidentially</strong> (being completely anonymous). You may contact us by Skype, e-mail or Messenger</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="question-block" style="background-image:url(./img/question-block-img.png)">
+            <div class="question-block__wrapper container">
+                <div class="question-block__container">
+                    <h2 class="main-caption">have any questions?</h2>
+                    <p class="sub">Write to us</p>
+                    <ul class="question-block__list">
+                        <li class="question-block__item question-block__item-message">
+                            <a href="#" class="question-block__link">
+                                <span class="icon-message"></span>
+                            </a>
+                        </li>
+                        <li class="question-block__item question-block__item-teleg">
+                            <a href="#" class="question-block__link">
+                                <span class="icon-teleg"></span>
+                            </a>
+                        </li>
+                        <li class="question-block__item question-block__item-whatsapp">
+                            <a href="#" class="question-block__link">
+                                <span class="icon-whatsapp"></span>
+                            </a>
+                        </li>
+                        <li class="question-block__item question-block__item-skype">
+                            <a href="#" class="question-block__link">
+                                <span class="icon-skype"></span>
+                            </a>
+                        </li>
+                        <li class="question-block__item question-block__item-viber">
+                            <a href="#" class="question-block__link">
+                                <span class="icon-viber"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper container">
+            <div class="footer__wrapper__top">
+                <div class="footer__logo-wrapper">
+                    <div class="footer__logo">
+                        <img src="./img/logo.svg" alt="Kratom">
+                    </div>
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Buy kratom</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Guidebook</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Earn with us</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Pay/Delivery</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">About us</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Reviews</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">forum</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Rewards</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Contact</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Faq</a>
+                    </li>
+                </ul>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social__link">
+                            <span class="icon-fb"></span>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social__link">
+                            <span class="icon-inst"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__wrapper__down">
+                <p class="footer__copyright">Copyright © 2020</p>
+                <a href="#" class="footer__down-link">Terms & Conditions</a>
+                <a href="#" class="footer__down-link">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    <section class="popup popup-change-pass" data-target="change-pass">
+        <button class="close__popup js-close">
+            <span class="icon-close"></span>
+        </button>
+        <h4 class="popup-caption">set new password</h4>
+        <div class="popup__header">
+            <p class="email">for <span>name.name@mail.com</span></p>
+            <ul class="popup-check__list">
+                <li class="popup-check__item">
+                    <span class="decor">
+                        <soan class="icon-active"></soan>
+                    </span>
+                    <span class="text">Min 8 characters</span>
+                </li>
+                <li class="popup-check__item active">
+                    <span class="decor">
+                        <soan class="icon-active"></soan>
+                    </span>
+                    <span class="text">1 Letter</span>
+                </li>
+                <li class="popup-check__item">
+                    <span class="decor">
+                        <soan class="icon-active"></soan>
+                    </span>
+                    <span class="text">1 Number</span>
+                </li>
+            </ul>
+        </div>
+        <div class="popup__body">
+            <label class="input__wrapper js-input-wrapper">
+                <input type="password" class="main-input js-input">
+                <span class="custome-placeholder__wrapper">
+                    <span class="custome-placeholder__before"></span>
+                    <span class="custome-placeholder__text">
+                        <span class="inner-text">New Password</span>
+                    </span>
+                    <span class="custome-placeholder__after"></span>
+                </span>
+                <button type="button" class="show-password">
+                    <span class="icon-show-pass"></span>
+                </button>
+            </label>
+            <label class="input__wrapper js-input-wrapper">
+                <input type="password" class="main-input js-input">
+                <span class="custome-placeholder__wrapper">
+                    <span class="custome-placeholder__before"></span>
+                    <span class="custome-placeholder__text">
+                        <span class="inner-text">Confirm Password</span>
+                    </span>
+                    <span class="custome-placeholder__after"></span>
+                </span>
+                <button type="button" class="show-password">
+                    <span class="icon-show-pass"></span>
+                </button>
+            </label>
+            <button class="main-button-color main-button-color-popup">
+                <span class="text">set new password</span>
+            </button>
+        </div>
+    </section>
+    <div class="button-to-top">
+        <button class="to-top">
+            <span class="icon-arrow-right"></span>
+        </button>
+    </div>
+    <div class="overlay"></div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
