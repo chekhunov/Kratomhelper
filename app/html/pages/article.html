@@ -1,502 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kratom</title>
-    <link rel="stylesheet" href="./css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kratom</title>
+  <link rel="stylesheet" href="./css/main.css?v=1.0">
 </head>
+
 <body>
-    <header class="header">
-        <a href="#" class="header__logo">
-            <img src="./img/logo.png" alt="Kratom">
-        </a>
-        <nav class="header__nav">
-            <span class="general-decor-elem"></span>
-            <ul class="header__list">
-                <li class="header__item">
-                    <a href="#" class="header__link">Buy kratom</a>
-                </li>
-                <li class="header__item header__item-hide-tablet">
-                    <a href="#" class="header__link">Guidebook</a>
-                </li>
-                <li class="header__item">
-                    <a href="#" class="header__link">Earn with us</a>
-                </li>
-                <li class="header__item header__item-hide-tablet">
-                    <a href="#" class="header__link">Pay/Delivery</a>
-                </li>
-                <li class="header__item">
-                    <a href="#" class="header__link">Contact</a>
-                </li>
-                <li class="header__item header__item__drop js-drop-item">
-                    <div class="wrapper js-drop-button">
-                        <a class="text">Menu</a>
-                        <span class="icon-drop"></span>
-                    </div>
-                    <ul class="header__drop-list">
-                        <li class="header__drop-item">
-                            <a href="#" class="header__drop-link">forum</a>
-                        </li>
-                        <li class="header__drop-item">
-                            <a href="#" class="header__drop-link">About us</a>
-                        </li>
-                        <li class="header__drop-item">
-                            <a href="#" class="header__drop-link">Reviews</a>
-                        </li>
-                        <li class="header__drop-item">
-                            <a href="#" class="header__drop-link">Faq</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <button class="header__close-nav">
-                <span class="icon-close"></span>
-            </button>
-        </nav>
-        <div class="header__nav-profile">
-            <div class="header__search js-drop-item">
-                <form action="#" class="header__search-form">
-                    <input type="text" class="header__search__input" placeholder="search">
-                    <button class="header__search__button">
-                        <span class="icon-search"></span>
-                    </button>
-                </form>
-                <div class="header__livesearch">
-                    <ul class="header__livesearch-list">
-                        <li class="header__livesearch-item">
-                            <a href="#" class="header__livesearch-link">maeng da green vein</a>
-                        </li>
-                        <li class="header__livesearch-item">
-                            <a href="#" class="header__livesearch-link">maeng da green vein</a>
-                        </li>
-                    </ul>
-                </div>
-                <button class="header__search__button js-drop-button">
-                    <span class="icon-search"></span>
-                </button>
-            </div>
-            <div class="header__nav-profile__item">
-                <a href="#">
-                    <span class="icon-profile"></span>
-                </a>
-            </div>
-            <div class="header__nav-profile__item header__nav-profile__item-cart">
-                <button class="js-button" data-target="noty-cart">
-                    <span class="icon-cart"></span>
-                </button>
-                <span class="decor-cart"></span>
-            </div>
-            <div class="header__nav-profile__item header__nav-profile__item-burger">
-                <button class="header__burger">
-                    <span class="decor"></span>
-                </button>
-            </div>
-        </div>
-    </header>
-    <section class="popup popup-noty-cart" data-target="noty-cart">
-        <div class="popup-noty-cart__header">
-            <button class="general-more js-close">
-                <span class="icon-arrow-left"></span>
-                <span class="text">back</span>
-            </button>
-            <h3 class="main-caption">cart</h3>
-        </div>
-        <div class="popup-noty-cart__body">
-            <ul class="popup-noty-cart__list">
-                <li class="popup-noty-cart__item">
-                    <div class="popup-noty-cart__img">
-                        <img src="./img/product-img-1.png" alt="Продукт">
-                    </div>
-                    <div class="popup-noty-cart__info">
-                        <h5 class="name">maeng da green vein kratom</h5>
-                        <p class="info">
-                            <span class="weight">50g</span>
-                            <span>x</span>
-                            <span class="calc">1</span>
-                        </p>
-                        <div class="info__footer">
-                            <p class="price"> USD <span>20</span></p>
-                            <button class="delete-button">
-                                <span class="icon-delete"></span>
-                            </button>
-                        </div>
-                    </div>
-                </li>
-                <li class="popup-noty-cart__item">
-                    <div class="popup-noty-cart__img">
-                        <img src="./img/product-img-1.png" alt="Продукт">
-                    </div>
-                    <div class="popup-noty-cart__info">
-                        <h5 class="name">maeng da green vein kratom</h5>
-                        <p class="info">
-                            <span class="weight">50g</span>
-                            <span>x</span>
-                            <span class="calc">1</span>
-                        </p>
-                        <div class="info__footer">
-                            <p class="price"> USD <span>20</span></p>
-                            <button class="delete-button">
-                                <span class="icon-delete"></span>
-                            </button>
-                        </div>
-                    </div>
-                </li>
-                <li class="popup-noty-cart__item">
-                    <div class="popup-noty-cart__img">
-                        <img src="./img/product-img-1.png" alt="Продукт">
-                    </div>
-                    <div class="popup-noty-cart__info">
-                        <h5 class="name">maeng da green vein kratom</h5>
-                        <p class="info">
-                            <span class="weight">50g</span>
-                            <span>x</span>
-                            <span class="calc">1</span>
-                        </p>
-                        <div class="info__footer">
-                            <p class="price"> USD <span>20</span></p>
-                            <button class="delete-button">
-                                <span class="icon-delete"></span>
-                            </button>
-                        </div>
-                    </div>
-                </li>
-                <li class="popup-noty-cart__item">
-                    <div class="popup-noty-cart__img">
-                        <img src="./img/product-img-1.png" alt="Продукт">
-                    </div>
-                    <div class="popup-noty-cart__info">
-                        <h5 class="name">maeng da green vein kratom</h5>
-                        <p class="info">
-                            <span class="weight">50g</span>
-                            <span>x</span>
-                            <span class="calc">1</span>
-                        </p>
-                        <div class="info__footer">
-                            <p class="price"> USD <span>20</span></p>
-                            <button class="delete-button">
-                                <span class="icon-delete"></span>
-                            </button>
-                        </div>
-                    </div>
-                </li>
-                <li class="popup-noty-cart__item">
-                    <div class="popup-noty-cart__img">
-                        <img src="./img/product-img-1.png" alt="Продукт">
-                    </div>
-                    <div class="popup-noty-cart__info">
-                        <h5 class="name">maeng da green vein kratom</h5>
-                        <p class="info">
-                            <span class="weight">50g</span>
-                            <span>x</span>
-                            <span class="calc">1</span>
-                        </p>
-                        <div class="info__footer">
-                            <p class="price"> USD <span>20</span></p>
-                            <button class="delete-button">
-                                <span class="icon-delete"></span>
-                            </button>
-                        </div>
-                    </div>
-                </li>
-                <li class="popup-noty-cart__item">
-                    <div class="popup-noty-cart__img">
-                        <img src="./img/product-img-1.png" alt="Продукт">
-                    </div>
-                    <div class="popup-noty-cart__info">
-                        <h5 class="name">maeng da green vein kratom</h5>
-                        <p class="info">
-                            <span class="weight">50g</span>
-                            <span>x</span>
-                            <span class="calc">1</span>
-                        </p>
-                        <div class="info__footer">
-                            <p class="price"> USD <span>20</span></p>
-                            <button class="delete-button">
-                                <span class="icon-delete"></span>
-                            </button>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="popup-noty-cart__footer js-drop-item">
-            <button class="popup-noty-cart__open-button js-drop-button"></button>
-            <div class="total__wrapper">
-                <div class="total__item">
-                    <p class="type">subtotal</p>
-                    <p class="description">usd 40</p>
-                </div>
-                <div class="total__item">
-                    <p class="type">Bonuses used</p>
-                    <p class="description">usd 0</p>
-                </div>
-                <div class="total__item">
-                    <p class="type">shipping</p>
-                    <p class="description">usd 0</p>
-                </div>
-                <div class="total__item total__item-general">
-                    <p class="type">total</p>
-                    <p class="description">usd 40</p>
-                </div>
-            </div>
-            <a href="#" class="main-button-color popup-noty-cart__button">
-                <span class="text">checkout</span>
-            </a>
-            <a href="#" class="main-button popup-noty-cart__button">
-                <span class="text">edit</span>
-            </a>
-        </div>
-    </section>
-    <main>
-        <section class="breadcrumbs">
-            <div class="breadcrumbs__wrapper container">
-                <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item">
-                        <a href="#" class="breadcrumbs__link">Home</a>
-                    </li>
-                    <li class="breadcrumbs__item">
-                        <a href="#" class="breadcrumbs__link">All about Kratom</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="article-page">
-            <div class="article-page__wrapper container">
-                <div class="general-decor-figure"></div>
-                <div class="general-decor-figure"></div>
-                <div class="general-decor-text">kratom helper</div>
-                <div class="article-page__img" style="background-image:url(./img/article-page-img.png)"></div>
-                <div class="article-page__content">
-                    <p class="date">02 .04.2020</p>
-                    <h2 class="main-caption main-caption-align">All about Kratom</h2>
-                    <p>Kratom is a tropical plant which has been used traditionally in different parts of Africa and Asia. Teas brewed from Kratom leaves have been used by people in this area for hundreds of years to manage pain, wean off of opioid and stave off exhaustion.</p>
-                    <p>In different places across the world, Kratom is consumed for its stimulant effects and as a substitute for an opioid in form of tea, chewable, or capsules. Most people take kratom as a substitute for coffee because it is a natural stimulant.</p>
-                    <p>In this article, we will discuss what kratom is, its uses and benefits as well as the controversy surrounding it. Let’s get right to that, shall we?</p>
-                    <h6>Benefits of Kratom</h6>
-                    <p>There are numerous benefits of kratom leaves to human health and they are highlighted below:</p>
-                    <ul>
-                        <li>white maeng da kratom will be especially useful for those who have long and intensive mental activity</li>
-                        <li>good analgesic effect</li>
-                        <li>suppresses sudden outbreaks of aggression</li>
-                        <li>inhibits alcohol and nicotine addiction</li>
-                        <li>often used as a substitute therapy for severe drug addiction</li>
-                    </ul>
-                    <p>The best way to use White vein maeng da kratom is in powder form. Just chew it with some water or juice. This will maximize the benefits of the alkaloids, which the White vein kratom contains in large quantities. But if you don’t like the taste of the powder, you can use the powder</p>
-                    <div class="table__wrapper">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <td>Permitted</td>
-                                    <td>Prohibited</td>
-                                    <td>Restrictions</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Alaska</td>
-                                    <td>Rhode Island</td>
-                                    <td>California –   permitted, except for the San Diego city</td>
-                                </tr>
-                                <tr>
-                                    <td>Arizona</td>
-                                    <td>Indiana</td>
-                                    <td>Colorado allowed the usage. The City of Denver prohibits the sale of Kratom for human consumption. Parker Town and Monument Town forbid Kratom sales.</td>
-                                </tr>
-                                <tr>
-                                    <td>Connecticut</td>
-                                    <td>Arkansas</td>
-                                    <td>Florida – permitted, besides the Sarasota County</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                    <h6>Side Effects of Kratom</h6>
-                    <p>As with any type of drugs, there are risks involved. The common side effects of regular intake of kratom include constipation and nausea, but the others are highlighted below.</p>
-                    <a href="#" class="general-more">
-                        <span class="icon-arrow-left"></span>
-                        <span class="text">back to all articles</span>
-                    </a>
-                </div>
-            </div>
-            <div class="articel-page__similar container">
-                <h2 class="articel-page__caption">similar articles</h2>
-                <ul class="article__list article__list-main">
-                    <li class="article__item">
-                        <div class="article__item__img">
-                            <img src="./img//article-img-1.png" alt="Фото">
-                        </div>
-                        <h5 class="article__item__caption">Kratom capsules and pills</h5>
-                        <div class="article__item__text">Everyone evaluates the comfort and convenience of the environments we spend our lives. It is the feature we expect to meet in evaluates the comfort and ...</div>
-                        <a href="#" class="general-more">
-                            <span class="text">read more</span>
-                            <span class="icon-arrow-right"></span>
-                        </a>
-                    </li>
-                    <li class="article__item">
-                        <div class="article__item__img">
-                            <img src="./img//article-img-2.png" alt="Фото">
-                        </div>
-                        <h5 class="article__item__caption">Kratom capsules and pills</h5>
-                        <div class="article__item__text">Everyone evaluates the comfort and convenience of the environments we spend our lives. It is the feature we expect to meet in evaluates the comfort and ...</div>
-                        <a href="#" class="general-more">
-                            <span class="text">read more</span>
-                            <span class="icon-arrow-right"></span>
-                        </a>
-                    </li>
-                    <li class="article__item">
-                        <div class="article__item__img">
-                            <img src="./img//article-img-3.png" alt="Фото">
-                        </div>
-                        <h5 class="article__item__caption">Kratom capsules and pills</h5>
-                        <div class="article__item__text">Everyone evaluates the comfort and convenience of the environments we spend our lives. It is the feature we expect to meet in evaluates the comfort and ...</div>
-                        <a href="#" class="general-more">
-                            <span class="text">read more</span>
-                            <span class="icon-arrow-right"></span>
-                        </a>
-                    </li>
-                    <li class="article__item">
-                        <div class="article__item__img">
-                            <img src="./img//article-img-4.png" alt="Фото">
-                        </div>
-                        <h5 class="article__item__caption">Kratom capsules and pills</h5>
-                        <div class="article__item__text">Everyone evaluates the comfort and convenience of the environments we spend our lives. It is the feature we expect to meet in evaluates the comfort and ...</div>
-                        <a href="#" class="general-more">
-                            <span class="text">read more</span>
-                            <span class="icon-arrow-right"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer__wrapper container">
-            <div class="footer__wrapper__top">
-                <div class="footer__logo-wrapper">
-                    <div class="footer__logo">
-                        <img src="./img/logo.svg" alt="Kratom">
-                    </div>
-                </div>
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Buy kratom</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Guidebook</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Earn with us</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Pay/Delivery</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">About us</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Reviews</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">forum</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Rewards</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Contact</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Faq</a>
-                    </li>
-                </ul>
-                <ul class="footer__social-list">
-                    <li class="footer__social-item">
-                        <a href="#" class="footer__social__link">
-                            <span class="icon-fb"></span>
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a href="#" class="footer__social__link">
-                            <span class="icon-inst"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__wrapper__down">
-                <p class="footer__copyright">Copyright © 2020</p>
-                <a href="#" class="footer__down-link">Terms & Conditions</a>
-                <a href="#" class="footer__down-link">Privacy Policy</a>
-            </div>
-        </div>
-    </footer>
-    <section class="popup popup-change-pass" data-target="change-pass">
-        <button class="close__popup js-close">
-            <span class="icon-close"></span>
-        </button>
-        <h4 class="popup-caption">set new password</h4>
-        <div class="popup__header">
-            <p class="email">for <span>name.name@mail.com</span></p>
-            <ul class="popup-check__list">
-                <li class="popup-check__item">
-                    <span class="decor">
-                        <soan class="icon-active"></soan>
-                    </span>
-                    <span class="text">Min 8 characters</span>
-                </li>
-                <li class="popup-check__item active">
-                    <span class="decor">
-                        <soan class="icon-active"></soan>
-                    </span>
-                    <span class="text">1 Letter</span>
-                </li>
-                <li class="popup-check__item">
-                    <span class="decor">
-                        <soan class="icon-active"></soan>
-                    </span>
-                    <span class="text">1 Number</span>
-                </li>
-            </ul>
-        </div>
-        <div class="popup__body">
-            <label class="input__wrapper js-input-wrapper">
-                <input type="password" class="main-input js-input">
-                <span class="custome-placeholder__wrapper">
-                    <span class="custome-placeholder__before"></span>
-                    <span class="custome-placeholder__text">
-                        <span class="inner-text">New Password</span>
-                    </span>
-                    <span class="custome-placeholder__after"></span>
-                </span>
-                <button type="button" class="show-password">
-                    <span class="icon-show-pass"></span>
-                </button>
-            </label>
-            <label class="input__wrapper js-input-wrapper">
-                <input type="password" class="main-input js-input">
-                <span class="custome-placeholder__wrapper">
-                    <span class="custome-placeholder__before"></span>
-                    <span class="custome-placeholder__text">
-                        <span class="inner-text">Confirm Password</span>
-                    </span>
-                    <span class="custome-placeholder__after"></span>
-                </span>
-                <button type="button" class="show-password">
-                    <span class="icon-show-pass"></span>
-                </button>
-            </label>
-            <button class="main-button-color main-button-color-popup">
-                <span class="text">set new password</span>
-            </button>
-        </div>
-    </section>
-    <div class="button-to-top">
-        <button class="to-top">
-            <span class="icon-arrow-right"></span>
-        </button>
+
+  @@include('../components/_header.html')
+
+  <section class="popup popup-noty-cart" data-target="noty-cart">
+    <div class="popup-noty-cart__header">
+      <button class="general-more js-close">
+        <span class="icon-arrow-left"></span>
+        <span class="text">back</span>
+      </button>
+      <h3 class="main-caption">cart</h3>
     </div>
-    <div class="overlay"></div>
-    <script src="./js/main.js"></script>
+    <div class="popup-noty-cart__body">
+      <ul class="popup-noty-cart__list">
+        <li class="popup-noty-cart__item">
+          <div class="popup-noty-cart__img">
+            <img src="./img/product-img-1.png" alt="Продукт">
+          </div>
+          <div class="popup-noty-cart__info">
+            <h5 class="name">maeng da green vein kratom</h5>
+            <p class="info">
+              <span class="weight">50g</span>
+              <span>x</span>
+              <span class="calc">1</span>
+            </p>
+            <div class="info__footer">
+              <p class="price"> USD <span>20</span></p>
+              <button class="delete-button">
+                <span class="icon-delete"></span>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="popup-noty-cart__item">
+          <div class="popup-noty-cart__img">
+            <img src="./img/product-img-1.png" alt="Продукт">
+          </div>
+          <div class="popup-noty-cart__info">
+            <h5 class="name">maeng da green vein kratom</h5>
+            <p class="info">
+              <span class="weight">50g</span>
+              <span>x</span>
+              <span class="calc">1</span>
+            </p>
+            <div class="info__footer">
+              <p class="price"> USD <span>20</span></p>
+              <button class="delete-button">
+                <span class="icon-delete"></span>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="popup-noty-cart__item">
+          <div class="popup-noty-cart__img">
+            <img src="./img/product-img-1.png" alt="Продукт">
+          </div>
+          <div class="popup-noty-cart__info">
+            <h5 class="name">maeng da green vein kratom</h5>
+            <p class="info">
+              <span class="weight">50g</span>
+              <span>x</span>
+              <span class="calc">1</span>
+            </p>
+            <div class="info__footer">
+              <p class="price"> USD <span>20</span></p>
+              <button class="delete-button">
+                <span class="icon-delete"></span>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="popup-noty-cart__item">
+          <div class="popup-noty-cart__img">
+            <img src="./img/product-img-1.png" alt="Продукт">
+          </div>
+          <div class="popup-noty-cart__info">
+            <h5 class="name">maeng da green vein kratom</h5>
+            <p class="info">
+              <span class="weight">50g</span>
+              <span>x</span>
+              <span class="calc">1</span>
+            </p>
+            <div class="info__footer">
+              <p class="price"> USD <span>20</span></p>
+              <button class="delete-button">
+                <span class="icon-delete"></span>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="popup-noty-cart__item">
+          <div class="popup-noty-cart__img">
+            <img src="./img/product-img-1.png" alt="Продукт">
+          </div>
+          <div class="popup-noty-cart__info">
+            <h5 class="name">maeng da green vein kratom</h5>
+            <p class="info">
+              <span class="weight">50g</span>
+              <span>x</span>
+              <span class="calc">1</span>
+            </p>
+            <div class="info__footer">
+              <p class="price"> USD <span>20</span></p>
+              <button class="delete-button">
+                <span class="icon-delete"></span>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="popup-noty-cart__item">
+          <div class="popup-noty-cart__img">
+            <img src="./img/product-img-1.png" alt="Продукт">
+          </div>
+          <div class="popup-noty-cart__info">
+            <h5 class="name">maeng da green vein kratom</h5>
+            <p class="info">
+              <span class="weight">50g</span>
+              <span>x</span>
+              <span class="calc">1</span>
+            </p>
+            <div class="info__footer">
+              <p class="price"> USD <span>20</span></p>
+              <button class="delete-button">
+                <span class="icon-delete"></span>
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="popup-noty-cart__footer js-drop-item">
+      <button class="popup-noty-cart__open-button js-drop-button"></button>
+      <div class="total__wrapper">
+        <div class="total__item">
+          <p class="type">subtotal</p>
+          <p class="description">usd 40</p>
+        </div>
+        <div class="total__item">
+          <p class="type">Bonuses used</p>
+          <p class="description">usd 0</p>
+        </div>
+        <div class="total__item">
+          <p class="type">shipping</p>
+          <p class="description">usd 0</p>
+        </div>
+        <div class="total__item total__item-general">
+          <p class="type">total</p>
+          <p class="description">usd 40</p>
+        </div>
+      </div>
+      <a href="#" class="main-button-color popup-noty-cart__button">
+        <span class="text">checkout</span>
+      </a>
+      <a href="#" class="main-button popup-noty-cart__button">
+        <span class="text">edit</span>
+      </a>
+    </div>
+  </section>
+
+  <main>
+
+    <section class="breadcrumbs">
+      <div class="breadcrumbs__wrapper container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">All about Kratom</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="article-page">
+      <div class="article-page__wrapper container">
+        <div class="general-decor-figure"></div>
+        <div class="general-decor-figure"></div>
+        <div class="general-decor-text">kratom helper</div>
+        <div class="article-page__img" style="background-image:url(./img/article-page-img.png)"></div>
+        <div class="article-page__content">
+          <p class="date">02 .04.2020</p>
+          <h2 class="main-caption main-caption-align">All about Kratom</h2>
+          <p>Kratom is a tropical plant which has been used traditionally in different parts of Africa and Asia. Teas
+            brewed from Kratom leaves have been used by people in this area for hundreds of years to manage pain, wean
+            off of opioid and stave off exhaustion.</p>
+          <p>In different places across the world, Kratom is consumed for its stimulant effects and as a substitute for
+            an opioid in form of tea, chewable, or capsules. Most people take kratom as a substitute for coffee because
+            it is a natural stimulant.</p>
+          <p>In this article, we will discuss what kratom is, its uses and benefits as well as the controversy
+            surrounding it. Let’s get right to that, shall we?</p>
+          <h6>Benefits of Kratom</h6>
+          <p>There are numerous benefits of kratom leaves to human health and they are highlighted below:</p>
+          <ul>
+            <li>white maeng da kratom will be especially useful for those who have long and intensive mental activity
+            </li>
+            <li>good analgesic effect</li>
+            <li>suppresses sudden outbreaks of aggression</li>
+            <li>inhibits alcohol and nicotine addiction</li>
+            <li>often used as a substitute therapy for severe drug addiction</li>
+          </ul>
+          <p>The best way to use White vein maeng da kratom is in powder form. Just chew it with some water or juice.
+            This will maximize the benefits of the alkaloids, which the White vein kratom contains in large quantities.
+            But if you don’t like the taste of the powder, you can use the powder</p>
+          <div class="table__wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <td>Permitted</td>
+                  <td>Prohibited</td>
+                  <td>Restrictions</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Alaska</td>
+                  <td>Rhode Island</td>
+                  <td>California – permitted, except for the San Diego city</td>
+                </tr>
+                <tr>
+                  <td>Arizona</td>
+                  <td>Indiana</td>
+                  <td>Colorado allowed the usage. The City of Denver prohibits the sale of Kratom for human consumption.
+                    Parker Town and Monument Town forbid Kratom sales.</td>
+                </tr>
+                <tr>
+                  <td>Connecticut</td>
+                  <td>Arkansas</td>
+                  <td>Florida – permitted, besides the Sarasota County</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h6>Side Effects of Kratom</h6>
+          <p>As with any type of drugs, there are risks involved. The common side effects of regular intake of kratom
+            include constipation and nausea, but the others are highlighted below.</p>
+          <a href="#" class="general-more">
+            <span class="icon-arrow-left"></span>
+            <span class="text">back to all articles</span>
+          </a>
+        </div>
+      </div>
+      <div class="articel-page__similar container">
+        <h2 class="articel-page__caption">similar articles</h2>
+        <ul class="article__list article__list-main">
+          <li class="article__item">
+            <div class="article__item__img">
+              <img src="./img//article-img-1.png" alt="Фото">
+            </div>
+            <h5 class="article__item__caption">Kratom capsules and pills</h5>
+            <div class="article__item__text">Everyone evaluates the comfort and convenience of the environments we spend
+              our lives. It is the feature we expect to meet in evaluates the comfort and ...</div>
+            <a href="#" class="general-more">
+              <span class="text">read more</span>
+              <span class="icon-arrow-right"></span>
+            </a>
+          </li>
+          <li class="article__item">
+            <div class="article__item__img">
+              <img src="./img//article-img-2.png" alt="Фото">
+            </div>
+            <h5 class="article__item__caption">Kratom capsules and pills</h5>
+            <div class="article__item__text">Everyone evaluates the comfort and convenience of the environments we spend
+              our lives. It is the feature we expect to meet in evaluates the comfort and ...</div>
+            <a href="#" class="general-more">
+              <span class="text">read more</span>
+              <span class="icon-arrow-right"></span>
+            </a>
+          </li>
+          <li class="article__item">
+            <div class="article__item__img">
+              <img src="./img//article-img-3.png" alt="Фото">
+            </div>
+            <h5 class="article__item__caption">Kratom capsules and pills</h5>
+            <div class="article__item__text">Everyone evaluates the comfort and convenience of the environments we spend
+              our lives. It is the feature we expect to meet in evaluates the comfort and ...</div>
+            <a href="#" class="general-more">
+              <span class="text">read more</span>
+              <span class="icon-arrow-right"></span>
+            </a>
+          </li>
+          <li class="article__item">
+            <div class="article__item__img">
+              <img src="./img//article-img-4.png" alt="Фото">
+            </div>
+            <h5 class="article__item__caption">Kratom capsules and pills</h5>
+            <div class="article__item__text">Everyone evaluates the comfort and convenience of the environments we spend
+              our lives. It is the feature we expect to meet in evaluates the comfort and ...</div>
+            <a href="#" class="general-more">
+              <span class="text">read more</span>
+              <span class="icon-arrow-right"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  @@include('../components/_footer.html')
+
+  <section class="popup popup-change-pass" data-target="change-pass">
+    <button class="close__popup js-close">
+      <span class="icon-close"></span>
+    </button>
+    <h4 class="popup-caption">set new password</h4>
+    <div class="popup__header">
+      <p class="email">for <span>name.name@mail.com</span></p>
+      <ul class="popup-check__list">
+        <li class="popup-check__item">
+          <span class="decor">
+            <soan class="icon-active"></soan>
+          </span>
+          <span class="text">Min 8 characters</span>
+        </li>
+        <li class="popup-check__item active">
+          <span class="decor">
+            <soan class="icon-active"></soan>
+          </span>
+          <span class="text">1 Letter</span>
+        </li>
+        <li class="popup-check__item">
+          <span class="decor">
+            <soan class="icon-active"></soan>
+          </span>
+          <span class="text">1 Number</span>
+        </li>
+      </ul>
+    </div>
+    <div class="popup__body">
+      <label class="input__wrapper js-input-wrapper">
+        <input type="password" class="main-input js-input">
+        <span class="custome-placeholder__wrapper">
+          <span class="custome-placeholder__before"></span>
+          <span class="custome-placeholder__text">
+            <span class="inner-text">New Password</span>
+          </span>
+          <span class="custome-placeholder__after"></span>
+        </span>
+        <button type="button" class="show-password">
+          <span class="icon-show-pass"></span>
+        </button>
+      </label>
+      <label class="input__wrapper js-input-wrapper">
+        <input type="password" class="main-input js-input">
+        <span class="custome-placeholder__wrapper">
+          <span class="custome-placeholder__before"></span>
+          <span class="custome-placeholder__text">
+            <span class="inner-text">Confirm Password</span>
+          </span>
+          <span class="custome-placeholder__after"></span>
+        </span>
+        <button type="button" class="show-password">
+          <span class="icon-show-pass"></span>
+        </button>
+      </label>
+      <button class="main-button-color main-button-color-popup">
+        <span class="text">set new password</span>
+      </button>
+    </div>
+  </section>
+
+  <div class="button-to-top">
+    <button class="to-top">
+      <span class="icon-arrow-right"></span>
+    </button>
+  </div>
+
+  <div class="overlay"></div>
+
+  <script src="./js/main.min.js"></script>
 </body>
+
 </html>

@@ -57,6 +57,7 @@ function htmlinclude() {
     'app/html/pages/profile-address.html',
     'app/html/pages/profile-order-history.html',
     'app/html/pages/profile-referral.html',
+    'app/html/pages/profile-referral-new.html',
     'app/html/pages/profile-setting.html',
     'app/html/pages/reviews.html',
     'app/html/pages/shop.html',
@@ -119,7 +120,7 @@ function cleanDist() {
 
 //монитор событий за кем следит
 function watching() {
-  watch(['app/less/*.less'], styles);
+  watch(['app/less/**/*.less'], styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
   watch(['app/html/**/*'], htmlinclude);
   watch(['app/icons/*.svg'], svgSprites);
