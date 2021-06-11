@@ -284,7 +284,12 @@
           <ul class="profile__sidebar-list">
   <li class="profile__sidebar-item">
     <a class="profile__sidebar-link" href="#">
-      <span class="icon-wishlist"></span>
+      <svg class="profile__heart-icon" width="20" height="18" viewBox="0 0 20 18" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M17.612 2.41452C17.1722 1.96607 16.65 1.61034 16.0752 1.36763C15.5005 1.12492 14.8844 1 14.2623 1C13.6401 1 13.0241 1.12492 12.4493 1.36763C11.8746 1.61034 11.3524 1.96607 10.9126 2.41452L9.99977 3.34476L9.08699 2.41452C8.19858 1.50912 6.99364 1.00047 5.73725 1.00047C4.48085 1.00047 3.27591 1.50912 2.38751 2.41452C1.4991 3.31992 1 4.5479 1 5.82833C1 7.10875 1.4991 8.33674 2.38751 9.24214L9.99977 17L17.612 9.24214C18.0521 8.79391 18.4011 8.26171 18.6393 7.67596C18.8774 7.0902 19 6.46237 19 5.82833C19 5.19428 18.8774 4.56645 18.6393 3.9807C18.4011 3.39494 18.0521 2.86275 17.612 2.41452Z"
+          stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
       <span class="text">wish list</span>
     </a>
   </li>
@@ -312,7 +317,26 @@
 
   <li class="profile__sidebar-item">
     <a href="#" class="profile__sidebar-link active">
-      <span class="icon-network"></span>
+      <svg class="profile__network-icon" width="17" height="22" viewBox="0 0 17 22" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="11.667" cy="4.00682" r="2.44628" stroke="#828282" />
+        <mask id="path-2-inside-1" fill="white">
+          <path
+            d="M16.9709 13.4351C16.9709 12.7387 16.8337 12.0491 16.5672 11.4057C16.3007 10.7622 15.91 10.1776 15.4176 9.68514C14.9251 9.19268 14.3405 8.80204 13.697 8.53553C13.0536 8.26901 12.364 8.13184 11.6676 8.13184C10.9711 8.13184 10.2815 8.26901 9.63807 8.53553C8.99465 8.80204 8.41002 9.19268 7.91756 9.68514C7.4251 10.1776 7.03446 10.7622 6.76795 11.4057C6.50143 12.0491 6.36426 12.7387 6.36426 13.4351L11.6676 13.4351H16.9709Z" />
+        </mask>
+        <path
+          d="M16.9709 13.4351C16.9709 12.7387 16.8337 12.0491 16.5672 11.4057C16.3007 10.7622 15.91 10.1776 15.4176 9.68514C14.9251 9.19268 14.3405 8.80204 13.697 8.53553C13.0536 8.26901 12.364 8.13184 11.6676 8.13184C10.9711 8.13184 10.2815 8.26901 9.63807 8.53553C8.99465 8.80204 8.41002 9.19268 7.91756 9.68514C7.4251 10.1776 7.03446 10.7622 6.76795 11.4057C6.50143 12.0491 6.36426 12.7387 6.36426 13.4351L11.6676 13.4351H16.9709Z"
+          stroke="#828282" stroke-width="2" mask="url(#path-2-inside-1)" />
+        <circle cx="6.36415" cy="3.53553" r="3.03553" fill="#333333" stroke="#828282" />
+        <mask id="path-4-inside-2" fill="white">
+          <path
+            d="M12.7279 14.8493C12.7279 14.0136 12.5633 13.186 12.2435 12.4139C11.9237 11.6418 11.4549 10.9403 10.864 10.3493C10.273 9.75836 9.57146 9.2896 8.79934 8.96978C8.02723 8.64996 7.19969 8.48535 6.36396 8.48535C5.52823 8.48535 4.70069 8.64996 3.92858 8.96978C3.15647 9.2896 2.45491 9.75836 1.86396 10.3493C1.27301 10.9403 0.804246 11.6418 0.484428 12.4139C0.164609 13.186 -7.30616e-08 14.0136 0 14.8493L6.36396 14.8493H12.7279Z" />
+        </mask>
+        <path
+          d="M12.7279 14.8493C12.7279 14.0136 12.5633 13.186 12.2435 12.4139C11.9237 11.6418 11.4549 10.9403 10.864 10.3493C10.273 9.75836 9.57146 9.2896 8.79934 8.96978C8.02723 8.64996 7.19969 8.48535 6.36396 8.48535C5.52823 8.48535 4.70069 8.64996 3.92858 8.96978C3.15647 9.2896 2.45491 9.75836 1.86396 10.3493C1.27301 10.9403 0.804246 11.6418 0.484428 12.4139C0.164609 13.186 -7.30616e-08 14.0136 0 14.8493L6.36396 14.8493H12.7279Z"
+          fill="#333333" stroke="#828282" stroke-width="2" mask="url(#path-4-inside-2)" />
+      </svg>
+
       <span class="text">referral network</span>
     </a>
   </li>
@@ -404,17 +428,20 @@
 
                 <div class="profile__content">
 
-                  <p>You can withdraw money to your account
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M7.00033 12.8332C10.222 12.8332 12.8337 10.2215 12.8337 6.99984C12.8337 3.77818 10.222 1.1665 7.00033 1.1665C3.77866 1.1665 1.16699 3.77818 1.16699 6.99984C1.16699 10.2215 3.77866 12.8332 7.00033 12.8332Z"
-                        stroke="#ACDA53" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M7 9.33333V7" stroke="#ACDA53" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M7 4.6665H7.00625" stroke="#ACDA53" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </p>
+                  <a class="profile__content-lnk" href="#">
+                    <p>You can withdraw money to your account
+                      <svg class="profile__info-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M7.00033 12.8332C10.222 12.8332 12.8337 10.2215 12.8337 6.99984C12.8337 3.77818 10.222 1.1665 7.00033 1.1665C3.77866 1.1665 1.16699 3.77818 1.16699 6.99984C1.16699 10.2215 3.77866 12.8332 7.00033 12.8332Z"
+                          stroke="#ACDA53" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7 9.33333V7" stroke="#ACDA53" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7 4.6665H7.00625" stroke="#ACDA53" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </p>
+                  </a>
 
-                  <button class="profile__btn main-button-color">
+                  <button class="main-button-color profile__btn ">
                     <span class="text">request withdrawal</span>
                   </button>
                 </div>
@@ -426,9 +453,12 @@
 
               <p class="profile__text profile__text--link">Copy your referral link and send it to your friends to start
                 build the
-                network!</p>
+                network!
+              </p>
+
               <div class="referral-link">
                 <label class="input__wrapper">
+
                   <input type="text" class="main-input" readonly
                     value="https://kratomhelper.com/account/referral-network">
                   <span class="custome-placeholder__wrapper">
@@ -438,6 +468,7 @@
                     <span class="custome-placeholder__after"></span>
                   </span>
                 </label>
+
                 <button class="copy-referral-link">
                   <span class="icon-copy"></span>
                 </button>
@@ -501,9 +532,11 @@
 
                       <li class="profile__table-item js-drop-button js-drop-item active">
                         <ul class="referral-history__user referral-history__user--1">
+
                           <li class="referral-history__item  referral-history-position-1-lvl">
                             <div class="main-wrapper">
-                              <p class="main-type">level</p>
+                              <p class="main-type">My referral (1st lvl):
+                              </p>
                               <p class="text">#1</p>
                             </div>
                           </li>
@@ -521,6 +554,7 @@
                           </li>
 
                           <li class="referral-history__item referral-history-position-data">
+                            <p class="type">add date</p>
                             <p class="text">12.04.2020</p>
                             <div class="referral-history__sub">
                               <div class="wrapper">
@@ -531,7 +565,7 @@
                           </li>
 
                           <li class="referral-history__item referral-history-position-3-lvl">
-                            <p class="text"><span>10</span>usd</p>
+                            <span class="text">10 usd</span>
                             <div class="referral-history__sub">
                               <div class="wrapper">
                                 <p class="type">Referral’s partners (3rd lvl)</p>
@@ -550,14 +584,15 @@
                             <ul class="referral-history__user">
                               <li class="referral-history__item referral-history-position-1-lvl">
                                 <div class="main-wrapper">
-                                  <p class="main-type">level</p>
+                                  <p class="main-type">Referral’s partners (2nd lvl):
+                                  </p>
                                   <p class="text">#2</p>
                                 </div>
                               </li>
 
                               <li class="referral-history__item referral-history-position-2-lvl">
-                                <img class="referral-history__img" src="./img/profile-network/1.png" <p
-                                  class="text">Arlene McCoy</p>
+                                <img class="referral-history__img" src="./img/profile-network/1.png">
+                                <p class="text">Arlene McCoy</p>
                                 <div class="referral-history__sub">
                                   <div class="wrapper">
                                     <p class="type">referral name</p>
@@ -569,6 +604,7 @@
                               </li>
 
                               <li class="referral-history__item referral-history-position-data">
+                                <p class="type">add date</p>
                                 <p class="text">12.04.2020</p>
                                 <div class="referral-history__sub">
                                   <div class="wrapper">
@@ -579,7 +615,7 @@
                               </li>
 
                               <li class="referral-history__item referral-history-position-3-lvl">
-                                <p class="text"><span>10</span>usd</p>
+                                <p class="text"><span>10</span> usd</p>
                                 <div class="referral-history__sub">
                                   <div class="wrapper">
                                     <p class="type">Referral’s partners (3rd lvl)</p>
@@ -600,25 +636,26 @@
 
                               <li class="referral-history__item referral-history-position-1-lvl">
                                 <div class="main-wrapper">
-                                  <p class="main-type">level</p>
+                                  <p class="main-type">Referral’s partners (3rd lvl):</p>
                                   <p class="text">#3</p>
                                 </div>
                               </li>
 
                               <li class="referral-history__item referral-history-position-2-lvl">
-                                <img class="referral-history__img" src="./img/profile-network/1.png" <p
-                                  class="text">Arlene McCoy</p>
+                                <img class="referral-history__img" src="./img/profile-network/1.png">
+                                <p class="text">Arlene McCoy
+                                </p>
                                 <div class="referral-history__sub">
                                   <div class="wrapper">
                                     <p class="type">referral name</p>
                                     <p class="description">5</p>
                                   </div>
 
-
                                 </div>
                               </li>
 
                               <li class="referral-history__item referral-history-position-data">
+                                <p class="type">add date</p>
                                 <p class="text">12.04.2020</p>
                                 <div class="referral-history__sub">
                                   <div class="wrapper">
@@ -629,7 +666,7 @@
                               </li>
 
                               <li class="referral-history__item referral-history-position-3-lvl">
-                                <p class="text"><span>10</span>usd</p>
+                                <p class="text"><span>10</span> usd</p>
                                 <div class="referral-history__sub">
                                   <div class="wrapper">
                                     <p class="type">Referral’s partners (3rd lvl)</p>
@@ -649,9 +686,11 @@
 
                       <li class="profile__table-item js-drop-button js-drop-item">
                         <ul class="referral-history__user referral-history__user--1">
+
                           <li class="referral-history__item  referral-history-position-1-lvl">
                             <div class="main-wrapper">
-                              <p class="main-type">level</p>
+                              <p class="main-type">My referral (1st lvl):
+                              </p>
                               <p class="text">#1</p>
                             </div>
                           </li>
@@ -669,6 +708,7 @@
                           </li>
 
                           <li class="referral-history__item referral-history-position-data">
+                            <p class="type">add date</p>
                             <p class="text">12.04.2020</p>
                             <div class="referral-history__sub">
                               <div class="wrapper">
@@ -679,7 +719,7 @@
                           </li>
 
                           <li class="referral-history__item referral-history-position-3-lvl">
-                            <p class="text"><span>10</span>usd</p>
+                            <span class="text">10 usd</span>
                             <div class="referral-history__sub">
                               <div class="wrapper">
                                 <p class="type">Referral’s partners (3rd lvl)</p>
@@ -698,14 +738,15 @@
                             <ul class="referral-history__user">
                               <li class="referral-history__item referral-history-position-1-lvl">
                                 <div class="main-wrapper">
-                                  <p class="main-type">level</p>
+                                  <p class="main-type">Referral’s partners (2nd lvl):
+                                  </p>
                                   <p class="text">#2</p>
                                 </div>
                               </li>
 
                               <li class="referral-history__item referral-history-position-2-lvl">
-                                <img class="referral-history__img" src="./img/profile-network/1.png" <p
-                                  class="text">Arlene McCoy</p>
+                                <img class="referral-history__img" src="./img/profile-network/1.png">
+                                <p class="text">Arlene McCoy</p>
                                 <div class="referral-history__sub">
                                   <div class="wrapper">
                                     <p class="type">referral name</p>
@@ -717,6 +758,7 @@
                               </li>
 
                               <li class="referral-history__item referral-history-position-data">
+                                <p class="type">add date</p>
                                 <p class="text">12.04.2020</p>
                                 <div class="referral-history__sub">
                                   <div class="wrapper">
@@ -727,7 +769,7 @@
                               </li>
 
                               <li class="referral-history__item referral-history-position-3-lvl">
-                                <p class="text"><span>10</span>usd</p>
+                                <p class="text"><span>10</span> usd</p>
                                 <div class="referral-history__sub">
                                   <div class="wrapper">
                                     <p class="type">Referral’s partners (3rd lvl)</p>
@@ -748,123 +790,26 @@
 
                               <li class="referral-history__item referral-history-position-1-lvl">
                                 <div class="main-wrapper">
-                                  <p class="main-type">level</p>
+                                  <p class="main-type">Referral’s partners (3rd lvl):</p>
                                   <p class="text">#3</p>
                                 </div>
                               </li>
 
                               <li class="referral-history__item referral-history-position-2-lvl">
-                                <img class="referral-history__img" src="./img/profile-network/1.png" <p
-                                  class="text">Arlene McCoy</p>
+                                <img class="referral-history__img" src="./img/profile-network/1.png">
+                                <p class="text">Arlene McCoy
+                                </p>
                                 <div class="referral-history__sub">
                                   <div class="wrapper">
                                     <p class="type">referral name</p>
                                     <p class="description">5</p>
                                   </div>
 
-
                                 </div>
                               </li>
 
                               <li class="referral-history__item referral-history-position-data">
-                                <p class="text">12.04.2020</p>
-                                <div class="referral-history__sub">
-                                  <div class="wrapper">
-                                    <p class="type">add date</p>
-                                    <p class="description">12.04.2020</p>
-                                  </div>
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-3-lvl">
-                                <p class="text"><span>10</span>usd</p>
-                                <div class="referral-history__sub">
-                                  <div class="wrapper">
-                                    <p class="type">Referral’s partners (3rd lvl)</p>
-                                    <p class="description">0</p>
-                                  </div>
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-last">
-                                <!-- <span class="icon-drop"></span> -->
-                              </li>
-                            </ul>
-                          </li>
-
-                        </ul>
-                      </li>
-
-                      <li class="profile__table-item js-drop-button js-drop-item">
-                        <ul class="referral-history__user referral-history__user--1">
-                          <li class="referral-history__item  referral-history-position-1-lvl">
-                            <div class="main-wrapper">
-                              <p class="main-type">level</p>
-                              <p class="text">#1</p>
-                            </div>
-                          </li>
-
-                          <li class="referral-history__item referral-history-position-2-lvl">
-                            <img class="referral-history__img" src="./img/profile-network/1.png"
-                              alt="profile network image">
-                            <p class="text">Arlene McCoy</p>
-                            <div class="referral-history__sub">
-                              <div class="wrapper">
-                                <p class="type">referral name</p>
-                                <p class="description">5</p>
-                              </div>
-                            </div>
-                          </li>
-
-                          <li class="referral-history__item referral-history-position-data">
-                            <p class="text">12.04.2020</p>
-                            <div class="referral-history__sub">
-                              <div class="wrapper">
                                 <p class="type">add date</p>
-                                <p class="description">12.04.2020</p>
-                              </div>
-                            </div>
-                          </li>
-
-                          <li class="referral-history__item referral-history-position-3-lvl">
-                            <p class="text"><span>10</span>usd</p>
-                            <div class="referral-history__sub">
-                              <div class="wrapper">
-                                <p class="type">Referral’s partners (3rd lvl)</p>
-                                <p class="description">0</p>
-                              </div>
-                            </div>
-                          </li>
-
-                          <li class="referral-history__item referral-history-position-last">
-                            <span class="icon-drop"></span>
-                          </li>
-                        </ul>
-
-                        <ul>
-                          <li class="referral-history__item referral-history__item--2lvl">
-                            <ul class="referral-history__user">
-                              <li class="referral-history__item referral-history-position-1-lvl">
-                                <div class="main-wrapper">
-                                  <p class="main-type">level</p>
-                                  <p class="text">#2</p>
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-2-lvl">
-                                <img class="referral-history__img" src="./img/profile-network/1.png" <p
-                                  class="text">Arlene McCoy</p>
-                                <div class="referral-history__sub">
-                                  <div class="wrapper">
-                                    <p class="type">referral name</p>
-                                    <p class="description">5</p>
-                                  </div>
-
-
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-data">
                                 <p class="text">12.04.2020</p>
                                 <div class="referral-history__sub">
                                   <div class="wrapper">
@@ -875,57 +820,7 @@
                               </li>
 
                               <li class="referral-history__item referral-history-position-3-lvl">
-                                <p class="text"><span>10</span>usd</p>
-                                <div class="referral-history__sub">
-                                  <div class="wrapper">
-                                    <p class="type">Referral’s partners (3rd lvl)</p>
-                                    <p class="description">0</p>
-                                  </div>
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-last">
-                                <!-- <span class="icon-drop"></span> -->
-                              </li>
-
-                            </ul>
-                          </li>
-
-                          <li class="referral-history__item referral-history__item--3lvl">
-                            <ul class="referral-history__user">
-
-                              <li class="referral-history__item referral-history-position-1-lvl">
-                                <div class="main-wrapper">
-                                  <p class="main-type">level</p>
-                                  <p class="text">#3</p>
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-2-lvl">
-                                <img class="referral-history__img" src="./img/profile-network/1.png" <p
-                                  class="text">Arlene McCoy</p>
-                                <div class="referral-history__sub">
-                                  <div class="wrapper">
-                                    <p class="type">referral name</p>
-                                    <p class="description">5</p>
-                                  </div>
-
-
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-data">
-                                <p class="text">12.04.2020</p>
-                                <div class="referral-history__sub">
-                                  <div class="wrapper">
-                                    <p class="type">add date</p>
-                                    <p class="description">12.04.2020</p>
-                                  </div>
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-3-lvl">
-                                <p class="text"><span>10</span>usd</p>
+                                <p class="text"><span>10</span> usd</p>
                                 <div class="referral-history__sub">
                                   <div class="wrapper">
                                     <p class="type">Referral’s partners (3rd lvl)</p>
@@ -984,47 +879,167 @@
 </div>
 
                 </div>
-                <div class="referral-history">
-                  <div class="referral-history__header">
 
+                <div class="referral-history referral-history--transactions">
+
+                  <div class="referral-history__header">
                     <p class="referral-history__name referral-history-position-data">date</p>
                     <p class="referral-history__name referral-history-position-descrip">Description</p>
-                    <!-- <p class="referral-history__name referral-history-position-amount">Amount</p> -->
                     <p class="referral-history__name referral-history-position-balance">Amount</p>
                   </div>
+
                   <div class="referral-history__body">
+
                     <ul class="referral-history__list referral-history__list-transactions js-drop-button js-drop-item">
                       <li class="referral-history__item referral-history-position-data">
                         <div class="main-wrapper">
-                          <p class="main-type">Transaction date</p>
-                          <p class="text">12.04.2020</p>
+                          <p class="main-type">date</p>
+                          <p class="text">24.08.2020</p>
                         </div>
                       </li>
+
                       <li class="referral-history__item referral-history-position-descrip">
-                        <p class="text">Description</p>
+                        <p class="main-type">Description</p>
+                        <p class="text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                          officia consequat duis enim velit
+                          mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                         <div class="referral-history__sub">
                           <div class="wrapper">
                             <p class="type">Description</p>
-                            <p class="description-text">Description</p>
+                            <p class="description-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                              amet sint. Velit officia consequat duis enim velit
+                              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                           </div>
                         </div>
                       </li>
-                      <!-- <li class="referral-history__item referral-history-position-amount">
-                        <p class="text">2</p>
-                        <div class="referral-history__sub">
-                          <div class="wrapper">
-                            <p class="type">Amount</p>
-                            <p class="description">2</p>
-                          </div>
-                        </div>
-                      </li> -->
+
                       <li
                         class="referral-history__item referral-history__item-balance referral-history-position-balance">
-                        <p class="text">USD 0</p>
+                        <p class="main-type">Amount</p>
+                        <p class="text">USD 12</p>
                         <div class="referral-history__sub">
                           <div class="wrapper">
                             <p class="type">Amount</p>
-                            <p class="description">USD 0</p>
+                            <p class="description">USD 12</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="referral-history__item referral-history__item-icon-drop">
+                        <span class="icon-drop"></span>
+                      </li>
+                    </ul>
+
+                    <ul class="referral-history__list referral-history__list-transactions js-drop-button js-drop-item">
+                      <li class="referral-history__item referral-history-position-data">
+                        <div class="main-wrapper">
+                          <p class="main-type">date</p>
+                          <p class="text">24.08.2020</p>
+                        </div>
+                      </li>
+
+                      <li class="referral-history__item referral-history-position-descrip">
+                        <p class="main-type">Description</p>
+                        <p class="text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                          officia consequat duis enim velit
+                          mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <div class="referral-history__sub">
+                          <div class="wrapper">
+                            <p class="type">Description</p>
+                            <p class="description-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                              amet sint. Velit officia consequat duis enim velit
+                              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li
+                        class="referral-history__item referral-history__item-balance referral-history-position-balance">
+                        <p class="main-type">Amount</p>
+                        <p class="text">USD 12</p>
+                        <div class="referral-history__sub">
+                          <div class="wrapper">
+                            <p class="type">Amount</p>
+                            <p class="description">USD 12</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="referral-history__item referral-history__item-icon-drop">
+                        <span class="icon-drop"></span>
+                      </li>
+                    </ul>
+
+                    <ul class="referral-history__list referral-history__list-transactions js-drop-button js-drop-item">
+                      <li class="referral-history__item referral-history-position-data">
+                        <div class="main-wrapper">
+                          <p class="main-type">date</p>
+                          <p class="text">24.08.2020</p>
+                        </div>
+                      </li>
+
+                      <li class="referral-history__item referral-history-position-descrip">
+                        <p class="main-type">Description</p>
+                        <p class="text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                          officia consequat duis enim velit
+                          mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <div class="referral-history__sub">
+                          <div class="wrapper">
+                            <p class="type">Description</p>
+                            <p class="description-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                              amet sint. Velit officia consequat duis enim velit
+                              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li
+                        class="referral-history__item referral-history__item-balance referral-history-position-balance">
+                        <p class="main-type">Amount</p>
+                        <p class="text">USD 12</p>
+                        <div class="referral-history__sub">
+                          <div class="wrapper">
+                            <p class="type">Amount</p>
+                            <p class="description">USD 12</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="referral-history__item referral-history__item-icon-drop">
+                        <span class="icon-drop"></span>
+                      </li>
+                    </ul>
+
+                    <ul class="referral-history__list referral-history__list-transactions js-drop-button js-drop-item">
+                      <li class="referral-history__item referral-history-position-data">
+                        <div class="main-wrapper">
+                          <p class="main-type">date</p>
+                          <p class="text">24.08.2020</p>
+                        </div>
+                      </li>
+                      <li class="referral-history__item referral-history-position-descrip">
+                        <p class="main-type">Description</p>
+                        <p class="text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                          officia consequat duis enim velit
+                          mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <div class="referral-history__sub">
+                          <div class="wrapper">
+                            <p class="type">Description</p>
+                            <p class="description-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                              amet sint. Velit officia consequat duis enim velit
+                              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li
+                        class="referral-history__item referral-history__item-balance referral-history-position-balance">
+                        <p class="main-type">Amount</p>
+                        <p class="text">USD 12</p>
+                        <div class="referral-history__sub">
+                          <div class="wrapper">
+                            <p class="type">Amount</p>
+                            <p class="description">USD 12</p>
                           </div>
                         </div>
                       </li>
@@ -1032,54 +1047,9 @@
                         <span class="icon-drop"></span>
                       </li>
                     </ul>
-                    <ul class="referral-history__list referral-history__list-transactions js-drop-button js-drop-item">
-                      <li class="referral-history__item referral-history-position-data">
-                        <div class="main-wrapper">
-                          <p class="main-type">Transaction date</p>
-                          <p class="text">12.04.2020</p>
-                        </div>
-                      </li>
-                      <li class="referral-history__item referral-history-position-descrip">
-                        <p class="text">Our unique articles are written by several people. In general, they are our
-                          regular customers, who are fond of ethnobotany and chemistry. Some of them are just kratom
-                          admirers.</p>
-                        <div class="referral-history__sub">
-                          <div class="wrapper">
-                            <p class="type">Description</p>
-                            <p class="description-text">Our unique articles are written by several people. In general,
-                              they are our regular customers, who are fond of ethnobotany and chemistry. Some of them
-                              are
-                              just kratom admirers.</p>
-                          </div>
-                        </div>
-                      </li>
-                      <!-- <li class="referral-history__item referral-history-position-amount">
-                        <p class="text">2</p>
-                        <div class="referral-history__sub">
-                          <div class="wrapper">
-                            <p class="type">Amount</p>
-                            <p class="description">2</p>
-                          </div>
-                        </div>
-                      </li> -->
-                      <li
-                        class="referral-history__item referral-history__item-balance referral-history-position-balance">
-                        <p class="text">USD 0</p>
-                        <div class="referral-history__sub">
-                          <div class="wrapper">
-                            <p class="type">Amount</p>
-                            <p class="description">USD 0</p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="referral-history__item referral-history__item-icon-drop">
-                        <span class="icon-drop"></span>
-                      </li>
-                    </ul>
+
                   </div>
                 </div>
-
-                <!-- //Transactions  -->
               </div>
             </div>
           </div>
@@ -1089,30 +1059,6 @@
 
       </div>
     </section>
-
-    <!-- <section class="subscribe" style="background-image:url(./img/question-block-img.png)">
-      <div class="subscribe__wrapper container">
-        <div class="subscribe__container">
-          <h2 class="main-caption">Want to receive news from us?</h2>
-          <p class="sub">Subscribe / unsubscribe to newsletter</p>
-          <form action="#" class="subscribe__form">
-            <label class="input__wrapper js-input-wrapper">
-              <input type="email" class="main-input js-input">
-              <span class="custome-placeholder__wrapper">
-                <span class="custome-placeholder__before"></span>
-                <span class="custome-placeholder__text">
-                  <span class="inner-text">Email <span>*</span></span>
-                </span>
-                <span class="custome-placeholder__after"></span>
-              </span>
-            </label>
-            <button class="main-button-color">
-              <span class="text">subscribe</span>
-            </button>
-          </form>
-        </div>
-      </div>
-    </section> -->
 
     <section class="popup popup-logout" data-target="logout">
       <button class="close__popup js-close">
@@ -1131,8 +1077,6 @@
     </section>
 
   </main>
-
-  
 
   <section class="popup popup-change-pass" data-target="change-pass">
   <button class="close__popup js-close">

@@ -330,7 +330,7 @@
     }
 
     &--network {
-      padding: 20px 20px 10px;
+      padding: 20px 30px 10px;
     }
 
     .referral-link {
@@ -368,6 +368,16 @@
     }
   }
 
+  &__content-lnk {
+    &:hover {
+      color: @accent;
+    }
+  }
+
+  &__info-icon {
+    margin-bottom: -2px;
+  }
+
   &__price span {
     font-weight: 700;
     color: @accent;
@@ -397,6 +407,14 @@
 
   &__table {
     .referral-history {
+      &__user--1 {
+        .referral-history-position-data {
+          .type {
+            display: none;
+          }
+        }
+      }
+
       &__item {
         padding-top: 0;
 
@@ -404,11 +422,22 @@
           .referral-history-position-2-lvl {
             padding-left: 40px;
           }
+          .referral-history-position-data {
+            .type {
+              display: none;
+            }
+          }
         }
 
         &--3lvl {
           .referral-history-position-2-lvl {
             padding-left: 80px;
+          }
+
+          .referral-history-position-data {
+            .type {
+              display: none;
+            }
           }
         }
       }
@@ -437,6 +466,7 @@
 
     .referral-history-position-3-lvl {
       text-align: end;
+      text-transform: uppercase;
       .text {
         text-align: right;
       }
@@ -552,5 +582,291 @@
 
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1068px) {
+  .referral-history-position-descrip {
+    width: calc(70% - 5px);
+  }
+}
+
+@media screen and (max-width: 1067px) {
+  .referral-history-position-last {
+    display: none;
+  }
+
+  .referral-history-position-3-lvl {
+    width: 14%;
+  }
+
+  .referral-history {
+    &__user {
+      .referral-history-position-last {
+        display: none;
+      }
+    }
+
+    &--transactions {
+      .referral-history-position-descrip,
+      .referral-history-position-balance {
+        .text,
+        .main-type {
+          height: 0;
+          opacity: 0;
+        }
+      }
+
+      .referral-history__item-icon-drop {
+        display: inline-flex;
+        padding-top: 0;
+
+        .icon-drop {
+          margin-top: -11px;
+        }
+      }
+      .referral-history {
+        &__header {
+          display: none;
+        }
+      }
+
+      .referral-history__item {
+        .main-type {
+          display: inline-block;
+        }
+      }
+
+      .referral-history__list-transactions.active {
+        .referral-history-position-descrip,
+        .referral-history-position-balance {
+          .text,
+          .main-type {
+            // display: inline-flex;
+            animation: referral-opcity 0.6s;
+            height: 100%;
+            opacity: 1;
+          }
+        }
+
+        .referral-history-position-descrip,
+        .referral-history-position-balance {
+          flex-direction: row;
+          justify-content: space-between;
+
+          .main-type {
+            color: @accent;
+            width: calc(15% - 30px);
+          }
+
+          .text {
+            width: 70%;
+            margin-right: 60px;
+            text-align: end;
+          }
+
+          .referral-history__sub {
+            display: none;
+          }
+        }
+
+        .referral-history-position-descrip {
+          margin-bottom: 20px;
+        }
+
+        .referral-history-position-data {
+          color: @accent;
+        }
+      }
+    }
+  }
+
+  .profile {
+    &__info {
+      padding: 20px 20px 10px;
+      &--network {
+        padding: 20px 20px 10px;
+      }
+    }
+    &__info-top {
+      margin-bottom: 40px;
+    }
+
+    &__items {
+      margin-bottom: 40px;
+      flex-direction: column;
+    }
+
+    &__item {
+      width: 100%;
+    }
+
+    &__table {
+      .referral-history {
+        &__item {
+          padding-top: 0;
+
+          &--2lvl {
+            .referral-history-position-2-lvl {
+              padding-left: 10px;
+            }
+          }
+
+          &--3lvl {
+            .referral-history-position-2-lvl {
+              padding-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .profile {
+    &__info {
+      padding: 0;
+    }
+  }
+
+  .referral-history__item .main-wrapper {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .referral-history {
+    &--transactions {
+      .referral-history-position-data {
+        .main-type {
+          display: none;
+        }
+      }
+
+      .referral-history__list-transactions.active {
+        .referral-history-position-descrip,
+        .referral-history-position-balance {
+          .text {
+            width: 80%;
+            text-align: left;
+          }
+        }
+
+        .referral-history-position-descrip,
+        .referral-history-position-balance {
+          flex-direction: column;
+
+          .main-type {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .profile {
+    &__box {
+      flex-direction: column;
+
+      &::before {
+        position: absolute;
+      }
+    }
+
+    &__content {
+      padding-left: 8px;
+      margin-bottom: 15px;
+    }
+
+    .main-button-color {
+      max-width: 100%;
+    }
+
+    &__meta {
+      flex-direction: column;
+    }
+
+    .sub-title {
+      margin-bottom: 15px;
+    }
+
+    &__table {
+      .referral-history-position-3-lvl {
+        width: 100%;
+        justify-content: flex-start;
+        text-transform: uppercase;
+      }
+      .referral-history {
+        &__header {
+          display: none;
+        }
+
+        &__body {
+          .referral-history {
+            &__user--1 {
+              .referral-history-position-data {
+                flex-direction: column;
+                align-items: flex-start;
+                .type {
+                  display: inline-block;
+                  margin-bottom: 10px;
+                  font-size: 12px;
+                  font-weight: bold;
+                  text-transform: uppercase;
+                }
+              }
+            }
+
+            &__user {
+              flex-direction: column;
+
+              .referral-history-position-1-lvl,
+              .referral-history-position-2-lvl,
+              .referral-history-position-data {
+                width: 100%;
+                margin-bottom: 10px;
+              }
+
+              .referral-history-position-1-lvl {
+                .main-type {
+                  display: inline-block;
+                }
+
+                .text {
+                  display: none;
+                }
+              }
+            }
+            &__item {
+              &--2lvl,
+              &--3lvl {
+                .referral-history-position-2-lvl {
+                  padding-left: 0;
+                }
+
+                .referral-history-position-data {
+                  flex-direction: column;
+                  align-items: flex-start;
+
+                  .type {
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                  }
+                }
+
+                .referral-history-position-2-lvl {
+                  margin-bottom: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

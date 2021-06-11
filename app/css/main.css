@@ -3706,7 +3706,7 @@ main {
     display: block;
     font-size: 14px;
     line-height: 17px;
-    color: #BDBDBD;
+    color: #bdbdbd;
     text-transform: initial;
   }
   .order-history-icon {
@@ -3745,15 +3745,6 @@ main {
   .referral-history__item:first-child .text {
     display: block;
   }
-  .referral-history__item:last-child {
-    position: absolute;
-    right: 0px;
-    top: 15px;
-    padding: 0px;
-  }
-  .referral-history__item .text {
-    display: none;
-  }
   .referral-history__item .main-wrapper {
     display: flex;
     justify-content: space-between;
@@ -3781,7 +3772,7 @@ main {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    color: #ACDA53;
+    color: #acda53;
   }
   .referral-history__sub .description-text {
     margin-left: 80px;
@@ -8929,6 +8920,39 @@ main {
   color: white;
   text-transform: uppercase;
 }
+.main-button-color {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: #b8e959;
+  color: #fffefe;
+  border-radius: 30px;
+  border: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  z-index: 0;
+}
+.main-button-color::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 500%;
+  background-color: #acda53;
+  z-index: 0;
+  transform-origin: top;
+  transform: rotate(-45deg) translate(0, -50%);
+  transition: transform 0.4s;
+}
+.main-button-color:hover::before {
+  transform: rotate(-45deg) translate(50%, -50%);
+}
 .referral-info {
   display: flex;
   justify-content: space-between;
@@ -9194,7 +9218,7 @@ main {
   margin-bottom: 20px;
 }
 .profile__info--network {
-  padding: 20px 20px 10px;
+  padding: 20px 30px 10px;
 }
 .profile__info .referral-link {
   margin-top: 0px;
@@ -9224,6 +9248,12 @@ main {
 .profile__content p {
   margin-bottom: 20px;
 }
+.profile__content-lnk:hover {
+  color: #acda53;
+}
+.profile__info-icon {
+  margin-bottom: -2px;
+}
 .profile__price span {
   font-weight: 700;
   color: #acda53;
@@ -9246,14 +9276,23 @@ main {
   align-items: center;
   margin-bottom: 20px;
 }
+.profile__table .referral-history__user--1 .referral-history-position-data .type {
+  display: none;
+}
 .profile__table .referral-history__item {
   padding-top: 0;
 }
 .profile__table .referral-history__item--2lvl .referral-history-position-2-lvl {
   padding-left: 40px;
 }
+.profile__table .referral-history__item--2lvl .referral-history-position-data .type {
+  display: none;
+}
 .profile__table .referral-history__item--3lvl .referral-history-position-2-lvl {
   padding-left: 80px;
+}
+.profile__table .referral-history__item--3lvl .referral-history-position-data .type {
+  display: none;
 }
 .profile__table .referral-history__user {
   width: 100%;
@@ -9275,6 +9314,7 @@ main {
 }
 .profile__table .referral-history-position-3-lvl {
   text-align: end;
+  text-transform: uppercase;
 }
 .profile__table .referral-history-position-3-lvl .text {
   text-align: right;
@@ -9351,6 +9391,202 @@ main {
     opacity: 1;
   }
 }
+@media screen and (min-width: 1068px) {
+  .referral-history-position-descrip {
+    width: calc(70% - 5px);
+  }
+}
+@media screen and (max-width: 1067px) {
+  .referral-history-position-last {
+    display: none;
+  }
+  .referral-history-position-3-lvl {
+    width: 14%;
+  }
+  .referral-history__user .referral-history-position-last {
+    display: none;
+  }
+  .referral-history--transactions .referral-history-position-descrip .text,
+  .referral-history--transactions .referral-history-position-balance .text,
+  .referral-history--transactions .referral-history-position-descrip .main-type,
+  .referral-history--transactions .referral-history-position-balance .main-type {
+    height: 0;
+    opacity: 0;
+  }
+  .referral-history--transactions .referral-history__item-icon-drop {
+    display: inline-flex;
+    padding-top: 0;
+  }
+  .referral-history--transactions .referral-history__item-icon-drop .icon-drop {
+    margin-top: -11px;
+  }
+  .referral-history--transactions .referral-history__header {
+    display: none;
+  }
+  .referral-history--transactions .referral-history__item .main-type {
+    display: inline-block;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .text,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .text,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .main-type,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .main-type {
+    animation: referral-opcity 0.6s;
+    height: 100%;
+    opacity: 1;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .main-type,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .main-type {
+    color: #acda53;
+    width: calc(15% - 30px);
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .text,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .text {
+    width: 70%;
+    margin-right: 60px;
+    text-align: end;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .referral-history__sub,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .referral-history__sub {
+    display: none;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip {
+    margin-bottom: 20px;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-data {
+    color: #acda53;
+  }
+  .profile__info {
+    padding: 20px 20px 10px;
+  }
+  .profile__info--network {
+    padding: 20px 20px 10px;
+  }
+  .profile__info-top {
+    margin-bottom: 40px;
+  }
+  .profile__items {
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+  .profile__item {
+    width: 100%;
+  }
+  .profile__table .referral-history__item {
+    padding-top: 0;
+  }
+  .profile__table .referral-history__item--2lvl .referral-history-position-2-lvl {
+    padding-left: 10px;
+  }
+  .profile__table .referral-history__item--3lvl .referral-history-position-2-lvl {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .profile__info {
+    padding: 0;
+  }
+  .referral-history__item .main-wrapper {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+@media screen and (max-width: 576px) {
+  .referral-history--transactions .referral-history-position-data .main-type {
+    display: none;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .text,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .text {
+    width: 80%;
+    text-align: left;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance {
+    flex-direction: column;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .main-type,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .main-type {
+    margin-bottom: 10px;
+  }
+  .profile__box {
+    flex-direction: column;
+  }
+  .profile__box::before {
+    position: absolute;
+  }
+  .profile__content {
+    padding-left: 8px;
+    margin-bottom: 15px;
+  }
+  .profile .main-button-color {
+    max-width: 100%;
+  }
+  .profile__meta {
+    flex-direction: column;
+  }
+  .profile .sub-title {
+    margin-bottom: 15px;
+  }
+  .profile__table .referral-history-position-3-lvl {
+    width: 100%;
+    justify-content: flex-start;
+    text-transform: uppercase;
+  }
+  .profile__table .referral-history__header {
+    display: none;
+  }
+  .profile__table .referral-history__body .referral-history__user--1 .referral-history-position-data {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile__table .referral-history__body .referral-history__user--1 .referral-history-position-data .type {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .profile__table .referral-history__body .referral-history__user {
+    flex-direction: column;
+  }
+  .profile__table .referral-history__body .referral-history__user .referral-history-position-1-lvl,
+  .profile__table .referral-history__body .referral-history__user .referral-history-position-2-lvl,
+  .profile__table .referral-history__body .referral-history__user .referral-history-position-data {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .profile__table .referral-history__body .referral-history__user .referral-history-position-1-lvl .main-type {
+    display: inline-block;
+  }
+  .profile__table .referral-history__body .referral-history__user .referral-history-position-1-lvl .text {
+    display: none;
+  }
+  .profile__table .referral-history__body .referral-history__item--2lvl .referral-history-position-2-lvl,
+  .profile__table .referral-history__body .referral-history__item--3lvl .referral-history-position-2-lvl {
+    padding-left: 0;
+  }
+  .profile__table .referral-history__body .referral-history__item--2lvl .referral-history-position-data,
+  .profile__table .referral-history__body .referral-history__item--3lvl .referral-history-position-data {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile__table .referral-history__body .referral-history__item--2lvl .referral-history-position-data .type,
+  .profile__table .referral-history__body .referral-history__item--3lvl .referral-history-position-data .type {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .profile__table .referral-history__body .referral-history__item--2lvl .referral-history-position-2-lvl,
+  .profile__table .referral-history__body .referral-history__item--3lvl .referral-history-position-2-lvl {
+    margin-bottom: 20px;
+  }
+}
 .title {
   font-family: 'Impact';
   font-size: 36px;
@@ -9365,6 +9601,39 @@ main {
   font-weight: 700;
   color: white;
   text-transform: uppercase;
+}
+.main-button-color {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: #b8e959;
+  color: #fffefe;
+  border-radius: 30px;
+  border: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  z-index: 0;
+}
+.main-button-color::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 500%;
+  background-color: #acda53;
+  z-index: 0;
+  transform-origin: top;
+  transform: rotate(-45deg) translate(0, -50%);
+  transition: transform 0.4s;
+}
+.main-button-color:hover::before {
+  transform: rotate(-45deg) translate(50%, -50%);
 }
 @font-face {
   font-family: 'Impact';
@@ -10395,6 +10664,39 @@ main {
   font-weight: 700;
   color: white;
   text-transform: uppercase;
+}
+.main-button-color {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: #b8e959;
+  color: #fffefe;
+  border-radius: 30px;
+  border: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  z-index: 0;
+}
+.main-button-color::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 500%;
+  background-color: #acda53;
+  z-index: 0;
+  transform-origin: top;
+  transform: rotate(-45deg) translate(0, -50%);
+  transition: transform 0.4s;
+}
+.main-button-color:hover::before {
+  transform: rotate(-45deg) translate(50%, -50%);
 }
 @media screen and (min-width: 1201px) {
   /* General */
@@ -15288,7 +15590,7 @@ main {
     display: block;
     font-size: 14px;
     line-height: 17px;
-    color: #BDBDBD;
+    color: #bdbdbd;
     text-transform: initial;
   }
   .order-history-icon {
@@ -15327,15 +15629,6 @@ main {
   .referral-history__item:first-child .text {
     display: block;
   }
-  .referral-history__item:last-child {
-    position: absolute;
-    right: 0px;
-    top: 15px;
-    padding: 0px;
-  }
-  .referral-history__item .text {
-    display: none;
-  }
   .referral-history__item .main-wrapper {
     display: flex;
     justify-content: space-between;
@@ -15363,7 +15656,7 @@ main {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    color: #ACDA53;
+    color: #acda53;
   }
   .referral-history__sub .description-text {
     margin-left: 80px;
@@ -18562,7 +18855,7 @@ main {
   margin-bottom: 20px;
 }
 .profile__info--network {
-  padding: 20px 20px 10px;
+  padding: 20px 30px 10px;
 }
 .profile__info .referral-link {
   margin-top: 0px;
@@ -18592,6 +18885,12 @@ main {
 .profile__content p {
   margin-bottom: 20px;
 }
+.profile__content-lnk:hover {
+  color: #acda53;
+}
+.profile__info-icon {
+  margin-bottom: -2px;
+}
 .profile__price span {
   font-weight: 700;
   color: #acda53;
@@ -18614,14 +18913,23 @@ main {
   align-items: center;
   margin-bottom: 20px;
 }
+.profile__table .referral-history__user--1 .referral-history-position-data .type {
+  display: none;
+}
 .profile__table .referral-history__item {
   padding-top: 0;
 }
 .profile__table .referral-history__item--2lvl .referral-history-position-2-lvl {
   padding-left: 40px;
 }
+.profile__table .referral-history__item--2lvl .referral-history-position-data .type {
+  display: none;
+}
 .profile__table .referral-history__item--3lvl .referral-history-position-2-lvl {
   padding-left: 80px;
+}
+.profile__table .referral-history__item--3lvl .referral-history-position-data .type {
+  display: none;
 }
 .profile__table .referral-history__user {
   width: 100%;
@@ -18643,6 +18951,7 @@ main {
 }
 .profile__table .referral-history-position-3-lvl {
   text-align: end;
+  text-transform: uppercase;
 }
 .profile__table .referral-history-position-3-lvl .text {
   text-align: right;
@@ -18719,9 +19028,229 @@ main {
     opacity: 1;
   }
 }
+@media screen and (min-width: 1068px) {
+  .referral-history-position-descrip {
+    width: calc(70% - 5px);
+  }
+}
+@media screen and (max-width: 1067px) {
+  .referral-history-position-last {
+    display: none;
+  }
+  .referral-history-position-3-lvl {
+    width: 14%;
+  }
+  .referral-history__user .referral-history-position-last {
+    display: none;
+  }
+  .referral-history--transactions .referral-history-position-descrip .text,
+  .referral-history--transactions .referral-history-position-balance .text,
+  .referral-history--transactions .referral-history-position-descrip .main-type,
+  .referral-history--transactions .referral-history-position-balance .main-type {
+    height: 0;
+    opacity: 0;
+  }
+  .referral-history--transactions .referral-history__item-icon-drop {
+    display: inline-flex;
+    padding-top: 0;
+  }
+  .referral-history--transactions .referral-history__item-icon-drop .icon-drop {
+    margin-top: -11px;
+  }
+  .referral-history--transactions .referral-history__header {
+    display: none;
+  }
+  .referral-history--transactions .referral-history__item .main-type {
+    display: inline-block;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .text,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .text,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .main-type,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .main-type {
+    animation: referral-opcity 0.6s;
+    height: 100%;
+    opacity: 1;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .main-type,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .main-type {
+    color: #acda53;
+    width: calc(15% - 30px);
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .text,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .text {
+    width: 70%;
+    margin-right: 60px;
+    text-align: end;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .referral-history__sub,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .referral-history__sub {
+    display: none;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip {
+    margin-bottom: 20px;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-data {
+    color: #acda53;
+  }
+  .profile__info {
+    padding: 20px 20px 10px;
+  }
+  .profile__info--network {
+    padding: 20px 20px 10px;
+  }
+  .profile__info-top {
+    margin-bottom: 40px;
+  }
+  .profile__items {
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+  .profile__item {
+    width: 100%;
+  }
+  .profile__table .referral-history__item {
+    padding-top: 0;
+  }
+  .profile__table .referral-history__item--2lvl .referral-history-position-2-lvl {
+    padding-left: 10px;
+  }
+  .profile__table .referral-history__item--3lvl .referral-history-position-2-lvl {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .profile__info {
+    padding: 0;
+  }
+  .referral-history__item .main-wrapper {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+@media screen and (max-width: 576px) {
+  .referral-history--transactions .referral-history-position-data .main-type {
+    display: none;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .text,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .text {
+    width: 80%;
+    text-align: left;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance {
+    flex-direction: column;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .main-type,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .main-type {
+    margin-bottom: 10px;
+  }
+  .profile__box {
+    flex-direction: column;
+  }
+  .profile__box::before {
+    position: absolute;
+  }
+  .profile__content {
+    padding-left: 8px;
+    margin-bottom: 15px;
+  }
+  .profile .main-button-color {
+    max-width: 100%;
+  }
+  .profile__meta {
+    flex-direction: column;
+  }
+  .profile .sub-title {
+    margin-bottom: 15px;
+  }
+  .profile__table .referral-history-position-3-lvl {
+    width: 100%;
+    justify-content: flex-start;
+    text-transform: uppercase;
+  }
+  .profile__table .referral-history__header {
+    display: none;
+  }
+  .profile__table .referral-history__body .referral-history__user--1 .referral-history-position-data {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile__table .referral-history__body .referral-history__user--1 .referral-history-position-data .type {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .profile__table .referral-history__body .referral-history__user {
+    flex-direction: column;
+  }
+  .profile__table .referral-history__body .referral-history__user .referral-history-position-1-lvl,
+  .profile__table .referral-history__body .referral-history__user .referral-history-position-2-lvl,
+  .profile__table .referral-history__body .referral-history__user .referral-history-position-data {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .profile__table .referral-history__body .referral-history__user .referral-history-position-1-lvl .main-type {
+    display: inline-block;
+  }
+  .profile__table .referral-history__body .referral-history__user .referral-history-position-1-lvl .text {
+    display: none;
+  }
+  .profile__table .referral-history__body .referral-history__item--2lvl .referral-history-position-2-lvl,
+  .profile__table .referral-history__body .referral-history__item--3lvl .referral-history-position-2-lvl {
+    padding-left: 0;
+  }
+  .profile__table .referral-history__body .referral-history__item--2lvl .referral-history-position-data,
+  .profile__table .referral-history__body .referral-history__item--3lvl .referral-history-position-data {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile__table .referral-history__body .referral-history__item--2lvl .referral-history-position-data .type,
+  .profile__table .referral-history__body .referral-history__item--3lvl .referral-history-position-data .type {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .profile__table .referral-history__body .referral-history__item--2lvl .referral-history-position-2-lvl,
+  .profile__table .referral-history__body .referral-history__item--3lvl .referral-history-position-2-lvl {
+    margin-bottom: 20px;
+  }
+}
 .profile__sort-network {
   max-width: 250px;
   height: 41px;
+}
+.profile__heart-icon {
+  width: 18px;
+  height: 16px;
+  margin-right: 18px;
+}
+.profile__network-icon {
+  width: 17px;
+  height: 22px;
+  margin-right: 18px;
+}
+.profile__sidebar-item:hover .profile__heart-icon path,
+.profile__sidebar-item:hover .profile__network-icon path {
+  stroke: #acda53;
+}
+.profile__sidebar-item:hover .profile__network-icon circle {
+  stroke: #acda53;
+}
+.profile__sidebar-link.active .profile__heart-icon path,
+.profile__sidebar-link.active .profile__network-icon path {
+  stroke: #acda53;
+}
+.profile__sidebar-link.active .profile__network-icon circle {
+  stroke: #acda53;
 }
 .profile__sidebar-list {
   margin-top: 0;
@@ -18777,19 +19306,90 @@ main {
 .profile__sidebar-link:hover span {
   color: #acda53;
 }
-@media screen and (max-width: 1067px) {
-  .profile__sidebar-list {
-    margin-top: 20px;
-  }
-}
 @media screen and (max-width: 767px) {
   .profile__sidebar-list {
     margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  .profile__inner {
+    width: 100%;
   }
   .profile__sidebar-item {
     margin-bottom: 30px;
   }
 }
+.title {
+  font-family: 'Impact';
+  font-size: 36px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.sub-title {
+  font-size: 18px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+.main-button-color {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: #b8e959;
+  color: #fffefe;
+  border-radius: 30px;
+  border: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  z-index: 0;
+}
+.main-button-color::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 500%;
+  background-color: #acda53;
+  z-index: 0;
+  transform-origin: top;
+  transform: rotate(-45deg) translate(0, -50%);
+  transition: transform 0.4s;
+}
+.main-button-color:hover::before {
+  transform: rotate(-45deg) translate(50%, -50%);
+}
+.profile__heart-icon {
+  width: 18px;
+  height: 16px;
+  margin-right: 18px;
+}
+.profile__network-icon {
+  width: 17px;
+  height: 22px;
+  margin-right: 18px;
+}
+.profile__sidebar-item:hover .profile__heart-icon path,
+.profile__sidebar-item:hover .profile__network-icon path {
+  stroke: #acda53;
+}
+.profile__sidebar-item:hover .profile__network-icon circle {
+  stroke: #acda53;
+}
+.profile__sidebar-link.active .profile__heart-icon path,
+.profile__sidebar-link.active .profile__network-icon path {
+  stroke: #acda53;
+}
+.profile__sidebar-link.active .profile__network-icon circle {
+  stroke: #acda53;
+}
 .profile__sidebar-list {
   margin-top: 0;
   padding-top: 5px;
@@ -18844,14 +19444,13 @@ main {
 .profile__sidebar-link:hover span {
   color: #acda53;
 }
-@media screen and (max-width: 1067px) {
-  .profile__sidebar-list {
-    margin-top: 20px;
-  }
-}
 @media screen and (max-width: 767px) {
   .profile__sidebar-list {
     margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  .profile__inner {
+    width: 100%;
   }
   .profile__sidebar-item {
     margin-bottom: 30px;

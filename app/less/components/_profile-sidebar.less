@@ -1,3 +1,42 @@
+@import '../_vars';
+
+.profile {
+  &__heart-icon {
+    width: 18px;
+    height: 16px;
+    margin-right: 18px;
+  }
+
+  &__network-icon {
+    width: 17px;
+    height: 22px;
+    margin-right: 18px;
+  }
+
+  &__sidebar-item {
+    &:hover {
+      .profile__heart-icon path,
+      .profile__network-icon path {
+        stroke: @accent;
+      }
+      .profile__network-icon circle {
+        stroke: @accent;
+      }
+    }
+  }
+
+  &__sidebar-link.active {
+    .profile__heart-icon path,
+    .profile__network-icon path {
+      stroke: @accent;
+    }
+
+    .profile__network-icon circle {
+      stroke: @accent;
+    }
+  }
+}
+
 .profile__sidebar-list {
   margin-top: 0;
   padding-top: 5px;
@@ -70,17 +109,21 @@
 }
 
 @media screen and (max-width: 1067px) {
-  .profile__sidebar-list {
-    margin-top: 20px;
-  }
 }
 
 @media screen and (max-width: 767px) {
-  .profile__sidebar-list {
-    margin-top: 0px;
-  }
+  .profile {
+    &__sidebar-list {
+      margin-top: 0px;
+      margin-bottom: 50px;
+    }
 
-  .profile__sidebar-item {
-    margin-bottom: 30px;
+    &__inner {
+      width: 100%;
+    }
+
+    &__sidebar-item {
+      margin-bottom: 30px;
+    }
   }
 }
