@@ -139,11 +139,11 @@
   &.active {
     .referral-history__item {
       .text {
-        color: #acda53;
+        color: @accent;
       }
 
       .icon-drop {
-        color: #acda53;
+        color: @accent;
         transform: rotate(0deg);
       }
     }
@@ -236,6 +236,12 @@
 }
 
 .profile {
+  .referral-history-position-3-lvl {
+    .type {
+      display: none;
+    }
+  }
+
   &__sidebar-list {
     margin-top: 0;
   }
@@ -327,6 +333,10 @@
 
     &:not(:last-child) {
       margin-bottom: 20px;
+    }
+
+    &--amount {
+      padding: 20px 20px 15px;
     }
 
     &--network {
@@ -506,6 +516,12 @@
       border-bottom: 1px solid #4f4f4f;
     }
 
+    .referral-history__item--mobile {
+      .icon-drop {
+        display: none;
+      }
+    }
+
     &.active {
       .referral-history__item {
         .icon-drop {
@@ -534,7 +550,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        // justify-content: flex-start;
 
         &--2lvl,
         &--3lvl {
@@ -592,21 +607,11 @@
 }
 
 @media screen and (max-width: 1067px) {
-  .referral-history-position-last {
-    display: none;
-  }
-
   .referral-history-position-3-lvl {
     width: 14%;
   }
 
   .referral-history {
-    &__user {
-      .referral-history-position-last {
-        display: none;
-      }
-    }
-
     &--transactions {
       .referral-history-position-descrip,
       .referral-history-position-balance {
@@ -626,23 +631,51 @@
         }
       }
       .referral-history {
+        &__list-transactions {
+          flex-direction: row;
+          align-items: flex-end;
+        }
+
         &__header {
           display: none;
         }
       }
 
       .referral-history__item {
+        .main-wrapper {
+          flex-direction: column;
+        }
+
         .main-type {
           display: inline-block;
         }
       }
 
+      .referral-history-position-balance {
+        flex-direction: column;
+        margin-right: 30px;
+        text-align: end;
+
+        .main-type,
+        .text {
+          display: contents;
+        }
+      }
+
       .referral-history__list-transactions.active {
+        flex-direction: column;
+        align-items: stretch;
+
+        .referral-history__item {
+          .main-wrapper {
+            flex-direction: row;
+          }
+        }
+
         .referral-history-position-descrip,
         .referral-history-position-balance {
           .text,
           .main-type {
-            // display: inline-flex;
             animation: referral-opcity 0.6s;
             height: 100%;
             opacity: 1;
@@ -661,7 +694,8 @@
 
           .text {
             width: 70%;
-            margin-right: 60px;
+            // margin-right: 60px;
+            margin-right: 40px;
             text-align: end;
           }
 
@@ -676,6 +710,26 @@
 
         .referral-history-position-data {
           color: @accent;
+
+          .text {
+            margin-right: 40px;
+          }
+        }
+
+        .referral-history-position-descrip {
+          .main-type,
+          .text {
+            color: white;
+          }
+        }
+
+        .referral-history-position-balance {
+          padding-right: 10px;
+          .main-type {
+            display: inline-block;
+            text-align: initial;
+            color: white;
+          }
         }
       }
     }
@@ -684,6 +738,15 @@
   .profile {
     &__info {
       padding: 20px 20px 10px;
+
+      &--amount {
+        padding: 20px 20px 15px;
+      }
+
+      &--link {
+        padding: 20px;
+      }
+
       &--network {
         padding: 20px 20px 10px;
       }
@@ -699,6 +762,10 @@
 
     &__item {
       width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
     }
 
     &__table {
@@ -727,30 +794,82 @@
   .profile {
     &__info {
       padding: 0;
+
+      &--network {
+        .referral-history__item--mobile {
+          width: 10px;
+        }
+      }
+    }
+
+    &__table {
+      .referral-history__item {
+        .main-wrapper {
+          .text {
+            margin-top: 0;
+          }
+        }
+      }
     }
   }
 
   .referral-history__item .main-wrapper {
     flex-direction: row;
     align-items: baseline;
+
+    .text {
+      margin-top: 0px;
+    }
   }
 }
 
 @media screen and (max-width: 576px) {
   .referral-history {
     &--transactions {
-      .referral-history-position-data {
-        .main-type {
-          display: none;
+      .referral-history__list-transactions {
+        justify-content: space-between;
+
+        .referral-history-position-data {
+          flex-grow: 1;
+        }
+
+        .referral-history-position-descrip {
+          width: 0;
+        }
+
+        .referral-history-position-balance {
+          width: 70px;
+          margin-right: 10px;
         }
       }
 
       .referral-history__list-transactions.active {
+        .referral-history-position-data {
+          .text {
+            margin-right: 20px;
+          }
+        }
+
+        .referral-history-position-descrip {
+          width: 100%;
+        }
         .referral-history-position-descrip,
         .referral-history-position-balance {
           .text {
             width: 80%;
             text-align: left;
+          }
+          .text,
+          .main-type {
+            color: white;
+          }
+        }
+
+        .referral-history-position-balance {
+          width: 100%;
+          padding-right: 20px;
+          .text {
+            color: @accent!important;
           }
         }
 
@@ -760,6 +879,14 @@
 
           .main-type {
             margin-bottom: 10px;
+          }
+        }
+
+        .referral-history-position-balance {
+          flex-direction: row;
+          align-items: flex-end;
+          .main-type {
+            margin-bottom: 0;
           }
         }
       }
@@ -786,10 +913,44 @@
 
     &__meta {
       flex-direction: column;
+      align-items: flex-start;
+
+      .profile__sort-network {
+        max-width: 100%;
+      }
     }
 
     .sub-title {
       margin-bottom: 15px;
+    }
+
+    &__table-item {
+      .referral-history-position-last {
+        .icon-drop {
+          display: none;
+        }
+      }
+
+      .referral-history {
+        &__user--1 {
+          .referral-history-position-2-lvl {
+            justify-content: space-between;
+
+            .text {
+              width: 100%;
+            }
+          }
+        }
+        &__item {
+          &--mobile {
+            .icon-drop {
+              &--mobile {
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
     }
 
     &__table {
@@ -806,12 +967,19 @@
         &__body {
           .referral-history {
             &__user--1 {
+              .referral-history-position-3-lvl,
+              .referral-history-position-data {
+                height: 0;
+                opacity: 0;
+                display: none;
+              }
+
               .referral-history-position-data {
                 flex-direction: column;
                 align-items: flex-start;
                 .type {
                   display: inline-block;
-                  margin-bottom: 10px;
+                  margin-bottom: 0px;
                   font-size: 12px;
                   font-weight: bold;
                   text-transform: uppercase;
@@ -839,7 +1007,14 @@
                 }
               }
             }
+
             &__item {
+              &--2lvl {
+                margin-left: 20px;
+              }
+              &--3lvl {
+                margin-left: 40px;
+              }
               &--2lvl,
               &--3lvl {
                 .referral-history-position-2-lvl {
@@ -866,6 +1041,48 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .profile__table-item.active {
+    .referral-history__user--1,
+    .referral-history__item--2lvl,
+    .referral-history__item--3lvl {
+      .referral-history-position-3-lvl,
+      .referral-history-position-data {
+        height: 100%;
+        opacity: 1;
+        display: contents;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    .referral-history__item--2lvl,
+    .referral-history__item--3lvl {
+      .referral-history-position-data {
+        .type {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .referral-history-position-3-lvl {
+      .type {
+        font-size: 12px;
+        font-weight: 700;
+        display: inline-block;
+      }
+      .text {
+        color: @accent;
+      }
+    }
+    .referral-history-position-1-lvl {
+      .main-type {
+        color: white;
       }
     }
   }

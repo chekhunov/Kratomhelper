@@ -8906,17 +8906,17 @@ main {
   /* //Popup result-calc */
 }
 .title {
-  font-family: 'Impact';
   font-size: 36px;
   font-weight: 900;
+  font-family: 'Impact';
   color: white;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 .sub-title {
   font-size: 18px;
-  font-family: 'Montserrat';
   font-weight: 700;
+  font-family: 'Montserrat';
   color: white;
   text-transform: uppercase;
 }
@@ -9143,6 +9143,9 @@ main {
 .referral-history__item-balance .text {
   color: #acda53;
 }
+.profile .referral-history-position-3-lvl .type {
+  display: none;
+}
 .profile__sidebar-list {
   margin-top: 0;
 }
@@ -9216,6 +9219,9 @@ main {
 }
 .profile__info:not(:last-child) {
   margin-bottom: 20px;
+}
+.profile__info--amount {
+  padding: 20px 20px 15px;
 }
 .profile__info--network {
   padding: 20px 30px 10px;
@@ -9342,6 +9348,9 @@ main {
 .profile__table-item:not(:last-child) {
   border-bottom: 1px solid #4f4f4f;
 }
+.profile__table-item .referral-history__item--mobile .icon-drop {
+  display: none;
+}
 .profile__table-item.active .referral-history__item .icon-drop {
   color: #acda53;
   transform: rotate(0deg);
@@ -9397,14 +9406,8 @@ main {
   }
 }
 @media screen and (max-width: 1067px) {
-  .referral-history-position-last {
-    display: none;
-  }
   .referral-history-position-3-lvl {
     width: 14%;
-  }
-  .referral-history__user .referral-history-position-last {
-    display: none;
   }
   .referral-history--transactions .referral-history-position-descrip .text,
   .referral-history--transactions .referral-history-position-balance .text,
@@ -9420,11 +9423,34 @@ main {
   .referral-history--transactions .referral-history__item-icon-drop .icon-drop {
     margin-top: -11px;
   }
+  .referral-history--transactions .referral-history__list-transactions {
+    flex-direction: row;
+    align-items: flex-end;
+  }
   .referral-history--transactions .referral-history__header {
     display: none;
   }
+  .referral-history--transactions .referral-history__item .main-wrapper {
+    flex-direction: column;
+  }
   .referral-history--transactions .referral-history__item .main-type {
     display: inline-block;
+  }
+  .referral-history--transactions .referral-history-position-balance {
+    flex-direction: column;
+    margin-right: 30px;
+    text-align: end;
+  }
+  .referral-history--transactions .referral-history-position-balance .main-type,
+  .referral-history--transactions .referral-history-position-balance .text {
+    display: contents;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history__item .main-wrapper {
+    flex-direction: row;
   }
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .text,
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .text,
@@ -9447,7 +9473,7 @@ main {
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .text,
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .text {
     width: 70%;
-    margin-right: 60px;
+    margin-right: 40px;
     text-align: end;
   }
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .referral-history__sub,
@@ -9460,8 +9486,29 @@ main {
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-data {
     color: #acda53;
   }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-data .text {
+    margin-right: 40px;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .main-type,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .text {
+    color: white;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance {
+    padding-right: 10px;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .main-type {
+    display: inline-block;
+    text-align: initial;
+    color: white;
+  }
   .profile__info {
     padding: 20px 20px 10px;
+  }
+  .profile__info--amount {
+    padding: 20px 20px 15px;
+  }
+  .profile__info--link {
+    padding: 20px;
   }
   .profile__info--network {
     padding: 20px 20px 10px;
@@ -9475,6 +9522,9 @@ main {
   }
   .profile__item {
     width: 100%;
+  }
+  .profile__item:not(:last-child) {
+    margin-bottom: 15px;
   }
   .profile__table .referral-history__item {
     padding-top: 0;
@@ -9490,19 +9540,57 @@ main {
   .profile__info {
     padding: 0;
   }
+  .profile__info--network .referral-history__item--mobile {
+    width: 10px;
+  }
+  .profile__table .referral-history__item .main-wrapper .text {
+    margin-top: 0;
+  }
   .referral-history__item .main-wrapper {
     flex-direction: row;
     align-items: baseline;
   }
+  .referral-history__item .main-wrapper .text {
+    margin-top: 0px;
+  }
 }
 @media screen and (max-width: 576px) {
-  .referral-history--transactions .referral-history-position-data .main-type {
-    display: none;
+  .referral-history--transactions .referral-history__list-transactions {
+    justify-content: space-between;
+  }
+  .referral-history--transactions .referral-history__list-transactions .referral-history-position-data {
+    flex-grow: 1;
+  }
+  .referral-history--transactions .referral-history__list-transactions .referral-history-position-descrip {
+    width: 0;
+  }
+  .referral-history--transactions .referral-history__list-transactions .referral-history-position-balance {
+    width: 70px;
+    margin-right: 10px;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-data .text {
+    margin-right: 20px;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip {
+    width: 100%;
   }
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .text,
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .text {
     width: 80%;
     text-align: left;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .text,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .text,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .main-type,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .main-type {
+    color: white;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance {
+    width: 100%;
+    padding-right: 20px;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .text {
+    color: #acda53 !important;
   }
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip,
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance {
@@ -9511,6 +9599,13 @@ main {
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .main-type,
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .main-type {
     margin-bottom: 10px;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .main-type {
+    margin-bottom: 0;
   }
   .profile__box {
     flex-direction: column;
@@ -9527,9 +9622,25 @@ main {
   }
   .profile__meta {
     flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile__meta .profile__sort-network {
+    max-width: 100%;
   }
   .profile .sub-title {
     margin-bottom: 15px;
+  }
+  .profile__table-item .referral-history-position-last .icon-drop {
+    display: none;
+  }
+  .profile__table-item .referral-history__user--1 .referral-history-position-2-lvl {
+    justify-content: space-between;
+  }
+  .profile__table-item .referral-history__user--1 .referral-history-position-2-lvl .text {
+    width: 100%;
+  }
+  .profile__table-item .referral-history__item--mobile .icon-drop--mobile {
+    display: inline-block;
   }
   .profile__table .referral-history-position-3-lvl {
     width: 100%;
@@ -9539,13 +9650,19 @@ main {
   .profile__table .referral-history__header {
     display: none;
   }
+  .profile__table .referral-history__body .referral-history__user--1 .referral-history-position-3-lvl,
+  .profile__table .referral-history__body .referral-history__user--1 .referral-history-position-data {
+    height: 0;
+    opacity: 0;
+    display: none;
+  }
   .profile__table .referral-history__body .referral-history__user--1 .referral-history-position-data {
     flex-direction: column;
     align-items: flex-start;
   }
   .profile__table .referral-history__body .referral-history__user--1 .referral-history-position-data .type {
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
@@ -9564,6 +9681,12 @@ main {
   }
   .profile__table .referral-history__body .referral-history__user .referral-history-position-1-lvl .text {
     display: none;
+  }
+  .profile__table .referral-history__body .referral-history__item--2lvl {
+    margin-left: 20px;
+  }
+  .profile__table .referral-history__body .referral-history__item--3lvl {
+    margin-left: 40px;
   }
   .profile__table .referral-history__body .referral-history__item--2lvl .referral-history-position-2-lvl,
   .profile__table .referral-history__body .referral-history__item--3lvl .referral-history-position-2-lvl {
@@ -9586,19 +9709,48 @@ main {
   .profile__table .referral-history__body .referral-history__item--3lvl .referral-history-position-2-lvl {
     margin-bottom: 20px;
   }
+  .profile__table-item.active .referral-history__user--1 .referral-history-position-3-lvl,
+  .profile__table-item.active .referral-history__item--2lvl .referral-history-position-3-lvl,
+  .profile__table-item.active .referral-history__item--3lvl .referral-history-position-3-lvl,
+  .profile__table-item.active .referral-history__user--1 .referral-history-position-data,
+  .profile__table-item.active .referral-history__item--2lvl .referral-history-position-data,
+  .profile__table-item.active .referral-history__item--3lvl .referral-history-position-data {
+    height: 100%;
+    opacity: 1;
+    display: contents;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .profile__table-item.active .referral-history__item--2lvl .referral-history-position-data .type,
+  .profile__table-item.active .referral-history__item--3lvl .referral-history-position-data .type {
+    margin-bottom: 0;
+  }
+  .profile__table-item.active .referral-history-position-3-lvl .type {
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+  }
+  .profile__table-item.active .referral-history-position-3-lvl .text {
+    color: #acda53;
+  }
+  .profile__table-item.active .referral-history-position-1-lvl .main-type {
+    color: white;
+  }
 }
 .title {
-  font-family: 'Impact';
   font-size: 36px;
   font-weight: 900;
+  font-family: 'Impact';
   color: white;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 .sub-title {
   font-size: 18px;
-  font-family: 'Montserrat';
   font-weight: 700;
+  font-family: 'Montserrat';
   color: white;
   text-transform: uppercase;
 }
@@ -10651,17 +10803,17 @@ main {
   background-size: auto;
 }
 .title {
-  font-family: 'Impact';
   font-size: 36px;
   font-weight: 900;
+  font-family: 'Impact';
   color: white;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 .sub-title {
   font-size: 18px;
-  font-family: 'Montserrat';
   font-weight: 700;
+  font-family: 'Montserrat';
   color: white;
   text-transform: uppercase;
 }
@@ -18780,6 +18932,9 @@ main {
 .referral-history__item-balance .text {
   color: #acda53;
 }
+.profile .referral-history-position-3-lvl .type {
+  display: none;
+}
 .profile__sidebar-list {
   margin-top: 0;
 }
@@ -18853,6 +19008,9 @@ main {
 }
 .profile__info:not(:last-child) {
   margin-bottom: 20px;
+}
+.profile__info--amount {
+  padding: 20px 20px 15px;
 }
 .profile__info--network {
   padding: 20px 30px 10px;
@@ -18979,6 +19137,9 @@ main {
 .profile__table-item:not(:last-child) {
   border-bottom: 1px solid #4f4f4f;
 }
+.profile__table-item .referral-history__item--mobile .icon-drop {
+  display: none;
+}
 .profile__table-item.active .referral-history__item .icon-drop {
   color: #acda53;
   transform: rotate(0deg);
@@ -19034,14 +19195,8 @@ main {
   }
 }
 @media screen and (max-width: 1067px) {
-  .referral-history-position-last {
-    display: none;
-  }
   .referral-history-position-3-lvl {
     width: 14%;
-  }
-  .referral-history__user .referral-history-position-last {
-    display: none;
   }
   .referral-history--transactions .referral-history-position-descrip .text,
   .referral-history--transactions .referral-history-position-balance .text,
@@ -19057,11 +19212,34 @@ main {
   .referral-history--transactions .referral-history__item-icon-drop .icon-drop {
     margin-top: -11px;
   }
+  .referral-history--transactions .referral-history__list-transactions {
+    flex-direction: row;
+    align-items: flex-end;
+  }
   .referral-history--transactions .referral-history__header {
     display: none;
   }
+  .referral-history--transactions .referral-history__item .main-wrapper {
+    flex-direction: column;
+  }
   .referral-history--transactions .referral-history__item .main-type {
     display: inline-block;
+  }
+  .referral-history--transactions .referral-history-position-balance {
+    flex-direction: column;
+    margin-right: 30px;
+    text-align: end;
+  }
+  .referral-history--transactions .referral-history-position-balance .main-type,
+  .referral-history--transactions .referral-history-position-balance .text {
+    display: contents;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history__item .main-wrapper {
+    flex-direction: row;
   }
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .text,
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .text,
@@ -19084,7 +19262,7 @@ main {
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .text,
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .text {
     width: 70%;
-    margin-right: 60px;
+    margin-right: 40px;
     text-align: end;
   }
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .referral-history__sub,
@@ -19097,8 +19275,29 @@ main {
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-data {
     color: #acda53;
   }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-data .text {
+    margin-right: 40px;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .main-type,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .text {
+    color: white;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance {
+    padding-right: 10px;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .main-type {
+    display: inline-block;
+    text-align: initial;
+    color: white;
+  }
   .profile__info {
     padding: 20px 20px 10px;
+  }
+  .profile__info--amount {
+    padding: 20px 20px 15px;
+  }
+  .profile__info--link {
+    padding: 20px;
   }
   .profile__info--network {
     padding: 20px 20px 10px;
@@ -19112,6 +19311,9 @@ main {
   }
   .profile__item {
     width: 100%;
+  }
+  .profile__item:not(:last-child) {
+    margin-bottom: 15px;
   }
   .profile__table .referral-history__item {
     padding-top: 0;
@@ -19127,19 +19329,57 @@ main {
   .profile__info {
     padding: 0;
   }
+  .profile__info--network .referral-history__item--mobile {
+    width: 10px;
+  }
+  .profile__table .referral-history__item .main-wrapper .text {
+    margin-top: 0;
+  }
   .referral-history__item .main-wrapper {
     flex-direction: row;
     align-items: baseline;
   }
+  .referral-history__item .main-wrapper .text {
+    margin-top: 0px;
+  }
 }
 @media screen and (max-width: 576px) {
-  .referral-history--transactions .referral-history-position-data .main-type {
-    display: none;
+  .referral-history--transactions .referral-history__list-transactions {
+    justify-content: space-between;
+  }
+  .referral-history--transactions .referral-history__list-transactions .referral-history-position-data {
+    flex-grow: 1;
+  }
+  .referral-history--transactions .referral-history__list-transactions .referral-history-position-descrip {
+    width: 0;
+  }
+  .referral-history--transactions .referral-history__list-transactions .referral-history-position-balance {
+    width: 70px;
+    margin-right: 10px;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-data .text {
+    margin-right: 20px;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip {
+    width: 100%;
   }
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .text,
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .text {
     width: 80%;
     text-align: left;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .text,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .text,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .main-type,
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .main-type {
+    color: white;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance {
+    width: 100%;
+    padding-right: 20px;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .text {
+    color: #acda53 !important;
   }
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip,
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance {
@@ -19148,6 +19388,13 @@ main {
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-descrip .main-type,
   .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .main-type {
     margin-bottom: 10px;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .referral-history--transactions .referral-history__list-transactions.active .referral-history-position-balance .main-type {
+    margin-bottom: 0;
   }
   .profile__box {
     flex-direction: column;
@@ -19164,9 +19411,25 @@ main {
   }
   .profile__meta {
     flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile__meta .profile__sort-network {
+    max-width: 100%;
   }
   .profile .sub-title {
     margin-bottom: 15px;
+  }
+  .profile__table-item .referral-history-position-last .icon-drop {
+    display: none;
+  }
+  .profile__table-item .referral-history__user--1 .referral-history-position-2-lvl {
+    justify-content: space-between;
+  }
+  .profile__table-item .referral-history__user--1 .referral-history-position-2-lvl .text {
+    width: 100%;
+  }
+  .profile__table-item .referral-history__item--mobile .icon-drop--mobile {
+    display: inline-block;
   }
   .profile__table .referral-history-position-3-lvl {
     width: 100%;
@@ -19176,13 +19439,19 @@ main {
   .profile__table .referral-history__header {
     display: none;
   }
+  .profile__table .referral-history__body .referral-history__user--1 .referral-history-position-3-lvl,
+  .profile__table .referral-history__body .referral-history__user--1 .referral-history-position-data {
+    height: 0;
+    opacity: 0;
+    display: none;
+  }
   .profile__table .referral-history__body .referral-history__user--1 .referral-history-position-data {
     flex-direction: column;
     align-items: flex-start;
   }
   .profile__table .referral-history__body .referral-history__user--1 .referral-history-position-data .type {
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
@@ -19201,6 +19470,12 @@ main {
   }
   .profile__table .referral-history__body .referral-history__user .referral-history-position-1-lvl .text {
     display: none;
+  }
+  .profile__table .referral-history__body .referral-history__item--2lvl {
+    margin-left: 20px;
+  }
+  .profile__table .referral-history__body .referral-history__item--3lvl {
+    margin-left: 40px;
   }
   .profile__table .referral-history__body .referral-history__item--2lvl .referral-history-position-2-lvl,
   .profile__table .referral-history__body .referral-history__item--3lvl .referral-history-position-2-lvl {
@@ -19222,6 +19497,35 @@ main {
   .profile__table .referral-history__body .referral-history__item--2lvl .referral-history-position-2-lvl,
   .profile__table .referral-history__body .referral-history__item--3lvl .referral-history-position-2-lvl {
     margin-bottom: 20px;
+  }
+  .profile__table-item.active .referral-history__user--1 .referral-history-position-3-lvl,
+  .profile__table-item.active .referral-history__item--2lvl .referral-history-position-3-lvl,
+  .profile__table-item.active .referral-history__item--3lvl .referral-history-position-3-lvl,
+  .profile__table-item.active .referral-history__user--1 .referral-history-position-data,
+  .profile__table-item.active .referral-history__item--2lvl .referral-history-position-data,
+  .profile__table-item.active .referral-history__item--3lvl .referral-history-position-data {
+    height: 100%;
+    opacity: 1;
+    display: contents;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .profile__table-item.active .referral-history__item--2lvl .referral-history-position-data .type,
+  .profile__table-item.active .referral-history__item--3lvl .referral-history-position-data .type {
+    margin-bottom: 0;
+  }
+  .profile__table-item.active .referral-history-position-3-lvl .type {
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+  }
+  .profile__table-item.active .referral-history-position-3-lvl .text {
+    color: #acda53;
+  }
+  .profile__table-item.active .referral-history-position-1-lvl .main-type {
+    color: white;
   }
 }
 .profile__sort-network {
@@ -19319,17 +19623,17 @@ main {
   }
 }
 .title {
-  font-family: 'Impact';
   font-size: 36px;
   font-weight: 900;
+  font-family: 'Impact';
   color: white;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 .sub-title {
   font-size: 18px;
-  font-family: 'Montserrat';
   font-weight: 700;
+  font-family: 'Montserrat';
   color: white;
   text-transform: uppercase;
 }
