@@ -118,7 +118,7 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
-  border-bottom: 1px solid #4f4f4f;
+  border-bottom: 1px solid @border;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.05em;
@@ -130,7 +130,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 0px;
-  border-bottom: 1px solid #4f4f4f;
+  border-bottom: 1px solid @border;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -231,7 +231,7 @@
   font-weight: 700;
 
   .text {
-    color: #acda53;
+    color: @accent;
   }
 }
 
@@ -458,7 +458,7 @@
       display: flex;
       justify-content: space-between;
       padding: 10px 0px;
-      border-bottom: 1px solid #4f4f4f;
+      border-bottom: 1px solid @border;
       font-weight: 500;
       font-size: 14px;
       line-height: 17px;
@@ -513,7 +513,7 @@
     cursor: pointer;
 
     &:not(:last-child) {
-      border-bottom: 1px solid #4f4f4f;
+      border-bottom: 1px solid @border;
     }
 
     .referral-history__item--mobile {
@@ -525,7 +525,7 @@
     &.active {
       .referral-history__item {
         .icon-drop {
-          color: #acda53;
+          color: @accent;
           transform: rotate(0deg);
         }
       }
