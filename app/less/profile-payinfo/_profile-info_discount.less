@@ -1,0 +1,60 @@
+@import '../_vars';
+
+.profile {
+  &__meta {
+    &--discount {
+      flex-direction: column;
+      align-items: flex-start;
+
+      & h2 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__discount-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__discount-inner {
+    position: relative;
+    width: calc(50% - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    &:not(:last-child)::after {
+      position: absolute;
+      content: '';
+      height: 198px;
+      width: 1px;
+      right: -30px;
+      background-color: @border-color;
+    }
+  }
+
+  &__discount-count {
+    margin-bottom: 10px;
+    font-size: 48px;
+    font-weight: 700;
+    color: @accent;
+  }
+
+  &__discount-point {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+  }
+
+  &__discount-desc {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &__discount-text {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,56 @@
+@import '../_vars';
+
+.card-main {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  &--active {
+    border: 1px solid @border-color;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+
+    & span {
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+
+  &__text {
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    &::before {
+      content: url('../icons/mastercard-icon.svg');
+      width: 28px;
+      height: 21px;
+      margin-right: 20px;
+      object-fit: cover;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    font-weight: 700;
+    color: @accent;
+  }
+
+  &__desc {
+    font-size: 14px;
+    color: #828282;
+    &:hover {
+      color: white;
+    }
+
+    .icon-delete {
+      margin-left: 30px;
+    }
+  }
+}

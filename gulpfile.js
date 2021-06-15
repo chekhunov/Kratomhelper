@@ -59,6 +59,7 @@ function htmlinclude() {
     'app/html/pages/profile-referral.html',
     'app/html/pages/profile-referral-new.html',
     'app/html/pages/profile-setting.html',
+    'app/html/pages/profile-payinfo.html',
     'app/html/pages/reviews.html',
     'app/html/pages/shop.html',
   ])

@@ -1,0 +1,230 @@
+<div class="profile-purchases__item style-block active">
+  <div class="profile-purchases__inner">
+    <span class="profile-purchases__title">purchase 2</span>
+    <span class="icon-drop"></span>
+  </div>
+
+  <div class="profile-purchases__drop-list">
+    <div class="profile-purchases__products">
+      <div class="profile-purchases__meta">
+        <span class="profile-purchases__count">1</span>
+        <div class="profile-purchases__box">
+
+          <span>Products</span>
+          <p class="profile-purchases__text">
+            Select the products you want to include in your subscription purchase
+          </p>
+        </div>
+      </div>
+
+      <div class="profile-purchases__holder">
+        <div class="profile-purchases__content">
+          <div class="profile-purchases__row">
+            <span>Category</span>
+            @@include('../components/_profile-sortcategory.html')
+
+          </div>
+
+          <div class="profile-purchases__row">
+            <span>Product</span>
+            @@include('../components/_profile-sortproduct.html')
+          </div>
+
+          <div class="profile-purchases__row">
+            <span>Weight</span>
+            @@include('../components/_profile-productweight.html')
+          </div>
+
+          <div class="profile-purchases__row">
+            <span>Quantity</span>
+            <div class="profile-purchases__row-inner">
+              <span>-</span><span>1</span><span>+</span>
+            </div>
+          </div>
+
+          <div class="profile-purchases__row profile-purchases__row--price">
+            <span>Price</span>
+            <div class="profile-purchases__price">
+              usd<span>20</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="profile-purchases__content">
+          <div class="profile-purchases__row">
+            <span>Category</span>
+            @@include('../components/_profile-sortcategory.html')
+          </div>
+
+          <div class="profile-purchases__row">
+            <span>Product</span>
+            @@include('../components/_profile-sortproduct.html')
+          </div>
+
+          <div class="profile-purchases__row">
+            <span>Weight</span>
+            @@include('../components/_profile-productweight.html')
+          </div>
+
+          <div class="profile-purchases__row">
+            <span>Quantity</span>
+            <div class="profile-purchases__row-inner">
+              <span>-</span><span>1</span><span>+</span>
+            </div>
+          </div>
+
+          <div class="profile-purchases__row profile-purchases__row--price">
+            <span>Price</span>
+            <div class="profile-purchases__price">
+              usd<span>20</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <a class="profile-purchases__link main-button-black" href="#">
+        <div class="plus plus--purchases"></div>
+        <span>add product</span>
+      </a>
+    </div>
+
+    <div class="profile-purchases__delivery">
+      <div class="profile-purchases__meta">
+        <span class="profile-purchases__count">2</span>
+        <div class="profile-purchases__box">
+
+          <span>Delivery</span>
+          <p class="profile-purchases__text">
+            Enter your delivery address
+          </p>
+        </div>
+      </div>
+
+      <div class="profile-purchases__content">
+        <div class="profile-purchases__row profile-purchases__row--delivery">
+          <span class="profile-purchases__delivery-subtitle">Delivery method</span>
+
+          <div class="profile-purchases__delivery-adress">
+            @@include('../components/_profile-choice_delivery-company.html')
+
+            @@include('../components/_profile-delivery_adress.html')
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-purchases__payment">
+      <div class="profile-purchases__meta">
+        <span class="profile-purchases__count">3</span>
+        <div class="profile-purchases__box">
+
+          <span>Payment</span>
+          <p class="profile-purchases__text">
+            Select a payment method
+          </p>
+        </div>
+      </div>
+
+      <div class="profile-purchases__content">
+        <div class="profile-purchases__row">
+          <span>Payment method</span>
+
+          @@include('../components/_profile-choose_card.html')
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-purchases__sending">
+      <div class="profile-purchases__meta">
+        <span class="profile-purchases__count">4</span>
+        <div class="profile-purchases__box">
+
+          <span>Sending</span>
+          <p class="profile-purchases__text">
+            Configure sending
+          </p>
+        </div>
+      </div>
+
+      <div class="profile-purchases__content">
+        <div class="profile-purchases__row">
+          <span>Delivery day</span>
+
+          <div class="profile-purchases__holder-date">
+            <div class="delivery-date input__wrapper js-input-wrapper js-drop-item general-drop">
+              <input type="text" class="main-input js-input js-drop-input js-drop-button" readonly required>
+              <span class="custome-placeholder__wrapper">
+                <span class="custome-placeholder__before"></span>
+                <span class="custome-placeholder__text">
+                  <span class="inner-text">Select date<span>*</span></span>
+                </span>
+                <span class="custome-placeholder__after"></span>
+              </span>
+
+              <span class="icon-drop"></span>
+
+              <div class="general-drop__list">
+                <div class="general-drop__item general-drop__item-select">
+                  <div class="text">Please select</div>
+                </div>
+
+                <div class="general-drop__item js-drop-contains">
+                  <span class="icon-active"></span>
+                  <div class="text">other Country</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="profile-purchases__row">
+          <span>Repeat</span>
+
+          <div class="profile-purchases__holder-date">
+            <div class="delivery-date input__wrapper js-input-wrapper js-drop-item general-drop">
+              <input type="text" class="main-input js-input js-drop-input js-drop-button" readonly required>
+              <span class="custome-placeholder__wrapper">
+                <span class="custome-placeholder__before"></span>
+                <span class="custome-placeholder__text">
+                  <span class="inner-text">Weekly<span>*</span></span>
+                </span>
+                <span class="custome-placeholder__after"></span>
+              </span>
+
+              <span class="icon-drop"></span>
+
+              <div class="general-drop__list">
+                <div class="general-drop__item general-drop__item-select">
+                  <div class="text">Please select</div>
+                </div>
+
+                <div class="general-drop__item js-drop-contains">
+                  <span class="icon-active"></span>
+                  <div class="text">Weekly</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-purchases__row profile-purchases__row--link">
+
+          <div class="profile-purchases__link-inner">
+            <a class="profile-purchases__link profile-purchases__link--delete main-button-black" href="#">
+              <span>delete purchase</span>
+            </a>
+
+            <a class="profile-purchases__link profile-purchases__link--save main-button-color" href="#">
+              <span>save changes</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

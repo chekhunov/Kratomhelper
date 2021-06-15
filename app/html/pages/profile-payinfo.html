@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kratom | Payment Information</title>
+  <link rel="stylesheet" href="./css/main.css?v=1.0">
+</head>
+
+<body>
+
+  @@include('../components/_header.html')
+
+  @@include('../components/_popup-noty-cart.html')
+
+  <main>
+
+    @@include('../components/_profile-breadcrumbs.html')
+
+    <section class="profile">
+      <div class="profile__wrapper container">
+
+        <div class="general-decor-figure"></div>
+
+        <span class="profile__main-caption main-caption main-caption-align">Hello, <span>ted</span>
+        </span>
+
+        <div class="profile__main-info">
+          <div class="profile__img" style="background-image:url(./img/client-say-img-2.png)"></div>
+
+          <p class="profile__email">ted.ted@mail.com</p>
+        </div>
+
+        <div class="profile__container">
+
+          @@include('../components/_profile-sidebar.html',
+          {
+          "activeclassReferral": "",
+          "activeclassPayInfo": "active"
+          })
+
+          <div class="profile__inner">
+
+            <h1 class="profile__title title">payment information</h1>
+
+            <div class="profile__card-discounts">
+
+              @@include('../components/_profile-card_payinfo-discounts.html')
+
+            </div>
+
+            @@include('../components/_profile-menu_payinfo-transactions.html')
+
+            <div class="profile__info">
+              <div class="profile__meta profile__meta--transactions">
+                <h2 class="profile__sub-title profile__sub-title--link sub-title">all transactions</h2>
+
+                @@include('../components/_profile-sortnetwork.html')
+
+              </div>
+
+              <table class="profile__table-transactions">
+
+                <tr>
+                  <th>date</th>
+                  <th>type of payment</th>
+                  <th>payment options</th>
+                  <th>amount</th>
+                </tr>
+
+                <tr>
+                  <td>24.08.2020</td>
+                  <td>Order №12345</td>
+                  <td>My card (**** 4567)</td>
+                  <td>USD 12</td>
+                </tr>
+
+                <tr>
+                  <td>24.08.2020</td>
+                  <td>Referral bonuses</td>
+                  <td>Kratomhelper</td>
+                  <td>USD 5</td>
+                </tr>
+
+                <tr>
+                  <td>24.08.2020</td>
+                  <td>Order №12333</td>
+                  <td>My card (**** 4567)</td>
+                  <td>USD 12</td>
+                </tr>
+
+                <tr>
+                  <td>24.08.2020</td>
+                  <td>Order</td>
+                  <td>Swift</td>
+                  <td>USD 12</td>
+                </tr>
+
+              </table>
+            </div>
+
+            <div class="profile__info">
+              <div class="profile__meta">
+                <h2 class="profile__sub-title profile__sub-title--link sub-title">referal transactions</h2>
+
+                @@include('../components/_profile-sortnetwork.html')
+
+              </div>
+
+              @@include('../components/_profile-referral_transaction.html')
+
+            </div>
+
+            @@include('../components/_profile-payinfo_cards.html')
+
+            <div class="profile__purchases profile-purchases">
+              <h2 class="profile__sub-title sub-title">subscription purchases</h2>
+
+              <p class="profile__text profile__text--purchases">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                enim velit
+                mollit. Exercitation veniam consequat sunt nostrud amet.
+              </p>
+
+              <div class="profile__meta-inner">
+                <div class="profile__subject profile__subject--purchases">Your purchases</div>
+
+                <a class="profile__link-purchases main-button-color" href="#">
+                  <div class="plus plus--purchases"></div>
+                  <span>add purchase</span>
+                </a>
+              </div>
+
+              <div class="profile-purchases__items">
+
+                @@include('../components/_profile-card_purchases.html')
+              
+              </div>
+
+            </div>
+
+            <div class="profile__discount">
+
+              <div class="profile__meta profile__meta--discount">
+                <h2 class="profile__sub-title profile__sub-title--link sub-title">discount</h2>
+
+                <p class="profile__text">
+                  To get a discount you must collect a certain number of points. The more points, the more discount
+                </p>
+              </div>
+
+              <div class="profile__discount-info style-card">
+                <div class="profile__discount-inner">
+                  <p class="profile__discount-desc">Your discount</p>
+
+                  <span class="profile__discount-count"><span class="profile__discount-count">10</span>%</span>
+
+                  <p class="profile__discount-text">For all products from the category “kratom”</p>
+                </div>
+
+                <div class="profile__discount-inner">
+                  <p class="profile__discount-desc">Your points</p>
+
+                  <span class="profile__discount-point">50</span>
+
+                  <p class="profile__discount-text">30 points left to get 15% discount on category “kratom”</p>
+
+                  @@include('../components/_progressbar-discount.html')
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="popup popup-logout" data-target="logout">
+      <button class="close__popup js-close">
+        <span class="icon-close"></span>
+      </button>
+      <h4 class="popup-caption">logout</h4>
+      <p>Are you sure you want to logout?</p>
+      <div class="wrapper">
+        <button class="button-only-text js-close">
+          <span class="text">cancel</span>
+        </button>
+        <button class="main-button main-button-small main-button-profile">
+          <span class="text">yes</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  @@include('../components/_popup-change-pass.html')
+
+  <div class="button-to-top">
+    <button class="to-top">
+      <span class="icon-arrow-right"></span>
+    </button>
+  </div>
+
+  <div class="overlay"></div>
+
+  <script src="./js/main.min.js"></script>
+  <script>
+
+    // Copy 
+
+    let copyButton = document.querySelector(".copy-referral-link");
+
+    copyButton.addEventListener('click', function () {
+      let wrapper = this.closest(".referral-link");
+      let input = wrapper.querySelector('.main-input');
+
+      input.select();
+      input.setSelectionRange(0, 99999);
+
+      document.execCommand("copy");
+    });
+
+    // //Copy
+  </script>
+</body>
+
+</html>

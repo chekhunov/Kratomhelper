@@ -16,23 +16,15 @@
 
   <main>
 
-    <section class="breadcrumbs">
-      <div class="breadcrumbs__wrapper container">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item">
-            <a href="#" class="breadcrumbs__link">Home</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a href="#" class="breadcrumbs__link">Profile</a>
-          </li>
-        </ul>
-      </div>
-    </section>
+    @@include('../components/_profile-breadcrumbs.html')
 
     <section class="profile">
+
       <div class="profile__wrapper container">
         <div class="general-decor-figure"></div>
-        <span class="profile__main-caption main-caption main-caption-align">Hello, <span>ted</span></span>
+
+        <span class="profile__main-caption main-caption main-caption-align">Hello, <span>ted</span>
+        </span>
 
         <div class="profile__main-info">
           <div class="profile__img" style="background-image:url(./img/client-say-img-2.png)"></div>
@@ -42,7 +34,11 @@
 
         <div class="profile__container">
 
-          @@include('../components/_profile-sidebar.html')
+          @@include('../components/_profile-sidebar.html',
+          {
+          "activeclassReferral": "active",
+          "activeclassPayInfo": ""
+          })
 
           <div class="profile__inner">
 
@@ -522,176 +518,8 @@
 
                 </div>
 
-                <div class="referral-history referral-history--transactions">
+                @@include('../components/_profile-referral_transaction.html')
 
-                  <div class="referral-history__header">
-                    <p class="referral-history__name referral-history-position-data">date</p>
-                    <p class="referral-history__name referral-history-position-descrip">Description</p>
-                    <p class="referral-history__name referral-history-position-balance">Amount</p>
-                  </div>
-
-                  <div class="referral-history__body">
-
-                    <ul class="referral-history__list referral-history__list-transactions js-drop-button js-drop-item">
-                      <li class="referral-history__item referral-history-position-data">
-                        <div class="main-wrapper">
-                          <p class="main-type">date</p>
-                          <p class="text">24.08.2020</p>
-                        </div>
-                      </li>
-
-                      <li class="referral-history__item referral-history-position-descrip">
-                        <p class="main-type">Description</p>
-                        <p class="text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                          officia consequat duis enim velit
-                          mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                        <div class="referral-history__sub">
-                          <div class="wrapper">
-                            <p class="type">Description</p>
-                            <p class="description-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                              amet sint. Velit officia consequat duis enim velit
-                              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li
-                        class="referral-history__item referral-history__item-balance referral-history-position-balance">
-                        <p class="main-type">Amount</p>
-                        <p class="text">USD 12</p>
-                        <div class="referral-history__sub">
-                          <div class="wrapper">
-                            <p class="type">Amount</p>
-                            <p class="description">USD 12</p>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li class="referral-history__item referral-history__item-icon-drop">
-                        <span class="icon-drop"></span>
-                      </li>
-                    </ul>
-
-                    <ul class="referral-history__list referral-history__list-transactions js-drop-button js-drop-item">
-                      <li class="referral-history__item referral-history-position-data">
-                        <div class="main-wrapper">
-                          <p class="main-type">date</p>
-                          <p class="text">24.08.2020</p>
-                        </div>
-                      </li>
-
-                      <li class="referral-history__item referral-history-position-descrip">
-                        <p class="main-type">Description</p>
-                        <p class="text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                          officia consequat duis enim velit
-                          mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                        <div class="referral-history__sub">
-                          <div class="wrapper">
-                            <p class="type">Description</p>
-                            <p class="description-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                              amet sint. Velit officia consequat duis enim velit
-                              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li
-                        class="referral-history__item referral-history__item-balance referral-history-position-balance">
-                        <p class="main-type">Amount</p>
-                        <p class="text">USD 12</p>
-                        <div class="referral-history__sub">
-                          <div class="wrapper">
-                            <p class="type">Amount</p>
-                            <p class="description">USD 12</p>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li class="referral-history__item referral-history__item-icon-drop">
-                        <span class="icon-drop"></span>
-                      </li>
-                    </ul>
-
-                    <ul class="referral-history__list referral-history__list-transactions js-drop-button js-drop-item">
-                      <li class="referral-history__item referral-history-position-data">
-                        <div class="main-wrapper">
-                          <p class="main-type">date</p>
-                          <p class="text">24.08.2020</p>
-                        </div>
-                      </li>
-
-                      <li class="referral-history__item referral-history-position-descrip">
-                        <p class="main-type">Description</p>
-                        <p class="text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                          officia consequat duis enim velit
-                          mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                        <div class="referral-history__sub">
-                          <div class="wrapper">
-                            <p class="type">Description</p>
-                            <p class="description-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                              amet sint. Velit officia consequat duis enim velit
-                              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li
-                        class="referral-history__item referral-history__item-balance referral-history-position-balance">
-                        <p class="main-type">Amount</p>
-                        <p class="text">USD 12</p>
-                        <div class="referral-history__sub">
-                          <div class="wrapper">
-                            <p class="type">Amount</p>
-                            <p class="description">USD 12</p>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li class="referral-history__item referral-history__item-icon-drop">
-                        <span class="icon-drop"></span>
-                      </li>
-                    </ul>
-
-                    <ul class="referral-history__list referral-history__list-transactions js-drop-button js-drop-item">
-                      <li class="referral-history__item referral-history-position-data">
-                        <div class="main-wrapper">
-                          <p class="main-type">date</p>
-                          <p class="text">24.08.2020</p>
-                        </div>
-                      </li>
-                      <li class="referral-history__item referral-history-position-descrip">
-                        <p class="main-type">Description</p>
-                        <p class="text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                          officia consequat duis enim velit
-                          mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                        <div class="referral-history__sub">
-                          <div class="wrapper">
-                            <p class="type">Description</p>
-                            <p class="description-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                              amet sint. Velit officia consequat duis enim velit
-                              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li
-                        class="referral-history__item referral-history__item-balance referral-history-position-balance">
-                        <p class="main-type">Amount</p>
-                        <p class="text">USD 12</p>
-                        <div class="referral-history__sub">
-                          <div class="wrapper">
-                            <p class="type">Amount</p>
-                            <p class="description">USD 12</p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="referral-history__item referral-history__item-icon-drop">
-                        <span class="icon-drop"></span>
-                      </li>
-                    </ul>
-
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -700,6 +528,7 @@
         </div>
 
       </div>
+
     </section>
 
     <section class="popup popup-logout" data-target="logout">

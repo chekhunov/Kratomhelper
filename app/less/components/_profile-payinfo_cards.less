@@ -1,0 +1,48 @@
+.profile {
+  &__info {
+    &--cards {
+      width: 100%;
+      padding: 0;
+      background-color: initial;
+      box-shadow: none;
+    }
+  }
+
+  &__meta {
+    &--cards {
+      flex-direction: column;
+      align-items: flex-start;
+
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  &__meta-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__sub-title {
+    &--cards {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__cards {
+    width: 100%;
+  }
+
+  &__link {
+    max-width: 167px;
+    font-family: 'Impact';
+    font-weight: 900;
+
+    & span {
+      z-index: 10;
+    }
+  }
+}

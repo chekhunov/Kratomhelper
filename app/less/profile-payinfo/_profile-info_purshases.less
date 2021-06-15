@@ -1,0 +1,45 @@
+@import '../_vars';
+.profile {
+  &__purchases {
+    margin-bottom: 50px;
+  }
+
+  &__meta-inner {
+    margin-bottom: 20px;
+
+    .plus {
+      &--purchases {
+        margin-right: 6px;
+
+        &::after,
+        &::before {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  &__link-purchases {
+    max-width: 221px;
+    & span {
+      z-index: 10;
+    }
+  }
+
+  &__subject {
+    &--purchases {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  &__sort-category {
+    max-width: 600px;
+    .inner-text,
+    .text {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

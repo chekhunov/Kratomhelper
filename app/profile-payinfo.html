@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kratom | Referral</title>
+  <title>Kratom | Payment Information</title>
   <link rel="stylesheet" href="./css/main.css?v=1.0">
 </head>
 
@@ -269,8 +269,8 @@
 </section>
 
     <section class="profile">
-
       <div class="profile__wrapper container">
+
         <div class="general-decor-figure"></div>
 
         <span class="profile__main-caption main-caption main-caption-align">Hello, <span>ted</span>
@@ -305,7 +305,7 @@
   </li>
 
   <li class="profile__sidebar-item">
-    <a href="#" class="profile__sidebar-link ">
+    <a href="#" class="profile__sidebar-link active">
       <span class="icon-referral"></span>
       <span class="text">payment information</span>
     </a>
@@ -319,7 +319,7 @@
   </li>
 
   <li class="profile__sidebar-item">
-    <a href="#" class="profile__sidebar-link active">
+    <a href="#" class="profile__sidebar-link ">
       <svg class="profile__network-icon" width="17" height="22" viewBox="0 0 17 22" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <circle cx="11.667" cy="4.00682" r="2.44628" stroke="#828282" />
@@ -361,126 +361,114 @@
 
           <div class="profile__inner">
 
-            <h1 class="profile__title title">referal network</h1>
+            <h1 class="profile__title title">payment information</h1>
 
-            <div class="profile__info-top">
+            <div class="profile__card-discounts">
 
-              <h2 class="profile__sub-title sub-title">how it works?</h2>
+              <div class="card-discount style-card">
+  <svg class="card-discount__icon">
+    <use xlink:href="sprite/sprite.svg#payinfo-bonuses"></use>
+  </svg>
 
-              <ul class="profile__items" start="1">
+  <div class="card-discount__inner">
+    <div class="card-discount__item">
+      <p class="card-discount__text">
+        Your bonuses
+      </p>
+      <span>usd
+        <span class="card-discount__count">50</span>
+      </span>
+    </div>
 
-                <li class="profile__item">
-                  <div class="profile__inner-desc">
-                    <p class="profile__desc">Сopy your referral link</p>
-                    <p class="profile__sub-desc">Сopy your referral link below</p>
-                  </div>
-                </li>
+    <div class="card-discount__item">
+      <p class="card-discount__text">
+        Referral bonuses
+      </p>
+      <span>usd
+        <span class="card-discount__count">20</span>
+      </span>
+    </div>
 
-                <li class="profile__item">
-                  <div class="profile__inner-desc">
-                    <p class="profile__desc">Send your referral link</p>
-                    <p class="profile__sub-desc">Send the link to your potential referral</p>
-                  </div>
-                </li>
+    <div class="card-discount__item">
+      <p class="card-discount__text">
+        Bonuses for reviews
+      </p>
+      <span>usd
+        <span class="card-discount__count">30</span>
+      </span>
+    </div>
+  </div>
+</div>
 
-                <li class="profile__item">
-                  <div class="profile__inner-desc">
-                    <p class="profile__desc">Get paid</p>
-                    <p class="profile__sub-desc">Get money for the fact that your referral has registered and bought a
-                      product from your link
-                    </p>
-                  </div>
-                </li>
+<div class="card-discount style-card">
+  <svg class="card-discount__icon">
+    <use xlink:href="sprite/sprite.svg#payinfo-discount"></use>
+  </svg>
 
-              </ul>
+  <div class="card-discount__inner">
+    <div class="card-discount__item">
+      <p class="card-discount__text">
+        Your discount
+      </p>
+      <span>
+        <span class="card-discount__count">10</span>%
+      </span>
+    </div>
 
-              <p class="profile__text">
-                If a new customer registers and makes an order by following your link, you get 10% of this customer’s
-                order amount. If
-                this customer creates his/her own link and invites another customer (who makes an order), you get 5% of
-                the latter’s
-                customer’s order amount. And so on up to the third degree. The order in the third degree brings you 2%
-                of an order
-                amount. To get the money, the order must have a “sent” status.
-              </p>
+    <div class="card-discount__item">
+      <p class="card-discount__text">
+        For all products from the category kratom
+      </p>
+    </div>
 
-              <p class="profile__text">
-                If the customer decides to return the order, it will not be your concern (as far as we are ready for
-                such expenses). It
-                should be noted that the money is real (not bonus), so you are able to get this money out any way you
-                prefer.
-              </p>
+  </div>
+</div>
 
             </div>
 
-            <div class="profile__info profile__info--amount">
-              <h2 class="profile__sub-title sub-title">
-                earned money
-              </h2>
+            <div class="menu-transactions">
+  <ul class="general-tabs__list general-tabs__list--transactions">
+    <li class="general-tabs__item active">all transactions</li>
+    <li class="general-tabs__item">referal transactions</li>
+    <li class="general-tabs__item">my cards</li>
+    <li class="general-tabs__item">subscription purchases</li>
+    <li class="general-tabs__item">discount</li>
+  </ul>
+</div>
 
-              <div class="profile__box">
-                <div class="profile__content">
-                  <p>Amount earned</p>
+<!-- 
+  <li class="menu-transactions__item active">
+    <a class="menu-transactions__link" href="#">
+      all transactions
+    </a>
+  </li>
 
-                  <span class="profile__price">
-                    <span class="profile__num">5</span>
-                    <span class="profile__currency">usd</span>
-                  </span>
+  <li class="menu-transactions__item active">
+    <a class="menu-transactions__link" href="#">
+      referal transactions
+    </a>
+  </li>
 
-                </div>
+  <li class="menu-transactions__item active">
+    <a class="menu-transactions__link" href="#">
+      my cards
+    </a>
+  </li>
 
-                <div class="profile__content">
+  <li class="menu-transactions__item active">
+    <a class="menu-transactions__link" href="#">
+      subscription purchases
+    </a>
+  </li>
+  <li class="menu-transactions__item active">
+    <a class="menu-transactions__link" href="#">
+      discount
+    </a>
+  </li> -->
 
-                  <a class="profile__content-lnk" href="#">
-                    <p>You can withdraw money to your account
-                      <svg class="profile__info-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M7.00033 12.8332C10.222 12.8332 12.8337 10.2215 12.8337 6.99984C12.8337 3.77818 10.222 1.1665 7.00033 1.1665C3.77866 1.1665 1.16699 3.77818 1.16699 6.99984C1.16699 10.2215 3.77866 12.8332 7.00033 12.8332Z"
-                          stroke="#ACDA53" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M7 9.33333V7" stroke="#ACDA53" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M7 4.6665H7.00625" stroke="#ACDA53" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </p>
-                  </a>
-
-                  <button class="main-button-color profile__btn ">
-                    <span class="text">request withdrawal</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="profile__info profile__info--link">
-              <h2 class="profile__sub-title profile__sub-title--link sub-title">your link</h2>
-
-              <p class="profile__text profile__text--link">Copy your referral link and send it to your friends to start
-                build the
-                network!
-              </p>
-
-              <div class="referral-link">
-                <label class="input__wrapper">
-
-                  <input type="text" class="main-input" readonly
-                    value="https://kratomhelper.com/account/referral-network">
-                  <span class="custome-placeholder__wrapper">
-                    <span class="custome-placeholder__before"></span>
-                    <span class="custome-placeholder__text">
-                    </span>
-                    <span class="custome-placeholder__after"></span>
-                  </span>
-                </label>
-
-                <button class="copy-referral-link">
-                  <span class="icon-copy"></span>
-                </button>
-              </div>
-            </div>
-
-            <div class="profile__info profile__info--network">
-              <div class="profile__meta">
-                <h2 class="profile__sub-title profile__sub-title--link sub-title">your referral network</h2>
+            <div class="profile__info">
+              <div class="profile__meta profile__meta--transactions">
+                <h2 class="profile__sub-title profile__sub-title--link sub-title">all transactions</h2>
 
                 <div class="profile__sort-network input__wrapper js-input-wrapper js-drop-item general-drop">
   <input type="text" class="main-input js-input js-drop-input js-drop-button" readonly required>
@@ -513,359 +501,56 @@
 
               </div>
 
-              <div class="profile__table">
-                <div class="referral-history">
-                  <div class="referral-history__header">
+              <table class="profile__table-transactions">
 
-                    <p class="referral-history__name referral-history-position-1-lvl">level</p>
+                <tr>
+                  <th>date</th>
+                  <th>type of payment</th>
+                  <th>payment options</th>
+                  <th>amount</th>
+                </tr>
 
-                    <p class="referral-history__name referral-history-position-2-lvl">referral name
-                    </p>
+                <tr>
+                  <td>24.08.2020</td>
+                  <td>Order №12345</td>
+                  <td>My card (**** 4567)</td>
+                  <td>USD 12</td>
+                </tr>
 
-                    <p class="referral-history__name referral-history-position-data">referral creation date</p>
+                <tr>
+                  <td>24.08.2020</td>
+                  <td>Referral bonuses</td>
+                  <td>Kratomhelper</td>
+                  <td>USD 5</td>
+                </tr>
 
-                    <p class="referral-history__name referral-history-position-3-lvl">your income
-                    </p>
+                <tr>
+                  <td>24.08.2020</td>
+                  <td>Order №12333</td>
+                  <td>My card (**** 4567)</td>
+                  <td>USD 12</td>
+                </tr>
 
-                    <p class="referral-history__name referral-history-position-last"></p>
-                  </div>
+                <tr>
+                  <td>24.08.2020</td>
+                  <td>Order</td>
+                  <td>Swift</td>
+                  <td>USD 12</td>
+                </tr>
 
-                  <div class="referral-history__body">
-                    <ul class="referral-history__users">
-
-                      <li class="profile__table-item js-drop-button js-drop-item active">
-                        <ul class="referral-history__user referral-history__user--1">
-
-                          <li class="referral-history__item  referral-history-position-1-lvl">
-                            <div class="main-wrapper">
-                              <p class="main-type">My referral (1st lvl):
-                              </p>
-                              <p class="text">#1</p>
-                            </div>
-                          </li>
-
-                          <li class="referral-history__item referral-history-position-2-lvl">
-
-                            <img class="referral-history__img" src="./img/profile-network/1.png"
-                              alt="profile network image">
-                            <p class="text">Arlene McCoy</p>
-                            <div
-                              class="referral-history__item referral-history__item--mobile referral-history-position-last">
-                              <span class="icon-drop icon-drop--mobile"></span>
-                            </div>
-                          </li>
-
-                          <li class="referral-history__item referral-history-position-data">
-                            <p class="type">add date</p>
-                            <p class="text">12.04.2020</p>
-                            <div class="referral-history__sub">
-                              <div class="wrapper">
-                                <p class="type">add date</p>
-                                <p class="description">12.04.2020</p>
-                              </div>
-                            </div>
-                          </li>
-
-                          <li class="referral-history__item referral-history-position-3-lvl">
-                            <p class="type">Amount</p>
-                            <span class="text">10 usd</span>
-                            <div class="referral-history__sub">
-                              <div class="wrapper">
-                                <p class="type">Referral’s partners (3rd lvl)</p>
-                                <p class="description">0</p>
-                              </div>
-                            </div>
-                          </li>
-
-                          <li class="referral-history__item referral-history-position-last">
-                            <span class="icon-drop"></span>
-                          </li>
-                        </ul>
-
-                        <ul>
-                          <li class="referral-history__item referral-history__item--2lvl">
-                            <ul class="referral-history__user">
-                              <li class="referral-history__item referral-history-position-1-lvl">
-                                <div class="main-wrapper">
-                                  <p class="main-type">Referral’s partners (2nd lvl):
-                                  </p>
-                                  <p class="text">#2</p>
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-2-lvl">
-                                <img class="referral-history__img" src="./img/profile-network/1.png">
-                                <p class="text">Arlene McCoy</p>
-                                <div class="referral-history__sub">
-                                  <div class="wrapper">
-                                    <p class="type">referral name</p>
-                                    <p class="description">5</p>
-                                  </div>
-
-
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-data">
-                                <p class="type">add date</p>
-                                <p class="text">12.04.2020</p>
-                                <div class="referral-history__sub">
-                                  <div class="wrapper">
-                                    <p class="type">add date</p>
-                                    <p class="description">12.04.2020</p>
-                                  </div>
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-3-lvl">
-                                <p class="type">Amount</p>
-                                <p class="text"><span>10</span> usd</p>
-                                <div class="referral-history__sub">
-                                  <div class="wrapper">
-                                    <p class="type">Referral’s partners (3rd lvl)</p>
-                                    <p class="description">0</p>
-                                  </div>
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-last">
-                                <!-- <span class="icon-drop"></span> -->
-                              </li>
-
-                            </ul>
-                          </li>
-
-                          <li class="referral-history__item referral-history__item--3lvl">
-                            <ul class="referral-history__user">
-
-                              <li class="referral-history__item referral-history-position-1-lvl">
-                                <div class="main-wrapper">
-                                  <p class="main-type">Referral’s partners (3rd lvl):</p>
-                                  <p class="text">#3</p>
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-2-lvl">
-                                <img class="referral-history__img" src="./img/profile-network/1.png">
-                                <p class="text">Arlene McCoy
-                                </p>
-                                <div class="referral-history__sub">
-                                  <div class="wrapper">
-                                    <p class="type">referral name</p>
-                                    <p class="description">5</p>
-                                  </div>
-
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-data">
-                                <p class="type">add date</p>
-                                <p class="text">12.04.2020</p>
-                                <div class="referral-history__sub">
-                                  <div class="wrapper">
-                                    <p class="type">add date</p>
-                                    <p class="description">12.04.2020</p>
-                                  </div>
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-3-lvl">
-                                <p class="type">Amount</p>
-                                <p class="text"><span>10</span> usd</p>
-                                <div class="referral-history__sub">
-                                  <div class="wrapper">
-                                    <p class="type">Referral’s partners (3rd lvl)</p>
-                                    <p class="description">0</p>
-                                  </div>
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-last">
-                                <!-- <span class="icon-drop"></span> -->
-                              </li>
-                            </ul>
-                          </li>
-
-                        </ul>
-                      </li>
-
-                      <li class="profile__table-item js-drop-button js-drop-item">
-                        <ul class="referral-history__user referral-history__user--1">
-
-                          <li class="referral-history__item  referral-history-position-1-lvl">
-                            <div class="main-wrapper">
-                              <p class="main-type">My referral (1st lvl):
-                              </p>
-                              <p class="text">#1</p>
-                            </div>
-                          </li>
-
-                          <li class="referral-history__item referral-history-position-2-lvl">
-
-                            <img class="referral-history__img" src="./img/profile-network/1.png"
-                              alt="profile network image">
-                            <p class="text">Arlene McCoy</p>
-                            <!-- <div class="referral-history__sub"> -->
-                            <!-- <div class="wrapper"> -->
-                            <!-- <p class="type">referral name</p> -->
-                            <!-- <p class="description">5</p> -->
-                            <!-- </div> -->
-                            <!-- </div> -->
-                            <div
-                              class="referral-history__item referral-history__item--mobile referral-history-position-last">
-                              <span class="icon-drop icon-drop--mobile"></span>
-                            </div>
-                          </li>
-
-                          <li class="referral-history__item referral-history-position-data">
-                            <p class="type">add date</p>
-                            <p class="text">12.04.2020</p>
-                            <div class="referral-history__sub">
-                              <div class="wrapper">
-                                <p class="type">add date</p>
-                                <p class="description">12.04.2020</p>
-                              </div>
-                            </div>
-                          </li>
-
-                          <li class="referral-history__item referral-history-position-3-lvl">
-                            <p class="type">Amount</p>
-                            <span class="text">10 usd</span>
-                            <div class="referral-history__sub">
-                              <div class="wrapper">
-                                <p class="type">Referral’s partners (3rd lvl)</p>
-                                <p class="description">0</p>
-                              </div>
-                            </div>
-                          </li>
-
-                          <li class="referral-history__item referral-history-position-last">
-                            <span class="icon-drop"></span>
-                          </li>
-                        </ul>
-
-                        <ul>
-                          <li class="referral-history__item referral-history__item--2lvl">
-                            <ul class="referral-history__user">
-                              <li class="referral-history__item referral-history-position-1-lvl">
-                                <div class="main-wrapper">
-                                  <p class="main-type">Referral’s partners (2nd lvl):
-                                  </p>
-                                  <p class="text">#2</p>
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-2-lvl">
-                                <img class="referral-history__img" src="./img/profile-network/1.png">
-                                <p class="text">Arlene McCoy</p>
-                                <div class="referral-history__sub">
-                                  <div class="wrapper">
-                                    <p class="type">referral name</p>
-                                    <p class="description">5</p>
-                                  </div>
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-data">
-                                <p class="type">add date</p>
-                                <p class="text">12.04.2020</p>
-                                <div class="referral-history__sub">
-                                  <div class="wrapper">
-                                    <p class="type">add date</p>
-                                    <p class="description">12.04.2020</p>
-                                  </div>
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-3-lvl">
-                                <p class="type">Amount</p>
-                                <p class="text"><span>10</span> usd</p>
-                                <div class="referral-history__sub">
-                                  <div class="wrapper">
-                                    <p class="type">Referral’s partners (3rd lvl)</p>
-                                    <p class="description">0</p>
-                                  </div>
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-last">
-                                <!-- <span class="icon-drop"></span> -->
-                              </li>
-
-                            </ul>
-                          </li>
-
-                          <li class="referral-history__item referral-history__item--3lvl">
-                            <ul class="referral-history__user">
-
-                              <li class="referral-history__item referral-history-position-1-lvl">
-                                <div class="main-wrapper">
-                                  <p class="main-type">Referral’s partners (3rd lvl):</p>
-                                  <p class="text">#3</p>
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-2-lvl">
-                                <img class="referral-history__img" src="./img/profile-network/1.png">
-                                <p class="text">Arlene McCoy
-                                </p>
-                                <div class="referral-history__sub">
-                                  <div class="wrapper">
-                                    <p class="type">referral name</p>
-                                    <p class="description">5</p>
-                                  </div>
-
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-data">
-                                <p class="type">add date</p>
-                                <p class="text">12.04.2020</p>
-                                <div class="referral-history__sub">
-                                  <div class="wrapper">
-                                    <p class="type">add date</p>
-                                    <p class="description">12.04.2020</p>
-                                  </div>
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-3-lvl">
-                                <p class="type">Amount</p>
-                                <p class="text"><span>10</span> usd</p>
-                                <div class="referral-history__sub">
-                                  <div class="wrapper">
-                                    <p class="type">Referral’s partners (3rd lvl)</p>
-                                    <p class="description">0</p>
-                                  </div>
-                                </div>
-                              </li>
-
-                              <li class="referral-history__item referral-history-position-last">
-                                <!-- <span class="icon-drop"></span> -->
-                              </li>
-                            </ul>
-                          </li>
-
-                        </ul>
-                      </li>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              </table>
             </div>
 
             <div class="profile__info">
-              <div class="referral-container">
-                <div class="profile__meta">
-                  <h2 class="profile__sub-title profile__sub-title--link sub-title">referal transactions</h2>
+              <div class="profile__meta">
+                <h2 class="profile__sub-title profile__sub-title--link sub-title">referal transactions</h2>
 
-                  <div class="profile__sort-network input__wrapper js-input-wrapper js-drop-item general-drop">
+                <div class="profile__sort-network input__wrapper js-input-wrapper js-drop-item general-drop">
   <input type="text" class="main-input js-input js-drop-input js-drop-button" readonly required>
   <span class="custome-placeholder__wrapper">
     <span class="custome-placeholder__before"></span>
     <span class="custome-placeholder__text">
-      <span class="inner-text">Only the first level<span>*</span></span>
+      <span class="inner-text">Сurrent month<span>*</span></span>
     </span>
     <span class="custome-placeholder__after"></span>
   </span>
@@ -876,22 +561,22 @@
     </div>
     <div class="general-drop__item js-drop-contains">
       <span class="icon-active"></span>
-      <div class="text">first</div>
+      <div class="text">one</div>
     </div>
     <div class="general-drop__item js-drop-contains">
       <span class="icon-active"></span>
-      <div class="text">second</div>
+      <div class="text">two</div>
     </div>
     <div class="general-drop__item js-drop-contains">
       <span class="icon-active"></span>
-      <div class="text">third</div>
+      <div class="text">three</div>
     </div>
   </div>
 </div>
 
-                </div>
+              </div>
 
-                <div class="referral-history referral-history--transactions">
+              <div class="referral-history referral-history--transactions">
 
   <div class="referral-history__header">
     <p class="referral-history__name referral-history-position-data">date</p>
@@ -1058,15 +743,582 @@
   </div>
 </div>
 
+            </div>
+
+            <div class="profile__info profile__info--cards">
+  <div class="profile__meta profile__meta--cards">
+    <h2 class="profile__sub-title profile__sub-title--cards sub-title">main card</h2>
+
+    <div class="profile__cards">
+
+      <div class="card-main card-main--active style-card">
+  <div class="card-main__inner">
+    <p class="card-main__text">Mastercard **** </p><span>5603</span>
+  </div>
+  <a class="card-main__link" href="#">main card</a>
+</div>
+
+    </div>
+
+  </div>
+
+  <div class="profile__meta profile__meta--cards">
+    <div class="profile__meta-inner">
+      <h2 class="profile__sub-title profile__sub-title--cards sub-title">your cards</h2>
+
+      <a class="profile__link main-button-black" href="#">
+        <div class="plus"></div>
+        <span>add card</span>
+      </a>
+    </div>
+
+    <div class="profile__cards">
+
+      <div class="card-main style-card">
+  <div class="card-main__inner">
+    <p class="card-main__text">Mastercard **** </p><span>5603</span>
+  </div>
+
+  <a class="card-main__desc" href="#">Make the main card
+    <span class="icon-delete"></span>
+  </a>
+
+</div>
+
+<div class="card-main style-card">
+  <div class="card-main__inner">
+    <p class="card-main__text">Mastercard **** </p><span>5603</span>
+  </div>
+
+  <a class="card-main__desc" href="#">Make the main card
+    <span class="icon-delete"></span>
+  </a>
+</div>
+
+    </div>
+  </div>
+</div>
+
+            <div class="profile__purchases profile-purchases">
+              <h2 class="profile__sub-title sub-title">subscription purchases</h2>
+
+              <p class="profile__text profile__text--purchases">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                enim velit
+                mollit. Exercitation veniam consequat sunt nostrud amet.
+              </p>
+
+              <div class="profile__meta-inner">
+                <div class="profile__subject profile__subject--purchases">Your purchases</div>
+
+                <a class="profile__link-purchases main-button-color" href="#">
+                  <div class="plus plus--purchases"></div>
+                  <span>add purchase</span>
+                </a>
+              </div>
+
+              <div class="profile-purchases__items">
+
+                <div class="profile-purchases__item style-block active">
+  <div class="profile-purchases__inner">
+    <span class="profile-purchases__title">purchase 2</span>
+    <span class="icon-drop"></span>
+  </div>
+
+  <div class="profile-purchases__drop-list">
+    <div class="profile-purchases__products">
+      <div class="profile-purchases__meta">
+        <span class="profile-purchases__count">1</span>
+        <div class="profile-purchases__box">
+
+          <span>Products</span>
+          <p class="profile-purchases__text">
+            Select the products you want to include in your subscription purchase
+          </p>
+        </div>
+      </div>
+
+      <div class="profile-purchases__holder">
+        <div class="profile-purchases__content">
+          <div class="profile-purchases__row">
+            <span>Category</span>
+            <div class="profile__sort-category input__wrapper js-input-wrapper js-drop-item general-drop">
+  <input type="text" class="main-input js-input js-drop-input js-drop-button" readonly required>
+  <span class="custome-placeholder__wrapper">
+    <span class="custome-placeholder__before"></span>
+    <span class="custome-placeholder__text">
+      <span class="inner-text">Kratom<span>*</span></span>
+    </span>
+    <span class="custome-placeholder__after"></span>
+  </span>
+
+  <span class="icon-drop"></span>
+
+  <div class="general-drop__list">
+    <div class="general-drop__item general-drop__item-select">
+      <div class="text">Please select</div>
+    </div>
+
+    <div class="general-drop__item js-drop-contains">
+      <span class="icon-active"></span>
+      <div class="text">other products</div>
+    </div>
+  </div>
+</div>
+
+          </div>
+
+          <div class="profile-purchases__row">
+            <span>Product</span>
+            <div class="profile__sort-category input__wrapper js-input-wrapper js-drop-item general-drop">
+  <input type="text" class="main-input js-input js-drop-input js-drop-button" readonly required>
+  <span class="custome-placeholder__wrapper">
+    <span class="custome-placeholder__before"></span>
+    <span class="custome-placeholder__text">
+
+      <span class="inner-text">
+        <img class="custome-placeholder__img" src="./img/product-img-1.png" alt="product icon">Maeng da green vein
+        kratom<span>*</span></span>
+    </span>
+    <span class="custome-placeholder__after"></span>
+  </span>
+
+  <span class="icon-drop"></span>
+
+  <div class="general-drop__list">
+    <div class="general-drop__item">
+      <form action="#" class="general-drop__search-form">
+        <input type="search" class="general-drop__search__input" placeholder="Search">
+        <button class="general-drop__search__button">
+          <span class="icon-search"></span>
+        </button>
+      </form>
+    </div>
+
+    <div class="general-drop__item js-drop-contains">
+      <span class="icon-active"></span>
+      <img class="custome-placeholder__img" src="./img/product-img-1.png" alt="product icon">
+      <div class="text">Maeng da green vein kratom</div>
+    </div>
+  </div>
+</div>
+          </div>
+
+          <div class="profile-purchases__row">
+            <span>Weight</span>
+            <ul class="product-weight">
+  <li class="active"><span>50</span>g</li>
+  <li><span>100</span>g</li>
+  <li><span>300</span>g</li>
+  <li><span>500</span>g</li>
+  <li><span>1000</span>g</li>
+</ul>
+          </div>
+
+          <div class="profile-purchases__row">
+            <span>Quantity</span>
+            <div class="profile-purchases__row-inner">
+              <span>-</span><span>1</span><span>+</span>
+            </div>
+          </div>
+
+          <div class="profile-purchases__row profile-purchases__row--price">
+            <span>Price</span>
+            <div class="profile-purchases__price">
+              usd<span>20</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="profile-purchases__content">
+          <div class="profile-purchases__row">
+            <span>Category</span>
+            <div class="profile__sort-category input__wrapper js-input-wrapper js-drop-item general-drop">
+  <input type="text" class="main-input js-input js-drop-input js-drop-button" readonly required>
+  <span class="custome-placeholder__wrapper">
+    <span class="custome-placeholder__before"></span>
+    <span class="custome-placeholder__text">
+      <span class="inner-text">Kratom<span>*</span></span>
+    </span>
+    <span class="custome-placeholder__after"></span>
+  </span>
+
+  <span class="icon-drop"></span>
+
+  <div class="general-drop__list">
+    <div class="general-drop__item general-drop__item-select">
+      <div class="text">Please select</div>
+    </div>
+
+    <div class="general-drop__item js-drop-contains">
+      <span class="icon-active"></span>
+      <div class="text">other products</div>
+    </div>
+  </div>
+</div>
+          </div>
+
+          <div class="profile-purchases__row">
+            <span>Product</span>
+            <div class="profile__sort-category input__wrapper js-input-wrapper js-drop-item general-drop">
+  <input type="text" class="main-input js-input js-drop-input js-drop-button" readonly required>
+  <span class="custome-placeholder__wrapper">
+    <span class="custome-placeholder__before"></span>
+    <span class="custome-placeholder__text">
+
+      <span class="inner-text">
+        <img class="custome-placeholder__img" src="./img/product-img-1.png" alt="product icon">Maeng da green vein
+        kratom<span>*</span></span>
+    </span>
+    <span class="custome-placeholder__after"></span>
+  </span>
+
+  <span class="icon-drop"></span>
+
+  <div class="general-drop__list">
+    <div class="general-drop__item">
+      <form action="#" class="general-drop__search-form">
+        <input type="search" class="general-drop__search__input" placeholder="Search">
+        <button class="general-drop__search__button">
+          <span class="icon-search"></span>
+        </button>
+      </form>
+    </div>
+
+    <div class="general-drop__item js-drop-contains">
+      <span class="icon-active"></span>
+      <img class="custome-placeholder__img" src="./img/product-img-1.png" alt="product icon">
+      <div class="text">Maeng da green vein kratom</div>
+    </div>
+  </div>
+</div>
+          </div>
+
+          <div class="profile-purchases__row">
+            <span>Weight</span>
+            <ul class="product-weight">
+  <li class="active"><span>50</span>g</li>
+  <li><span>100</span>g</li>
+  <li><span>300</span>g</li>
+  <li><span>500</span>g</li>
+  <li><span>1000</span>g</li>
+</ul>
+          </div>
+
+          <div class="profile-purchases__row">
+            <span>Quantity</span>
+            <div class="profile-purchases__row-inner">
+              <span>-</span><span>1</span><span>+</span>
+            </div>
+          </div>
+
+          <div class="profile-purchases__row profile-purchases__row--price">
+            <span>Price</span>
+            <div class="profile-purchases__price">
+              usd<span>20</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <a class="profile-purchases__link main-button-black" href="#">
+        <div class="plus plus--purchases"></div>
+        <span>add product</span>
+      </a>
+    </div>
+
+    <div class="profile-purchases__delivery">
+      <div class="profile-purchases__meta">
+        <span class="profile-purchases__count">2</span>
+        <div class="profile-purchases__box">
+
+          <span>Delivery</span>
+          <p class="profile-purchases__text">
+            Enter your delivery address
+          </p>
+        </div>
+      </div>
+
+      <div class="profile-purchases__content">
+        <div class="profile-purchases__row profile-purchases__row--delivery">
+          <span class="profile-purchases__delivery-subtitle">Delivery method</span>
+
+          <div class="profile-purchases__delivery-adress">
+            <div class="delivery-company input__wrapper js-input-wrapper js-drop-item general-drop">
+  <input type="text" class="main-input js-input js-drop-input js-drop-button" readonly required />
+  <span class="custome-placeholder__wrapper">
+    <span class="custome-placeholder__before"></span>
+    <span class="custome-placeholder__text">
+      <span class="inner-text">Ups<span>*</span></span>
+    </span>
+    <span class="custome-placeholder__after"></span>
+  </span>
+
+  <span class="icon-drop"></span>
+
+  <div class="general-drop__list">
+    <div class="general-drop__item general-drop__item-select">
+      <div class="text">Please select</div>
+    </div>
+
+    <div class="general-drop__item js-drop-contains">
+      <span class="icon-active"></span>
+      <div class="text">other company</div>
+    </div>
+  </div>
+</div>
+
+            <div class="delivery-adress">
+  <div class="delivery-adress__row">
+    <div class="delivery-country input__wrapper js-input-wrapper js-drop-item general-drop">
+      <input type="text" class="main-input js-input js-drop-input js-drop-button" readonly required>
+      <span class="custome-placeholder__wrapper">
+        <span class="custome-placeholder__before"></span>
+        <span class="custome-placeholder__text">
+          <span class="inner-text">Country / Region<span>*</span></span>
+        </span>
+        <span class="custome-placeholder__after"></span>
+      </span>
+
+      <span class="icon-drop"></span>
+
+      <div class="general-drop__list">
+        <div class="general-drop__item general-drop__item-select">
+          <div class="text">Please select</div>
+        </div>
+
+        <div class="general-drop__item js-drop-contains">
+          <span class="icon-active"></span>
+          <div class="text">other Country</div>
+        </div>
+      </div>
+    </div>
+
+    <label class="delivery-adress__city" for="city">
+      <input id="city" class="delivery-adress__input main-input input__wrapper" type="text" placeholder="Town / City*">
+    </label>
+  </div>
+
+  <div class="delivery-adress__row">
+    <label class="delivery-adress__state" for="state">
+      <input id="state" class="delivery-adress__input main-input input__wrapper" type="text" placeholder="State *">
+    </label>
+
+    <label class="delivery-adress__street" for="street">
+      <input id="street" class="delivery-adress__input main-input input__wrapper" type="text"
+        placeholder="Street Number / Street Name*">
+    </label>
+  </div>
+
+  <div class="delivery-adress__row">
+    <label class="delivery-adress__apartament" for="apartament">
+      <input id="apartament" class="delivery-adress__input main-input input__wrapper" type="text"
+        placeholder="Apartment or Suite Number">
+    </label>
+
+    <label class="delivery-adress__zip" for="zip">
+      <input id="zip" class="delivery-adress__input main-input input__wrapper" type="text" placeholder="zip">
+    </label>
+  </div>
+</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-purchases__payment">
+      <div class="profile-purchases__meta">
+        <span class="profile-purchases__count">3</span>
+        <div class="profile-purchases__box">
+
+          <span>Payment</span>
+          <p class="profile-purchases__text">
+            Select a payment method
+          </p>
+        </div>
+      </div>
+
+      <div class="profile-purchases__content">
+        <div class="profile-purchases__row">
+          <span>Payment method</span>
+
+          <div class="profile__choose-card input__wrapper js-input-wrapper js-drop-item general-drop">
+  <input type="text" class="main-input js-input js-drop-input js-drop-button" readonly required>
+  <span class="custome-placeholder__wrapper">
+    <span class="custome-placeholder__before"></span>
+    <span class="custome-placeholder__text custome-placeholder__text--choose-card">
+      <img src="./icons/mastercard-icon.svg" alt="icon mastercard">
+      <span class="inner-text">Mastercard **** 5603</span>
+    </span>
+    <span class="custome-placeholder__after"></span>
+  </span>
+
+  <span class="icon-drop"></span>
+
+  <div class="general-drop__list">
+    <div class="general-drop__item general-drop__item-select">
+      <div class="text">Please select</div>
+    </div>
+
+    <div class="general-drop__item js-drop-contains">
+      <span class="icon-active"></span>
+      <div class="text">other cards</div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-purchases__sending">
+      <div class="profile-purchases__meta">
+        <span class="profile-purchases__count">4</span>
+        <div class="profile-purchases__box">
+
+          <span>Sending</span>
+          <p class="profile-purchases__text">
+            Configure sending
+          </p>
+        </div>
+      </div>
+
+      <div class="profile-purchases__content">
+        <div class="profile-purchases__row">
+          <span>Delivery day</span>
+
+          <div class="profile-purchases__holder-date">
+            <div class="delivery-date input__wrapper js-input-wrapper js-drop-item general-drop">
+              <input type="text" class="main-input js-input js-drop-input js-drop-button" readonly required>
+              <span class="custome-placeholder__wrapper">
+                <span class="custome-placeholder__before"></span>
+                <span class="custome-placeholder__text">
+                  <span class="inner-text">Select date<span>*</span></span>
+                </span>
+                <span class="custome-placeholder__after"></span>
+              </span>
+
+              <span class="icon-drop"></span>
+
+              <div class="general-drop__list">
+                <div class="general-drop__item general-drop__item-select">
+                  <div class="text">Please select</div>
+                </div>
+
+                <div class="general-drop__item js-drop-contains">
+                  <span class="icon-active"></span>
+                  <div class="text">other Country</div>
+                </div>
               </div>
             </div>
           </div>
 
-
         </div>
 
-      </div>
+        <div class="profile-purchases__row">
+          <span>Repeat</span>
 
+          <div class="profile-purchases__holder-date">
+            <div class="delivery-date input__wrapper js-input-wrapper js-drop-item general-drop">
+              <input type="text" class="main-input js-input js-drop-input js-drop-button" readonly required>
+              <span class="custome-placeholder__wrapper">
+                <span class="custome-placeholder__before"></span>
+                <span class="custome-placeholder__text">
+                  <span class="inner-text">Weekly<span>*</span></span>
+                </span>
+                <span class="custome-placeholder__after"></span>
+              </span>
+
+              <span class="icon-drop"></span>
+
+              <div class="general-drop__list">
+                <div class="general-drop__item general-drop__item-select">
+                  <div class="text">Please select</div>
+                </div>
+
+                <div class="general-drop__item js-drop-contains">
+                  <span class="icon-active"></span>
+                  <div class="text">Weekly</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-purchases__row profile-purchases__row--link">
+
+          <div class="profile-purchases__link-inner">
+            <a class="profile-purchases__link profile-purchases__link--delete main-button-black" href="#">
+              <span>delete purchase</span>
+            </a>
+
+            <a class="profile-purchases__link profile-purchases__link--save main-button-color" href="#">
+              <span>save changes</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+              
+              </div>
+
+            </div>
+
+            <div class="profile__discount">
+
+              <div class="profile__meta profile__meta--discount">
+                <h2 class="profile__sub-title profile__sub-title--link sub-title">discount</h2>
+
+                <p class="profile__text">
+                  To get a discount you must collect a certain number of points. The more points, the more discount
+                </p>
+              </div>
+
+              <div class="profile__discount-info style-card">
+                <div class="profile__discount-inner">
+                  <p class="profile__discount-desc">Your discount</p>
+
+                  <span class="profile__discount-count"><span class="profile__discount-count">10</span>%</span>
+
+                  <p class="profile__discount-text">For all products from the category “kratom”</p>
+                </div>
+
+                <div class="profile__discount-inner">
+                  <p class="profile__discount-desc">Your points</p>
+
+                  <span class="profile__discount-point">50</span>
+
+                  <p class="profile__discount-text">30 points left to get 15% discount on category “kratom”</p>
+
+                  <div class="progressbar">
+  <div class="progressbar__line">
+    <span style="width: calc(100% - 20%);">50pt</span>
+  </div>
+
+  <ul class="progressbar__procent">
+    <li>0</li>
+    <li><span>10</span>%</li>
+    <li><span>15</span>%</li>
+    <li><span>20</span>%</li>
+    <li><span>25</span>%</li>
+  </ul>
+</div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
     </section>
 
     <section class="popup popup-logout" data-target="logout">

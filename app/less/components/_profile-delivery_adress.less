@@ -1,0 +1,31 @@
+.delivery-adress {
+  .delivery-country {
+    width: calc(50% - 5px);
+    margin-bottom: 0;
+
+    .inner-text {
+    }
+  }
+
+  &__city,
+  &__state,
+  &__street,
+  &__apartament,
+  &__zip {
+    width: calc(50% - 5px);
+  }
+
+  &__zip input {
+    text-transform: uppercase;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  &__input {
+    border: 1px solid white;
+    border-radius: 30px;
+  }
+}

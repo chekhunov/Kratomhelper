@@ -1,0 +1,54 @@
+@import '../_vars';
+
+.progressbar {
+  padding-top: 50px;
+  &__line {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    margin-bottom: 8px;
+    border-top: 4px solid @accent;
+
+    & span {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: -25px;
+      margin-right: 7px;
+      text-align: initial;
+    }
+
+    & span::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      top: 21px;
+      right: -7px;
+      background-color: @border-color;
+    }
+  }
+
+  &__procent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & li:first-child {
+      opacity: 0;
+    }
+
+    & li:not(:first-child, :last-child) {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 3px;
+        left: 50%;
+        top: -8px;
+        background-color: @border-color;
+      }
+    }
+  }
+}

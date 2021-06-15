@@ -1,0 +1,185 @@
+@import '../_vars';
+
+.profile-purchases {
+  &__content {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    &:not(:last-child) {
+      border-bottom: 1px solid @border-color;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .icon-drop {
+      transform: rotate(180deg);
+      font-size: 6px;
+      transition: transform 0.3s;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__products,
+  &__delivery,
+  &__payment {
+    padding-bottom: 50px;
+  }
+
+  &__drop-list {
+    padding-top: 30px;
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__count {
+    margin-right: 20px;
+    font-family: 'Impact';
+    font-size: 48px;
+    font-weight: 900;
+    color: @accent;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__box span {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: @accent;
+  }
+
+  &__row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & span {
+      font-size: 14px;
+    }
+
+    &--price {
+      padding-top: 20px;
+    }
+
+    &--delivery {
+      align-items: self-start;
+
+      .profile-purchases__delivery-subtitle {
+        padding-top: 12px;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &__row-inner {
+    width: 100%;
+    max-width: 600px;
+    & span {
+      font-size: 18px;
+      &:first-child,
+      &:last-child {
+        width: 37px;
+        height: 37px;
+        font-size: 20px;
+        padding: 6px 15px;
+        background-color: @border-color;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  &__price {
+    width: 100%;
+    max-width: 600px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+    & span {
+      margin-left: 4px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  &__link {
+    .plus::after,
+    .plus::before {
+      background-color: white;
+    }
+    & span {
+      font-family: 'Impact';
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      color: white;
+      z-index: 10;
+    }
+  }
+
+  &__delivery-adress {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .profile-purchases__holder-date {
+    width: 100%;
+    max-width: 600px;
+  }
+  .delivery-date {
+    width: calc(50% - 5px);
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .profile-purchases__link-inner {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .profile-purchases {
+    &__row {
+      &--link {
+        margin-bottom: -10px;
+        padding-top: 40px;
+        justify-content: flex-end;
+      }
+    }
+    &__link {
+      &--delete,
+      &--save {
+        min-width: calc(50% - 5px);
+      }
+
+      &--delete {
+        margin-right: 10px;
+      }
+    }
+  }
+}

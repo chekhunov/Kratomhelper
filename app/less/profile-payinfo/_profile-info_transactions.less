@@ -1,0 +1,36 @@
+@import '../_vars';
+
+.profile {
+  &__meta {
+    &--transactions {
+      margin-bottom: 38px;
+    }
+  }
+
+  &__table-transactions {
+    width: 100%;
+    border-collapse: collapse;
+    & th {
+      padding-bottom: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      border-bottom: 1px solid white;
+      text-align: left;
+      text-transform: uppercase;
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+
+    & tr td {
+      padding: 20px 0;
+      border-bottom: 1px solid @border-color;
+
+      &:last-child {
+        font-weight: 700;
+        text-align: right;
+      }
+    }
+  }
+}
