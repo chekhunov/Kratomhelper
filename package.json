@@ -384,6 +384,7 @@
     "vinyl-fs": "^3.0.3",
     "vinyl-sourcemap": "^1.1.0",
     "vinyl-sourcemaps-apply": "^0.2.1",
+    "vue-ctk-date-time-picker": "^2.5.0",
     "which": "^2.0.2",
     "which-module": "^1.0.0",
     "wide-align": "^1.1.3",
