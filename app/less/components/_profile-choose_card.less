@@ -1,7 +1,29 @@
+@import '../_vars';
+
 .profile {
   &__choose-card {
     max-width: 600px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+
+    &.active-input {
+      .custome-placeholder__text--choose-card {
+        margin-left: 0;
+        background-color: @bg-color;
+        transform: translateY(-21px) scale(0.8);
+      }
+    }
+
+    .custome-placeholder {
+      &__text {
+        border: none;
+      }
+    }
   }
+}
+
+.profile-purchases__category {
+  z-index: 10;
 }
 
 .custome-placeholder {
@@ -9,6 +31,9 @@
     &--choose-card {
       display: flex;
       align-items: center;
+      margin-left: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
 
       & img {
         margin-right: 10px;

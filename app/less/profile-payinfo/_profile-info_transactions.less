@@ -58,6 +58,18 @@
     .table-amount {
       color: @accent;
     }
+
+    .table-drop-hide {
+      opacity: 0;
+      height: 0;
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+.table-transactions {
+  .amount {
+    text-align: end;
   }
 }
 
@@ -116,12 +128,6 @@
       }
       & tr td {
         font-size: 14px;
-      }
-
-      .table-drop-hide {
-        opacity: 0;
-        height: 0;
-        transform: rotate(-180deg);
       }
 
       .payment,

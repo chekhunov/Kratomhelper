@@ -6,7 +6,7 @@
   display: flex;
   justify-content: flex-start;
 
-  & li {
+  &__item {
     padding: 10px 20px;
     border-radius: 30px;
     border: 1px solid @border-color;
@@ -28,6 +28,16 @@
     &.active {
       color: @accent;
       border-color: @accent;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .product-weight {
+    flex-wrap: wrap;
+
+    &__item {
+      margin-bottom: 10px;
     }
   }
 }

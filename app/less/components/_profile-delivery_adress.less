@@ -2,9 +2,6 @@
   .delivery-country {
     width: calc(50% - 5px);
     margin-bottom: 0;
-
-    .inner-text {
-    }
   }
 
   &__city,
@@ -27,5 +24,29 @@
   &__input {
     border: 1px solid white;
     border-radius: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .delivery-adress {
+    &__row {
+      margin-bottom: 20px;
+      flex-direction: column;
+    }
+
+    .delivery-country {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+
+    &__city,
+    &__state,
+    &__street,
+    &__apartament,
+    &__zip {
+      width: 100%;
+      margin-bottom: 10px;
+    }
   }
 }

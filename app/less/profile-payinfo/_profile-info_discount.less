@@ -58,3 +58,19 @@
     font-size: 12px;
   }
 }
+
+@media screen and (max-width: 567px) {
+  .profile {
+    &__discount-info {
+      flex-direction: column;
+    }
+    &__discount-inner {
+      width: 100%;
+      margin-bottom: 30px;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

@@ -854,7 +854,7 @@
     <div class="profile__meta-inner">
       <h2 class="profile__sub-title profile__sub-title--cards sub-title">your cards</h2>
 
-      <a class="profile__link main-button-black" href="#">
+      <a class="profile__link profile__link--cards main-button-black" href="#">
         <div class="plus"></div>
         <span>add card</span>
       </a>
@@ -908,7 +908,7 @@
               <div class="profile-purchases__items">
 
                 <div class="profile-purchases__item style-block active">
-  <div class="profile-purchases__inner">
+  <div class="profile-purchases__inner ">
     <span class="profile-purchases__title">purchase 2</span>
     <span class="icon-drop"></span>
   </div>
@@ -929,15 +929,15 @@
       <div class="profile-purchases__holder">
         <div class="profile-purchases__content">
           <div class="profile-purchases__row">
-            <span>Category</span>
+            <div class="profile-purchases__category">Category</div>
             <div class="profile__sort-category input__wrapper js-input-wrapper js-drop-item general-drop">
   <input type="text" class="main-input js-input js-drop-input js-drop-button" readonly required>
   <span class="custome-placeholder__wrapper">
-    <span class="custome-placeholder__before"></span>
     <span class="custome-placeholder__text">
-      <span class="inner-text">Kratom<span>*</span></span>
+      <span class="inner-text">
+        <p>Kratom</p><span>*</span>
+      </span>
     </span>
-    <span class="custome-placeholder__after"></span>
   </span>
 
   <span class="icon-drop"></span>
@@ -957,18 +957,22 @@
           </div>
 
           <div class="profile-purchases__row">
-            <span>Product</span>
-            <div class="profile__sort-category input__wrapper js-input-wrapper js-drop-item general-drop">
+            <div class="profile-purchases__category">Product</div>
+            <div class="profile__sort-products input__wrapper js-input-wrapper js-drop-item general-drop">
   <input type="text" class="main-input js-input js-drop-input js-drop-button" readonly required>
   <span class="custome-placeholder__wrapper">
-    <span class="custome-placeholder__before"></span>
+
     <span class="custome-placeholder__text">
 
       <span class="inner-text">
-        <img class="custome-placeholder__img" src="./img/product-img-1.png" alt="product icon">Maeng da green vein
-        kratom<span>*</span></span>
+        <img class="custome-placeholder__img" src="./img/product-img-1.png" alt="product icon">
+        <p class="custome-placeholder__desc">Maeng da green vein kratom
+        </p>
+        <span>*</span>
+
+      </span>
     </span>
-    <span class="custome-placeholder__after"></span>
+
   </span>
 
   <span class="icon-drop"></span>
@@ -986,32 +990,32 @@
     <div class="general-drop__item js-drop-contains">
       <span class="icon-active"></span>
       <img class="custome-placeholder__img" src="./img/product-img-1.png" alt="product icon">
-      <div class="text">Maeng da green vein kratom</div>
+      <div class="text custome-placeholder__desc">Maeng da green vein kratom</div>
     </div>
   </div>
 </div>
           </div>
 
           <div class="profile-purchases__row">
-            <span>Weight</span>
+            <div class="profile-purchases__category">Weight</div>
             <ul class="product-weight">
-  <li class="active"><span>50</span>g</li>
-  <li><span>100</span>g</li>
-  <li><span>300</span>g</li>
-  <li><span>500</span>g</li>
-  <li><span>1000</span>g</li>
+  <li class="product-weight__item active"><span>50</span>g</li>
+  <li class="product-weight__item"><span>100</span>g</li>
+  <li class="product-weight__item"><span>300</span>g</li>
+  <li class="product-weight__item"><span>500</span>g</li>
+  <li class="product-weight__item"><span>1000</span>g</li>
 </ul>
           </div>
 
           <div class="profile-purchases__row">
-            <span>Quantity</span>
+            <div class="profile-purchases__category">Quantity</div>
             <div class="profile-purchases__row-inner">
               <span>-</span><span>1</span><span>+</span>
             </div>
           </div>
 
           <div class="profile-purchases__row profile-purchases__row--price">
-            <span>Price</span>
+            <div class="profile-purchases__category">Price</div>
             <div class="profile-purchases__price">
               usd<span>20</span>
             </div>
@@ -1021,15 +1025,15 @@
 
         <div class="profile-purchases__content">
           <div class="profile-purchases__row">
-            <span>Category</span>
+            <div class="profile-purchases__category">Category</div>
             <div class="profile__sort-category input__wrapper js-input-wrapper js-drop-item general-drop">
   <input type="text" class="main-input js-input js-drop-input js-drop-button" readonly required>
   <span class="custome-placeholder__wrapper">
-    <span class="custome-placeholder__before"></span>
     <span class="custome-placeholder__text">
-      <span class="inner-text">Kratom<span>*</span></span>
+      <span class="inner-text">
+        <p>Kratom</p><span>*</span>
+      </span>
     </span>
-    <span class="custome-placeholder__after"></span>
   </span>
 
   <span class="icon-drop"></span>
@@ -1048,18 +1052,22 @@
           </div>
 
           <div class="profile-purchases__row">
-            <span>Product</span>
-            <div class="profile__sort-category input__wrapper js-input-wrapper js-drop-item general-drop">
+            <div class="profile-purchases__category">Product</div>
+            <div class="profile__sort-products input__wrapper js-input-wrapper js-drop-item general-drop">
   <input type="text" class="main-input js-input js-drop-input js-drop-button" readonly required>
   <span class="custome-placeholder__wrapper">
-    <span class="custome-placeholder__before"></span>
+
     <span class="custome-placeholder__text">
 
       <span class="inner-text">
-        <img class="custome-placeholder__img" src="./img/product-img-1.png" alt="product icon">Maeng da green vein
-        kratom<span>*</span></span>
+        <img class="custome-placeholder__img" src="./img/product-img-1.png" alt="product icon">
+        <p class="custome-placeholder__desc">Maeng da green vein kratom
+        </p>
+        <span>*</span>
+
+      </span>
     </span>
-    <span class="custome-placeholder__after"></span>
+
   </span>
 
   <span class="icon-drop"></span>
@@ -1077,32 +1085,32 @@
     <div class="general-drop__item js-drop-contains">
       <span class="icon-active"></span>
       <img class="custome-placeholder__img" src="./img/product-img-1.png" alt="product icon">
-      <div class="text">Maeng da green vein kratom</div>
+      <div class="text custome-placeholder__desc">Maeng da green vein kratom</div>
     </div>
   </div>
 </div>
           </div>
 
           <div class="profile-purchases__row">
-            <span>Weight</span>
+            <div class="profile-purchases__category">Weight</div>
             <ul class="product-weight">
-  <li class="active"><span>50</span>g</li>
-  <li><span>100</span>g</li>
-  <li><span>300</span>g</li>
-  <li><span>500</span>g</li>
-  <li><span>1000</span>g</li>
+  <li class="product-weight__item active"><span>50</span>g</li>
+  <li class="product-weight__item"><span>100</span>g</li>
+  <li class="product-weight__item"><span>300</span>g</li>
+  <li class="product-weight__item"><span>500</span>g</li>
+  <li class="product-weight__item"><span>1000</span>g</li>
 </ul>
           </div>
 
           <div class="profile-purchases__row">
-            <span>Quantity</span>
+            <div class="profile-purchases__category">Quantity</div>
             <div class="profile-purchases__row-inner">
               <span>-</span><span>1</span><span>+</span>
             </div>
           </div>
 
           <div class="profile-purchases__row profile-purchases__row--price">
-            <span>Price</span>
+            <div class="profile-purchases__category">Price</div>
             <div class="profile-purchases__price">
               usd<span>20</span>
             </div>
@@ -1131,7 +1139,7 @@
 
       <div class="profile-purchases__content">
         <div class="profile-purchases__row profile-purchases__row--delivery">
-          <span class="profile-purchases__delivery-subtitle">Delivery method</span>
+          <div class="profile-purchases__delivery-subtitle">Delivery method</div>
 
           <div class="profile-purchases__delivery-adress">
             <div class="delivery-company input__wrapper js-input-wrapper js-drop-item general-drop">
@@ -1231,17 +1239,17 @@
 
       <div class="profile-purchases__content">
         <div class="profile-purchases__row">
-          <span>Payment method</span>
+          <div class="profile-purchases__category profile-purchases__category--mobile">Payment method</div>
 
           <div class="profile__choose-card input__wrapper js-input-wrapper js-drop-item general-drop">
   <input type="text" class="main-input js-input js-drop-input js-drop-button" readonly required>
   <span class="custome-placeholder__wrapper">
-    <span class="custome-placeholder__before"></span>
+    <!-- <span class="custome-placeholder__before"></span> -->
     <span class="custome-placeholder__text custome-placeholder__text--choose-card">
       <img src="./icons/mastercard-icon.svg" alt="icon mastercard">
       <span class="inner-text">Mastercard **** 5603</span>
     </span>
-    <span class="custome-placeholder__after"></span>
+    <!-- <span class="custome-placeholder__after"></span> -->
   </span>
 
   <span class="icon-drop"></span>
@@ -1275,7 +1283,7 @@
 
       <div class="profile-purchases__content">
         <div class="profile-purchases__row">
-          <span>Delivery day</span>
+          <div class="profile-purchases__category">Delivery day</div>
 
           <div class="profile-purchases__holder-date">
             <div class="delivery-date input__wrapper js-input-wrapper js-drop-item general-drop">
@@ -1519,7 +1527,7 @@
         </div>
 
         <div class="profile-purchases__row">
-          <span>Repeat</span>
+          <div class="profile-purchases__category">Repeat</div>
 
           <div class="profile-purchases__holder-date">
             <div class="delivery-date input__wrapper js-input-wrapper js-drop-item general-drop">
